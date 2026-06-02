@@ -1,0 +1,13 @@
+{
+  "_status": "reconstructed",
+  "planData": {
+    "elevations": [
+      {
+        "id": 1001,
+        "elements": [
+          { "id": 1, "name": "Body Colour", "src": "" }
+        ]
+      }
+    ]
+  }
+}

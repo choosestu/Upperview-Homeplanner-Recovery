@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="620" viewBox="0 0 900 620">
+  <rect width="900" height="620" fill="#f7f7f7"/>
+  <rect x="70" y="70" width="760" height="480" fill="none" stroke="#555" stroke-width="8"/>
+  <line x1="70" y1="250" x2="830" y2="250" stroke="#555" stroke-width="6"/>
+  <line x1="330" y1="70" x2="330" y2="550" stroke="#555" stroke-width="6"/>
+  <line x1="590" y1="250" x2="590" y2="550" stroke="#555" stroke-width="6"/>
+  <text x="450" y="315" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" fill="#555">Reconstructed Floorplan Placeholder</text>
+  <text x="450" y="352" text-anchor="middle" font-family="Arial, sans-serif" font-size="18" fill="#777">No original floorplan artwork was recovered</text>
+</svg>

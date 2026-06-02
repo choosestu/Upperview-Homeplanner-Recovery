@@ -1,0 +1,1497 @@
+<?xml version="1.0"?>
+<designers>
+  <client id="80"/>
+  <nbrhood id="380">
+    <plan id="1534" name="Daniel" videoUrl="" description="" def="4537">
+      <elev id="4537" base="daniela-base_56d8a7547f460.jpg" cap="A" description="" tag="A" bed="3" bath="3.5" size="3713" cost="0" thumb="daniela_56d9f27d1b494.jpg" thumbLg="daniela-lg_56d9f293c36d4.jpg" schemeids="1568,1569,1570,1571,1572,1573,1575,1576,1577" cars="0" floorCount="2"/>
+    </plan>
+    <plan id="1532" name="Statesman" videoUrl="" description="" def="4532">
+      <elev id="4532" base="statesmana-base_56d86a9388804.jpg" cap="A" description="" tag="A" bed="4" bath="4" size="3160" cost="0" thumb="statesmana_56d86ae0976b5.jpg" thumbLg="statesmana-lg_56d86ae45ef6a.jpg" schemeids="1568,1569,1570,1571,1572,1573,1575,1576,1577" cars="0" floorCount="2">
+        <filter catId="15" tagId="59"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1511" name="Brogan" videoUrl="" description="" def="4461">
+      <elev id="4462" base="broganb-base.jpg" cap="B" description="" tag="B" bed="3" bath="2.5" size="2613" cost="0" thumb="broganb.jpg" thumbLg="broganb-lg.jpg" schemeids="1568,1569,1570,1571,1572,1573,1575,1576,1577" cars="0" floorCount="2">
+        <filter catId="20" tagId="77"/>
+      </elev>
+      <elev id="4461" base="brogana-base.jpg" cap="A" description="" tag="A" bed="3" bath="2.5" size="2613" cost="0" thumb="brogana.jpg" thumbLg="brogana-lg.jpg" schemeids="1568,1569,1570,1571,1572,1573,1575,1576,1577" cars="0" floorCount="2">
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1510" name="Blue Ridge" videoUrl="" description="" def="4460">
+      <elev id="4460" base="blueridgea-base.jpg" cap="A" description="" tag="A" bed="4" bath="2.5" size="3015" cost="0" thumb="blueridgea.jpg" thumbLg="blueridgea-lg.jpg" schemeids="1568,1569,1570,1571,1572,1573,1575,1576,1577" cars="0" floorCount="2">
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1507" name="Cassiopeia" videoUrl="" description="" def="4451">
+      <elev id="4459" base="cassiopeiaaa-base.jpg" cap="A Alternate" description="" tag="AA" bed="4" bath="3" size="3144" cost="0" thumb="cassiopeiaaa.jpg" thumbLg="cassiopeiaaa-lg.jpg" schemeids="1568,1569,1570,1571,1572,1573,1575,1576,1577" cars="0" floorCount="3">
+        <filter catId="20" tagId="77"/>
+      </elev>
+      <elev id="4451" base="cassiopeiaa-base.jpg" cap="A" description="" tag="A" bed="4" bath="3" size="3144" cost="0" thumb="cassiopeiaa.jpg" thumbLg="cassiopeiaa-lg.jpg" schemeids="1568,1569,1570,1571,1572,1573,1575,1576,1577" cars="0" floorCount="3">
+        <filter catId="15" tagId="59"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1525" name="Dugan" videoUrl="" description="" def="4498">
+      <elev id="4498" base="dugana-base.jpg" cap="A" description="" tag="A" bed="4" bath="3.5" size="3184" cost="0" thumb="dugana.jpg" thumbLg="dugana-lg.jpg" schemeids="1568,1569,1570,1571,1572,1573,1575,1576,1577" cars="0" floorCount="2">
+        <filter catId="20" tagId="76"/>
+        <filter catId="20" tagId="78"/>
+        <filter catId="20" tagId="80"/>
+      </elev>
+    </plan>
+    <plan id="1524" name="Greenhaven" videoUrl="" description="" def="">
+      <elev id="4497" base="greenhavena-base.jpg" cap="A" description="" tag="A" bed="5" bath="3.5" size="3716" cost="0" thumb="greenhavena.jpg" thumbLg="greenhavena-lg.jpg" schemeids="1568,1569,1570,1571,1572,1573,1575,1576,1577" cars="0" floorCount="3">
+        <filter catId="20" tagId="77"/>
+        <filter catId="20" tagId="78"/>
+        <filter catId="20" tagId="80"/>
+      </elev>
+      <elev id="4511" base="greenhavenb-base_56d5b6ffaa01a.jpg" cap="B" description="" tag="B" bed="5" bath="3.5" size="3716" cost="0" thumb="greenhavenb_56d5b726a69a1.jpg" thumbLg="greenhavenb-lg_56d5b72965ee1.jpg" schemeids="1568,1569,1570,1571,1572,1573,1575,1576,1577" cars="0" floorCount="3">
+        <filter catId="20" tagId="77"/>
+        <filter catId="20" tagId="78"/>
+        <filter catId="20" tagId="80"/>
+      </elev>
+      <elev id="5266" base="greenhavenc-base_57a33342db948.jpg" cap="C" description="" tag="C" bed="5" bath="3.5" size="3716" cost="0" thumb="greenhavenc_57a3334d6b90d.jpg" thumbLg="greenhavenc-lg_57a3335055d2e.jpg" cars="0" floorCount="3">
+        <filter catId="20" tagId="77"/>
+        <filter catId="20" tagId="78"/>
+        <filter catId="20" tagId="80"/>
+      </elev>
+    </plan>
+    <plan id="1523" name="Sullivan" videoUrl="" description="" def="4494">
+      <elev id="4496" base="sullivanc-base.jpg" cap="C" description="" tag="C" bed="4" bath="3" size="2548" cost="0" thumb="sullivanc.jpg" thumbLg="sullivanc-lg.jpg" schemeids="1568,1569,1570,1571,1572,1573,1575,1576,1577" cars="0" floorCount="2">
+        <filter catId="20" tagId="81"/>
+      </elev>
+      <elev id="4495" base="sullivanb-base.jpg" cap="B" description="" tag="B" bed="4" bath="3" size="2548" cost="0" thumb="sullivanb.jpg" thumbLg="sullivanb-lg.jpg" schemeids="1568,1569,1570,1571,1572,1573,1575,1576,1577" cars="0" floorCount="2">
+        <filter catId="20" tagId="81"/>
+      </elev>
+      <elev id="4494" base="sullivana-base.jpg" cap="A" description="" tag="A" bed="4" bath="3" size="2548" cost="0" thumb="sullivana.jpg" thumbLg="sullivana-lg.jpg" schemeids="1568,1569,1570,1571,1572,1573,1575,1576,1577" cars="0" floorCount="2">
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1505" name="Stilesboro" videoUrl="" description="" def="4446">
+      <elev id="4446" base="stilesboroa-base.jpg" cap="A" description="" tag="A" bed="5" bath="3" size="2833" cost="0" thumb="stilesboroa.jpg" thumbLg="stilesboroa-lg.jpg" schemeids="1568,1569,1570,1571,1572,1573,1575,1576,1577" cars="0" floorCount="2">
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1759" name="Hamilton" videoUrl="" description="" def="5124">
+      <elev id="5124" base="hamiltona-base_579916cde5cbf.jpg" cap="" description="" tag="A" bed="4" bath="4" size="0" cost="0" thumb="hamiltona_579259c313e3a.jpg" thumbLg="hamiltona-lg_579259c825659.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="63"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1764" name="Alderwood" videoUrl="" description="" def="5131">
+      <elev id="5131" base="alderwooda-base_57978d8f86222.jpg" cap="" description="" tag="A" bed="4" bath="4" size="0" cost="0" thumb="alderwooda_57978daf28ef5.jpg" thumbLg="alderwooda-lg_57978db541c19.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="61"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="15" tagId="67"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1765" name="Ansley Cottage" videoUrl="" description="" def="5132">
+      <elev id="5132" base="ansleycottagea-base_57978e0b70d4a.jpg" cap="" description="" tag="A" bed="4" bath="4" size="0" cost="0" thumb="ansleycottagea_57978e19dddc2.jpg" thumbLg="ansleycottagea-lg_57978e2011b65.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="61"/>
+        <filter catId="15" tagId="63"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1766" name="Avonlea" videoUrl="" description="" def="5133">
+      <elev id="5133" base="avonleaa-base_57978e727e3c5.jpg" cap="" description="" tag="A" bed="5" bath="4.5" size="0" cost="0" thumb="avonleaa_57978e7f0a709.jpg" thumbLg="avonleaa-lg_57978e855d229.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="59"/>
+        <filter catId="15" tagId="65"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="15" tagId="67"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1767" name="Banner Elk II" videoUrl="" description="" def="5134">
+      <elev id="5134" base="bannerelkiia-base_57978ee4c6456.jpg" cap="" description="" tag="A" bed="4" bath="4.5" size="0" cost="0" thumb="bannerelkiia_57978ef394e78.jpg" thumbLg="bannerelkiia-lg_57978efa411c7.jpg" cars="0" floorCount="3">
+        <filter catId="15" tagId="61"/>
+        <filter catId="15" tagId="65"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1768" name="Butlers Mill Cottage" videoUrl="" description="" def="5135">
+      <elev id="5135" base="butlermillcottagea-base_57978f88d94ed.jpg" cap="" description="" tag="A" bed="3" bath="2.5" size="0" cost="0" thumb="butlermillcottagea_57978f9749954.jpg" thumbLg="butlermillcottagea-lg_57978f99cb11b.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="61"/>
+        <filter catId="20" tagId="76"/>
+      </elev>
+    </plan>
+    <plan id="1769" name="Chattahoochie" videoUrl="" description="" def="5136">
+      <elev id="5136" base="chattahoochiea-base_5797900991865.jpg" cap="" description="" tag="A" bed="4" bath="3" size="0" cost="0" thumb="chattahoochiea_579790196bd34.jpg" thumbLg="chattahoochiea-lg_5797901f72ad2.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="64"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1770" name="Country Farmhouse" videoUrl="" description="" def="5137">
+      <elev id="5137" base="countryfarmhousea-base_579790747ffe9.jpg" cap="" description="" tag="A" bed="4" bath="3.5" size="0" cost="0" thumb="countryfarmhousea_579790848187c.jpg" thumbLg="countryfarmhousea-lg_579790875edb6.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="61"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1771" name="Flanagan" videoUrl="" description="" def="5138">
+      <elev id="5138" base="flanagana-base_579790e0c3045.jpg" cap="" description="" tag="A" bed="5" bath="4.5" size="0" cost="0" thumb="flanagana_579790f1b244b.jpg" thumbLg="flanagana-lg_579790fa02592.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="59"/>
+        <filter catId="15" tagId="65"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="15" tagId="67"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1772" name="Glendale" videoUrl="" description="" def="5139">
+      <elev id="5139" base="glendalea-base_579791608c377.jpg" cap="" description="" tag="A" bed="4" bath="4.5" size="0" cost="0" thumb="glendalea_5797917d8fe6e.jpg" thumbLg="glendalea-lg_579791823f71b.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="63"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="15" tagId="65"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1773" name="Greenwich" videoUrl="" description="" def="5140">
+      <elev id="5140" base="greenwicha-base_579791da6b93f.jpg" cap="" description="" tag="A" bed="5" bath="4.5" size="0" cost="0" thumb="greenwicha_579791e8741c8.jpg" thumbLg="greenwicha-lg_579791eb52199.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="63"/>
+        <filter catId="15" tagId="65"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1774" name="Hartford" videoUrl="" description="" def="5141">
+      <elev id="5141" base="hartforda-base_5797924e6d2a0.jpg" cap="" description="" tag="A" bed="3" bath="3.5" size="0" cost="0" thumb="hartforda_5797937fc7618.jpg" thumbLg="hartforda-lg_5797938edaa1e.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="63"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1775" name="Havenbrooke" videoUrl="" description="" def="5142">
+      <elev id="5142" base="havenbrookea-base_579792b7c044b.jpg" cap="" description="" tag="A" bed="5" bath="4" size="0" cost="0" thumb="havenbrookea_579792cb40ec0.jpg" thumbLg="havenbrookea-lg_579792d76f8eb.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="61"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1776" name="Hayfield" videoUrl="" description="" def="5143">
+      <elev id="5143" base="hayfielda-base_579793cc193bd.jpg" cap="" description="" tag="A" bed="4" bath="3.5" size="0" cost="0" thumb="hayfielda_579793fb25328.jpg" thumbLg="hayfielda-lg_5797940b46e7d.jpg" cars="0" floorCount="3">
+        <filter catId="15" tagId="61"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="15" tagId="65"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1777" name="Johns Creek" videoUrl="" description="" def="5144">
+      <elev id="5144" base="johnscreeka-base_5797946f102a4.jpg" cap="" description="" tag="A" bed="4" bath="2.5" size="0" cost="0" thumb="johnscreeka_57979480267bd.jpg" thumbLg="johnscreeka-lg_579794848792e.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="61"/>
+        <filter catId="15" tagId="63"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="20" tagId="76"/>
+      </elev>
+    </plan>
+    <plan id="1778" name="Lake Burton Lodge" videoUrl="" description="" def="5145">
+      <elev id="5145" base="lakeburtonlodgea-base_579794d845309.jpg" cap="" description="" tag="A" bed="4" bath="3.5" size="0" cost="0" thumb="lakeburtonlodgea_579794eaebe42.jpg" thumbLg="lakeburtonlodgea-lg_579794f135f7b.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="62"/>
+        <filter catId="15" tagId="63"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="15" tagId="67"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1779" name="Serenbe Farmhouse" videoUrl="" description="" def="5146">
+      <elev id="5146" base="serenbefarmhousea-base_5797958cb12e1.jpg" cap="" description="" tag="A" bed="3" bath="2" size="0" cost="0" thumb="serenbefarmhousea_5797959ebb2b0.jpg" thumbLg="serenbefarmhousea-lg_579795a1be800.jpg" cars="0" floorCount="2">
+        <filter catId="20" tagId="76"/>
+      </elev>
+    </plan>
+    <plan id="1780" name="Walden Pond" videoUrl="" description="" def="5147">
+      <elev id="5147" base="waldenponda-base_57979611c4a98.jpg" cap="" description="" tag="A" bed="4" bath="4.5" size="0" cost="0" thumb="waldenponda_5797962b85b15.jpg" thumbLg="waldenponda-lg_57979636bc7d6.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="59"/>
+        <filter catId="15" tagId="65"/>
+        <filter catId="15" tagId="67"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1781" name="Wynter Park" videoUrl="" description="" def="5148">
+      <elev id="5148" base="wynterparka-base_579796b4eeb60.jpg" cap="" description="" tag="A" bed="4" bath="5" size="0" cost="0" thumb="wynterparka_579796c552ae6.jpg" thumbLg="wynterparka-lg_579796cb754e1.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="59"/>
+        <filter catId="15" tagId="61"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="15" tagId="65"/>
+        <filter catId="15" tagId="67"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1783" name="Amberg" videoUrl="" description="" def="5150">
+      <elev id="5150" base="amberga-base_579a3d3f64a49.jpg" cap="" description="" tag="A" bed="3" bath="3.5" size="0" cost="0" thumb="amberga_579a3dbb7c604.jpg" thumbLg="amberga-lg_579a3dd240154.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="61"/>
+        <filter catId="15" tagId="63"/>
+        <filter catId="20" tagId="76"/>
+      </elev>
+    </plan>
+    <plan id="1785" name="Bedford" videoUrl="" description="" def="5152">
+      <elev id="5152" base="bedforda-base_579a3df1d2ba1.jpg" cap="" description="" tag="A" bed="3" bath="2.5" size="0" cost="0" thumb="bedforda_579a3e19839a9.jpg" thumbLg="bedforda-lg_579a3e29a52a8.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="61"/>
+        <filter catId="15" tagId="63"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1786" name="Brackenbury" videoUrl="" description="" def="5154">
+      <elev id="5154" base="brackenburya-base_579a3ec8af1b9.jpg" cap="" description="" tag="A" bed="5" bath="2.5" size="0" cost="0" thumb="brackenburya_579a3f1084c8b.jpg" thumbLg="brackenburya-lg_579a3f3712762.jpg" cars="0" floorCount="3">
+        <filter catId="15" tagId="61"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1787" name="Bradner" videoUrl="" description="" def="5155">
+      <elev id="5155" base="bradnera-base_579a4028982c1.jpg" cap="" description="" tag="A" bed="4" bath="2.5" size="0" cost="0" thumb="bradnera_579a408f10021.jpg" thumbLg="bradnera-lg_579a4098141fa.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="61"/>
+        <filter catId="15" tagId="63"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1788" name="Brandeis" videoUrl="" description="" def="5156">
+      <elev id="5156" base="brandeisa-base_579a40c1cc9a8.jpg" cap="" description="" tag="A" bed="4" bath="3.5" size="0" cost="0" thumb="brandeisa_579a40e44ee4d.jpg" thumbLg="brandeisa-lg_579a40eaf1ae9.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="61"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1790" name="Bridgefield" videoUrl="" description="" def="5158">
+      <elev id="5158" base="bridgefielda-base_579a41bab3730.jpg" cap="" description="" tag="A" bed="4" bath="3.5" size="0" cost="0" thumb="bridgefielda_579a41e414708.jpg" thumbLg="bridgefielda-lg_579a41fe4de49.jpg" cars="0" floorCount="2">
+        <filter catId="20" tagId="77"/>
+        <filter catId="20" tagId="80"/>
+      </elev>
+    </plan>
+    <plan id="1791" name="Broderick" videoUrl="" description="" def="5159">
+      <elev id="5159" base="brodericka-base_579a444ce1772.jpg" cap="A" description="" tag="A" bed="3" bath="2.5" size="0" cost="0" thumb="brodericka_579a4554bc52a.jpg" thumbLg="brodericka-lg_579a459b19b37.jpg" cars="0" floorCount="1">
+        <filter catId="20" tagId="76"/>
+      </elev>
+    </plan>
+    <plan id="1792" name="Cainsville" videoUrl="" description="" def="5161">
+      <elev id="5161" base="cainsvillea-base_579a468a1aa18.jpg" cap="" description="" tag="A" bed="4" bath="4.5" size="0" cost="0" thumb="cainsvillea_579a472ba93e6.jpg" thumbLg="cainsvillea-lg_579a475fe92ba.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="63"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="20" tagId="76"/>
+      </elev>
+    </plan>
+    <plan id="1793" name="Campbell" videoUrl="" description="" def="5162">
+      <elev id="5162" base="campbella-base_579a48696726b.jpg" cap="A" description="" tag="A" bed="4" bath="3.5" size="0" cost="0" thumb="campbella_579a489ab3495.jpg" thumbLg="campbella-lg_579a48e52ece7.jpg" cars="0" floorCount="2">
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1794" name="Clearfield" videoUrl="" description="" def="5163">
+      <elev id="5163" base="clearfielda-base_579a4982b236d.jpg" cap="" description="" tag="A" bed="4" bath="4" size="0" cost="0" thumb="clearfielda_579a49a35525a.jpg" thumbLg="clearfielda-lg_579a49ba2bee2.jpg" cars="0" floorCount="3">
+        <filter catId="15" tagId="61"/>
+        <filter catId="15" tagId="63"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1795" name="Covington" videoUrl="" description="" def="5164">
+      <elev id="5164" base="covingtona-base_579a4b12781d7.jpg" cap="" description="" tag="A" bed="4" bath="2.5" size="0" cost="0" thumb="covingtona_579a4b2f5f2f8.jpg" thumbLg="covingtona-lg_579a4b4c06d50.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="62"/>
+        <filter catId="15" tagId="63"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1796" name="Farnsworth" videoUrl="" description="" def="5165">
+      <elev id="5165" base="farnswortha-base_579a4c65446a6.jpg" cap="" description="" tag="A" bed="3" bath="3.5" size="0" cost="0" thumb="farnswortha_579a504f71746.jpg" thumbLg="farnswortha-lg_579a50534ca71.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="61"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1798" name="Habersham Cottage" videoUrl="" description="" def="5167">
+      <elev id="5167" base="habershamcottagea-base_579a525ac56d7.jpg" cap="" description="" tag="A" bed="4" bath="3.5" size="0" cost="0" thumb="habershamcottagea_579a528667abc.jpg" thumbLg="habershamcottagea-lg_579a529ed82c1.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="63"/>
+        <filter catId="15" tagId="67"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1799" name="Harbins Landing" videoUrl="" description="" def="5168">
+      <elev id="5168" base="harbinslandinga-base_579a52e6108f0.jpg" cap="A" description="" tag="A" bed="4" bath="3.5" size="0" cost="0" thumb="harbinslandinga_579a53089b483.jpg" thumbLg="harbinslandinga-lg_579a5308eb47c.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="63"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1800" name="Hood River" videoUrl="" description="" def="5169">
+      <elev id="5169" base="hoodrivera-base_579a5397b67d1.jpg" cap="" description="" tag="A" bed="3" bath="2.5" size="0" cost="0" thumb="hoodrivera_579a53b6c5770.jpg" thumbLg="hoodrivera-lg_579a53d9a5001.jpg" cars="0" floorCount="2">
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1801" name="Huntcliffe" videoUrl="" description="" def="5170">
+      <elev id="5170" base="huntcliffea-base_579a542c0bd2e.jpg" cap="A" description="" tag="A" bed="4" bath="2.5" size="0" cost="0" thumb="huntcliffea_579a543f8edb3.jpg" thumbLg="huntcliffea-lg_579a544b727bf.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="65"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1802" name="Iverson" videoUrl="" description="" def="5171">
+      <elev id="5171" base="iversona-base_579a54a3d93b0.jpg" cap="" description="" tag="A" bed="5" bath="4.5" size="0" cost="0" thumb="iversona_579a54d062ec5.jpg" thumbLg="iversona-lg_579a54d81b4ae.jpg" cars="0" floorCount="3">
+        <filter catId="15" tagId="59"/>
+        <filter catId="15" tagId="61"/>
+        <filter catId="15" tagId="63"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1803" name="Kaiser" videoUrl="" description="" def="5172">
+      <elev id="5172" base="kaisera-base_579a5563166f5.jpg" cap="" description="" tag="A" bed="4" bath="4.5" size="4007" cost="0" thumb="kaisera_579a55ca0af0f.jpg" thumbLg="kaisera-lg_579a55d4b5029.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="61"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1804" name="Kelley" videoUrl="" description="" def="5173">
+      <elev id="5173" base="kelleya-base_579a5614604f2.jpg" cap="A" description="" tag="A" bed="4" bath="4" size="0" cost="0" thumb="kelleya_579a563b29173.jpg" thumbLg="kelleya-lg_579a563ecb80f.jpg" cars="0" floorCount="2">
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1805" name="Lofton" videoUrl="" description="" def="5174">
+      <elev id="5174" base="loftona-base_579a56c197d9c.jpg" cap="" description="" tag="A" bed="4" bath="3.5" size="0" cost="0" thumb="loftona_579a56d5c2416.jpg" thumbLg="loftona-lg_579a56e7b7c18.jpg" cars="0" floorCount="0">
+        <filter catId="15" tagId="63"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1807" name="Northbrook" videoUrl="" description="" def="5176">
+      <elev id="5176" base="northbrooka-base_579a57b4531e3.jpg" cap="A" description="" tag="A" bed="4" bath="2.5" size="0" cost="0" thumb="northbrooka_579a57db22855.jpg" thumbLg="northbrooka-lg_579a580196302.jpg" cars="0" floorCount="2">
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1808" name="Pineville" videoUrl="" description="" def="5177">
+      <elev id="5177" base="pinevillea-base_579a589ed5c3f.jpg" cap="" description="" tag="A" bed="4" bath="4" size="3998" cost="0" thumb="pinevillea_579a58e5b624d.jpg" thumbLg="pinevillea-lg_579a58f698f9c.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="59"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="20" tagId="76"/>
+      </elev>
+    </plan>
+    <plan id="1809" name="Ravenwood" videoUrl="" description="" def="5178">
+      <elev id="5178" base="ravenwooda-base_579a59a48dc46.jpg" cap="A" description="" tag="A" bed="5" bath="3.5" size="0" cost="0" thumb="ravenwooda_579a59cc0bb31.jpg" thumbLg="ravenwooda-lg_579a5a0883f54.jpg" cars="0" floorCount="2">
+        <filter catId="20" tagId="76"/>
+      </elev>
+    </plan>
+    <plan id="1810" name="Sibley" videoUrl="" description="" def="5179">
+      <elev id="5179" base="sibleya-base_579a5a6fa60ae.jpg" cap="" description="" tag="A" bed="4" bath="2.5" size="0" cost="0" thumb="sibleya_579a5ab37b102.jpg" thumbLg="sibleya-lg_579a5ac2e2efd.jpg" cars="0" floorCount="2">
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1811" name="Victoria" videoUrl="" description="" def="5180">
+      <elev id="5180" base="victoriaa-base_579a5adf3e1cd.jpg" cap="" description="" tag="A" bed="4" bath="3.5" size="0" cost="0" thumb="victoriaa_579a5afbaf4af.jpg" thumbLg="victoriaa-lg_579a5b130f34c.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="64"/>
+        <filter catId="20" tagId="76"/>
+      </elev>
+    </plan>
+    <plan id="1828" name="Aberle" videoUrl="" description="" def="5208">
+      <elev id="5208" base="aberiea-base_57a08db625c25.jpg" cap="" description="" tag="A" bed="4" bath="3.5" size="0" cost="0" thumb="aberiea_57a08e0aa1045.jpg" thumbLg="aberiea-lg_57a08e0d8eb6a.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="59"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1829" name="Anniston" videoUrl="" description="" def="5209">
+      <elev id="5209" base="annistona-base_57a08e2de6494.jpg" cap="" description="" tag="A" bed="4" bath="3.5" size="0" cost="0" thumb="annistona_57a08e566ceb6.jpg" thumbLg="annistona-lg_57a08e5a16e24.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="61"/>
+        <filter catId="15" tagId="63"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1830" name="Avonstone Manor" videoUrl="" description="" def="5210">
+      <elev id="5210" base="avonstonemanora-base_57a08ec848037.jpg" cap="" description="" tag="A" bed="4" bath="5.5" size="5681" cost="0" thumb="avonstonemanora_57a08ed353d42.jpg" thumbLg="avonstonemanora-lg_57a08ed63a631.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="64"/>
+        <filter catId="15" tagId="65"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1831" name="Benedict" videoUrl="" description="" def="5211">
+      <elev id="5211" base="benedicta-base_57a08f1c3b18d.jpg" cap="" description="" tag="A" bed="4" bath="3.5" size="0" cost="0" thumb="benedicta_57a08f6949b3e.jpg" thumbLg="benedicta-lg_57a08f6cc2bdd.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="61"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1832" name="Collinwood" videoUrl="" description="" def="5212">
+      <elev id="5212" base="collinwooda-base_57a08f8a88cc9.jpg" cap="" description="" tag="A" bed="5" bath="4.5" size="4464" cost="0" thumb="collinwooda_57a08f98cd22c.jpg" thumbLg="collinwooda-lg_57a08f9a07b6a.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="0"/>
+        <filter catId="15" tagId="62"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1833" name="Douglas" videoUrl="" description="" def="5213">
+      <elev id="5213" base="douglasa-base_57a08fffd8e00.jpg" cap="" description="" tag="A" bed="4" bath="4.5" size="0" cost="0" thumb="douglasa_57a0900a200a0.jpg" thumbLg="douglasa-lg_57a0900dafa65.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="63"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1834" name="Ellisville" videoUrl="" description="" def="5214">
+      <elev id="5214" base="ellisvillea-base_57a0907b1453b.jpg" cap="" description="" tag="A" bed="3" bath="2.5" size="0" cost="0" thumb="ellisvillea_57a09085a1263.jpg" thumbLg="ellisvillea-lg_57a0908edc250.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="0"/>
+        <filter catId="15" tagId="59"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="15" tagId="65"/>
+        <filter catId="15" tagId="66"/>
+      </elev>
+    </plan>
+    <plan id="1835" name="Elstad" videoUrl="" description="" def="5215">
+      <elev id="5215" base="elstada-base_57a090d54a748.jpg" cap="" description="" tag="A" bed="5" bath="6.5" size="0" cost="0" thumb="elstada_57a090ef027c5.jpg" thumbLg="elstada-lg_57a090f266d14.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="59"/>
+        <filter catId="15" tagId="61"/>
+        <filter catId="15" tagId="63"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="15" tagId="65"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1836" name="Fireglow" videoUrl="" description="" def="5216">
+      <elev id="5216" base="fireglowa-base_57a091468bfb6.jpg" cap="" description="" tag="A" bed="3" bath="2.5" size="0" cost="0" thumb="fireglowa_57a0915260cd7.jpg" thumbLg="fireglowa-lg_57a09156768dd.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="61"/>
+        <filter catId="15" tagId="63"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1837" name="Garnell" videoUrl="" description="" def="5217">
+      <elev id="5217" base="garnella-base_57a091a133192.jpg" cap="" description="" tag="A" bed="4" bath="3.5" size="0" cost="0" thumb="garnella_57a0932d5ebce.jpg" thumbLg="garnella-lg_57a0932fd2e94.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="63"/>
+        <filter catId="20" tagId="77"/>
+        <filter catId="20" tagId="80"/>
+      </elev>
+    </plan>
+    <plan id="1838" name="Hermitage" videoUrl="" description="" def="5218">
+      <elev id="5218" base="hermitagea-base_57a0948194974.jpg" cap="" description="" tag="A" bed="4" bath="3.5" size="0" cost="0" thumb="hermitagea_57a094884fb04.jpg" thumbLg="hermitagea-lg_57a09489da27e.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="63"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1839" name="Holden" videoUrl="" description="" def="5219">
+      <elev id="5219" base="holdena-base_57a094b10da25.jpg" cap="" description="" tag="A" bed="5" bath="6.5" size="0" cost="0" thumb="holdena_57a094bc26320.jpg" thumbLg="holdena-lg_57a094bf5af36.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="63"/>
+        <filter catId="15" tagId="65"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1840" name="Ingram" videoUrl="" description="" def="5220">
+      <elev id="5220" base="ingrama-base_57a0952f0e1bc.jpg" cap="" description="" tag="A" bed="4" bath="5.5" size="0" cost="0" thumb="ingrama_57a0953ce379b.jpg" thumbLg="ingrama-lg_57a09540cd323.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="63"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="15" tagId="65"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="77"/>
+        <filter catId="20" tagId="80"/>
+      </elev>
+    </plan>
+    <plan id="1841" name="Karstan" videoUrl="" description="" def="5221">
+      <elev id="5221" base="karstana-base_57a0958b4fd34.jpg" cap="" description="" tag="A" bed="5" bath="5.5" size="0" cost="0" thumb="karstana_57a095950d1e3.jpg" thumbLg="karstana-lg_57a095985b3d9.jpg" cars="0" floorCount="3">
+        <filter catId="15" tagId="63"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1842" name="Kirkwood" videoUrl="" description="" def="5222">
+      <elev id="5222" base="kirkwooda-base_57a09602d40d3.jpg" cap="" description="" tag="A" bed="4" bath="5.5" size="0" cost="0" thumb="kirkwooda_57a0960e51834.jpg" thumbLg="kirkwooda-lg_57a0961120894.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="61"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1843" name="Ladner" videoUrl="" description="" def="5223">
+      <elev id="5223" base="ladnera-base_57a0966204309.jpg" cap="" description="" tag="A" bed="4" bath="3.5" size="0" cost="0" thumb="ladnera_57a0966d76986.jpg" thumbLg="ladnera-lg_57a0967229ec2.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="62"/>
+        <filter catId="15" tagId="65"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1844" name="Lyndale" videoUrl="" description="" def="5224">
+      <elev id="5224" base="lyndalea-base_57a096bc59059.jpg" cap="" description="" tag="A" bed="4" bath="3.5" size="0" cost="0" thumb="lyndalea_57a096c7c1cfe.jpg" thumbLg="lyndalea-lg_57a096ce1ba3d.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="63"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1845" name="Marlow" videoUrl="" description="" def="5225">
+      <elev id="5225" base="marlowa-base_57a0973196aa9.jpg" cap="" description="" tag="A" bed="4" bath="3.5" size="0" cost="0" thumb="marlowa_57a0973bcf658.jpg" thumbLg="marlowa-lg_57a0973f3ba61.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="63"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1846" name="Orleans" videoUrl="" description="" def="5226">
+      <elev id="5226" base="orleansa-base_57a097a1b3500.jpg" cap="" description="" tag="A" bed="4" bath="4.5" size="0" cost="0" thumb="orleansa_57a097acb35ce.jpg" thumbLg="orleansa-lg_57a097ae48f28.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="59"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="15" tagId="67"/>
+        <filter catId="20" tagId="76"/>
+      </elev>
+    </plan>
+    <plan id="1847" name="Parnell" videoUrl="" description="" def="5227">
+      <elev id="5227" base="parnella-base_57a097fb5c3ef.jpg" cap="" description="" tag="A" bed="4" bath="4" size="0" cost="0" thumb="parnella_57a0981834d62.jpg" thumbLg="parnella-lg_57a0981a16621.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="63"/>
+        <filter catId="20" tagId="80"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1848" name="Saint Denis" videoUrl="" description="" def="5228">
+      <elev id="5228" base="saintdenisa-base_57a0985bea918.jpg" cap="" description="" tag="A" bed="4" bath="4.5" size="0" cost="0" thumb="saintdenisa_57a098712b76c.jpg" thumbLg="saintdenisa-lg_57a0987290b1e.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="61"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="15" tagId="67"/>
+        <filter catId="20" tagId="76"/>
+      </elev>
+    </plan>
+    <plan id="1849" name="Toulouse" videoUrl="" description="" def="5229">
+      <elev id="5229" base="toulousea-base_57a099267505b.jpg" cap="" description="" tag="A" bed="5" bath="5.5" size="4782" cost="0" thumb="toulousea_57a0993195b0b.jpg" thumbLg="toulousea-lg_57a09933480d2.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="61"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="15" tagId="65"/>
+        <filter catId="15" tagId="67"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1850" name="Tualatin" videoUrl="" description="" def="5230">
+      <elev id="5230" base="tualatina-base_57a0994dd8f23.jpg" cap="" description="" tag="A" bed="5" bath="5.5" size="0" cost="0" thumb="tualatina_57a09957465ae.jpg" thumbLg="tualatina-lg_57a0995ac3c99.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="59"/>
+        <filter catId="15" tagId="63"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1851" name="Vicksburg" videoUrl="" description="" def="5231">
+      <elev id="5231" base="vicksburga-base_57a099bb2ca57.jpg" cap="" description="" tag="A" bed="4" bath="4.5" size="0" cost="0" thumb="vicksburga_57a099cda3fac.jpg" thumbLg="vicksburga-lg_57a099d0c71f0.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="61"/>
+        <filter catId="15" tagId="63"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1852" name="Winthrop" videoUrl="" description="" def="5232">
+      <elev id="5232" base="winthropa-base_57a09a0f61d50.jpg" cap="" description="" tag="A" bed="5" bath="4.5" size="4574" cost="0" thumb="winthropa_57a09a1aa34c7.jpg" thumbLg="winthropa-lg_57a09a1e078a9.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="65"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1873" name="Almodovar" videoUrl="" description="" def="5258">
+      <elev id="5258" base="almodovara-base_57a3300e4d62c.jpg" cap="" description="" tag="A" bed="4" bath="2.5" size="0" cost="0" thumb="almodovara_57a3301e39308.jpg" thumbLg="almodovara-lg_57a33020e1921.jpg" cars="0" floorCount="1">
+        <filter catId="20" tagId="76"/>
+      </elev>
+    </plan>
+    <plan id="1874" name="Amazing Grace" videoUrl="" description="" def="5259">
+      <elev id="5259" base="amazinggracea-base_57a330638e7b2.jpg" cap="" description="" tag="A" bed="3" bath="2.5" size="0" cost="0" thumb="amazinggracea_57a33099eb494.jpg" thumbLg="amazinggracea-lg_57a3309b48763.jpg" cars="0" floorCount="2">
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1875" name="Bryson" videoUrl="" description="" def="5260">
+      <elev id="5260" base="brysona-base_57a330b1ed0cc.jpg" cap="" description="" tag="A" bed="4" bath="3.5" size="0" cost="0" thumb="brysona_57a330bdf03fd.jpg" thumbLg="brysona-lg_57a330bf7b1ac.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="61"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1876" name="Carwile" videoUrl="" description="" def="5261">
+      <elev id="5261" base="carwiea-base_57a33114c38e1.jpg" cap="" description="" tag="A" bed="4" bath="2.5" size="0" cost="0" thumb="carwiea_57a3311f8c05a.jpg" thumbLg="carwiea-lg_57a331222e7cf.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="61"/>
+        <filter catId="15" tagId="65"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1877" name="Chandler" videoUrl="" description="" def="5262">
+      <elev id="5262" base="chandlera-base_57a33165e7f70.jpg" cap="" description="" tag="A" bed="4" bath="2.5" size="0" cost="0" thumb="chandlera_57a331714a50a.jpg" thumbLg="chandlera-lg_57a33174dd7f4.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="65"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1878" name="Culpepper" videoUrl="" description="" def="5263">
+      <elev id="5263" base="culpeppera-base_57a331cb164e4.jpg" cap="" description="" tag="A" bed="5" bath="4" size="0" cost="0" thumb="culpeppera_57a331d5df9be.jpg" thumbLg="culpeppera-lg_57a331d72332d.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="64"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1879" name="Everton " videoUrl="" description="" def="5264">
+      <elev id="5264" base="evertona-base_57a3326b66958.jpg" cap="" description="" tag="A" bed="5" bath="6.5" size="0" cost="0" thumb="evertona_57a332765926b.jpg" thumbLg="evertona-lg_57a3327a87277.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="59"/>
+        <filter catId="15" tagId="61"/>
+        <filter catId="15" tagId="63"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1880" name="Hallsville" videoUrl="" description="" def="5267">
+      <elev id="5267" base="hallsvillea-base_57a33414adf35.jpg" cap="" description="" tag="A" bed="5" bath="5.5" size="0" cost="0" thumb="hallsvillea_57a3342c0ba48.jpg" thumbLg="hallsvillea-lg_57a334301649c.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="61"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="15" tagId="65"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="77"/>
+        <filter catId="20" tagId="80"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1881" name="Halstad" videoUrl="" description="" def="5268">
+      <elev id="5268" base="halstada-base_57a3347fbf4e0.jpg" cap="" description="" tag="A" bed="3" bath="2.5" size="0" cost="0" thumb="halstada_57a3348b7552b.jpg" thumbLg="halstada-lg_57a3348f7ad0d.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="61"/>
+        <filter catId="15" tagId="63"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1882" name="Harriet" videoUrl="" description="" def="5269">
+      <elev id="5269" base="harrieta-base_57a334db12345.jpg" cap="" description="" tag="A" bed="4" bath="4.5" size="0" cost="0" thumb="harrieta_57a334e76b095.jpg" thumbLg="harrieta-lg_57a334e89a249.jpg" cars="0" floorCount="1">
+        <filter catId="15" tagId="59"/>
+        <filter catId="20" tagId="76"/>
+        <filter catId="20" tagId="80"/>
+      </elev>
+    </plan>
+    <plan id="1883" name="Hartville" videoUrl="" description="" def="5270">
+      <elev id="5270" base="hartvillea-base_57a3352d7e7ac.jpg" cap="" description="" tag="A" bed="3" bath="2.5" size="0" cost="0" thumb="hartvillea_57a335373cf21.jpg" thumbLg="hartvillea-lg_57a3353a82b9a.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1884" name="Harwood" videoUrl="" description="" def="5271">
+      <elev id="5271" base="hardwooda-base_57a3358078838.jpg" cap="" description="" tag="A" bed="5" bath="4.5" size="0" cost="0" thumb="hardwooda_57a3358a020f2.jpg" thumbLg="hardwooda-lg_57a3358dba215.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="59"/>
+        <filter catId="15" tagId="61"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1885" name="Judson" videoUrl="" description="" def="5272">
+      <elev id="5272" base="judsona-base_57a335f451096.jpg" cap="" description="" tag="A" bed="4" bath="3.5" size="0" cost="0" thumb="judsona_57a335fec8ce7.jpg" thumbLg="judsona-lg_57a335ffd05ad.jpg" cars="0" floorCount="1">
+        <filter catId="15" tagId="67"/>
+        <filter catId="20" tagId="76"/>
+        <filter catId="20" tagId="78"/>
+      </elev>
+    </plan>
+    <plan id="1886" name="Lafayette" videoUrl="" description="" def="5273">
+      <elev id="5273" base="lafayettea-base_57a3364f97681.jpg" cap="" description="" tag="A" bed="5" bath="3.5" size="0" cost="0" thumb="lafayettea_57a33658edb07.jpg" thumbLg="lafayettea-lg_57a3365b3d5b4.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="59"/>
+        <filter catId="15" tagId="63"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1887" name="Lanagan" videoUrl="" description="" def="5274">
+      <elev id="5274" base="lanagana-base_57a336a6e1311.jpg" cap="" description="" tag="A" bed="5" bath="4.5" size="0" cost="0" thumb="lanagana_57a336b0a6f8c.jpg" thumbLg="lanagana-lg_57a336b44a638.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="64"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1888" name="Letterham" videoUrl="" description="" def="5275">
+      <elev id="5275" base="letterhama-base_57a336f74fb7a.jpg" cap="" description="" tag="A" bed="5" bath="5.5" size="0" cost="0" thumb="letterhama_57a33700b67eb.jpg" thumbLg="letterhama-lg_57a33703cfeed.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="59"/>
+        <filter catId="15" tagId="61"/>
+        <filter catId="15" tagId="63"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1889" name="Lisette" videoUrl="" description="" def="5276">
+      <elev id="5276" base="lisettea-base_57a3374ae3ebc.jpg" cap="" description="" tag="A" bed="4" bath="3.5" size="0" cost="0" thumb="lisettea_57a33754871c5.jpg" thumbLg="lisettea-lg_57a33756e34f8.jpg" cars="0" floorCount="3">
+        <filter catId="15" tagId="59"/>
+        <filter catId="15" tagId="62"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1890" name="Madison Farmhouse" videoUrl="" description="" def="5277">
+      <elev id="5277" base="madisonfarmhousea-base_57a337c5c7eb8.jpg" cap="" description="" tag="A" bed="4" bath="3.5" size="0" cost="0" thumb="madisonfarmhousea_57a337cfc231e.jpg" thumbLg="madisonfarmhousea-lg_57a337d088a60.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="64"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1891" name="Maple Lane" videoUrl="" description="" def="5278">
+      <elev id="5278" base="maplelanea-base_57a3381cd7378.jpg" cap="" description="" tag="A" bed="5" bath="4.5" size="3275" cost="0" thumb="maplelanea_57a3382693514.jpg" thumbLg="maplelanea-lg_57a33827cc185.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="65"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="80"/>
+      </elev>
+    </plan>
+    <plan id="1892" name="Masonville" videoUrl="" description="" def="5279">
+      <elev id="5279" base="masonvillea-base_57a3386e1dff3.jpg" cap="" description="" tag="A" bed="4" bath="3.5" size="0" cost="0" thumb="masonvillea_57a338781b0ca.jpg" thumbLg="masonvillea-lg_57a3387b7b87a.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="59"/>
+        <filter catId="15" tagId="61"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1893" name="Mastrosimone" videoUrl="" description="" def="5280">
+      <elev id="5280" base="mastrosimonea-base_57a338ce6c335.jpg" cap="" description="" tag="A" bed="5" bath="3.5" size="0" cost="0" thumb="mastrosimonea_57a338d82dbef.jpg" thumbLg="mastrosimonea-lg_57a338db742e3.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="64"/>
+        <filter catId="15" tagId="65"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="15" tagId="67"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1894" name="Mulberry" videoUrl="" description="" def="5281">
+      <elev id="5281" base="mulberrya-base_57a3392dba739.jpg" cap="" description="" tag="A" bed="4" bath="3.5" size="3227" cost="0" thumb="mulberrya_57a3393876044.jpg" thumbLg="mulberrya-lg_57a3393a0e318.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="63"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="15" tagId="65"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1895" name="Newberry" videoUrl="" description="" def="5282">
+      <elev id="5282" base="newberrya-base_57a3397ce0ca2.jpg" cap="" description="" tag="A" bed="5" bath="4.5" size="0" cost="0" thumb="newberrya_57a3399ebbb1a.jpg" thumbLg="newberrya-lg_57a339a1d03e4.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="64"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="77"/>
+        <filter catId="20" tagId="80"/>
+      </elev>
+    </plan>
+    <plan id="1896" name="Oak Lane" videoUrl="" description="" def="5283">
+      <elev id="5283" base="oaklanea-base_57a33a318dadb.jpg" cap="" description="" tag="A" bed="3" bath="2.5" size="0" cost="0" thumb="oaklanea_57a33a7842c6a.jpg" thumbLg="oaklanea-lg_57a33a7f925bc.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="64"/>
+        <filter catId="20" tagId="76"/>
+      </elev>
+    </plan>
+    <plan id="1897" name="Peay" videoUrl="" description="" def="5284">
+      <elev id="5284" base="peaya-base_57a33a97a1dbf.jpg" cap="" description="" tag="A" bed="6" bath="3" size="0" cost="0" thumb="peaya_57a33aa2e8130.jpg" thumbLg="peaya-lg_57a33aa5d771c.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="65"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="80"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1898" name="Penelope" videoUrl="" description="" def="5285">
+      <elev id="5285" base="penelopea-base_57a33af578b6c.jpg" cap="" description="" tag="A" bed="4" bath="2.5" size="0" cost="0" thumb="penelopea_57a33b02925d7.jpg" thumbLg="penelopea-lg_57a33b0ba9475.jpg" cars="0" floorCount="3">
+        <filter catId="15" tagId="63"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1899" name="Remington" videoUrl="" description="" def="5286">
+      <elev id="5286" base="remingtona-base_57a33b6a0c6b1.jpg" cap="" description="" tag="A" bed="3" bath="2.5" size="0" cost="0" thumb="remingtona_57a33b74a447c.jpg" thumbLg="remingtona-lg_57a33b7716ac3.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="64"/>
+        <filter catId="20" tagId="76"/>
+      </elev>
+    </plan>
+    <plan id="1900" name="Rivard" videoUrl="" description="" def="5287">
+      <elev id="5287" base="rivarda-base_57a33bcc971b4.jpg" cap="" description="" tag="A" bed="5" bath="5.5" size="0" cost="0" thumb="rivarda_57a33bd71a7ef.jpg" thumbLg="rivarda-lg_57a33bd928eb7.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="59"/>
+        <filter catId="15" tagId="63"/>
+        <filter catId="15" tagId="65"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="15" tagId="67"/>
+        <filter catId="20" tagId="77"/>
+        <filter catId="20" tagId="80"/>
+      </elev>
+    </plan>
+    <plan id="1901" name="Sedgwick" videoUrl="" description="" def="5288">
+      <elev id="5288" base="sedgwicka-base_57a33c20e4197.jpg" cap="" description="" tag="A" bed="4" bath="2.5" size="0" cost="0" thumb="sedgwicka_57a33c2a20087.jpg" thumbLg="sedgwicka-lg_57a33c2d6f0f3.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="65"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1902" name="Silverton" videoUrl="" description="" def="5289">
+      <elev id="5289" base="silvertona-base_57a33ca71e301.jpg" cap="" description="" tag="A" bed="3" bath="2.5" size="0" cost="0" thumb="silvertona_57a33cb29e816.jpg" thumbLg="silvertona-lg_57a33cb72261f.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="63"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1903" name="Sumner" videoUrl="" description="" def="5290">
+      <elev id="5290" base="sumnera-base_57a33d078d63a.jpg" cap="" description="" tag="A" bed="3" bath="2.5" size="0" cost="0" thumb="sumnera_57a33d125e63f.jpg" thumbLg="sumnera-lg_57a33d15ac4d1.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="64"/>
+        <filter catId="15" tagId="65"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1904" name="Sundstrom" videoUrl="" description="" def="5291">
+      <elev id="5291" base="sundstroma-base_57a33d6e8fd43.jpg" cap="" description="" tag="A" bed="4" bath="4.5" size="0" cost="0" thumb="sundstroma_57a33d7bc2481.jpg" thumbLg="sundstroma-lg_57a33d7e4fbcd.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="59"/>
+        <filter catId="15" tagId="62"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="15" tagId="65"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1905" name="Timbersedge" videoUrl="" description="" def="5292">
+      <elev id="5292" base="timbersedgea-base_57a33dce839c0.jpg" cap="" description="" tag="A" bed="4" bath="3.5" size="5708" cost="0" thumb="timbersedgea_57a33ddb7fe77.jpg" thumbLg="timbersedgea-lg_57a33df29acd2.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="63"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1906" name="Treehouse" videoUrl="" description="" def="5293">
+      <elev id="5293" base="treehousea-base_57a33e34a0a42.jpg" cap="" description="" tag="A" bed="3" bath="2.5" size="0" cost="0" thumb="treehousea_57a33e3f257c8.jpg" thumbLg="treehousea-lg_57a33e4319db2.jpg" cars="0" floorCount="3">
+        <filter catId="15" tagId="65"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1907" name="Tumalo" videoUrl="" description="" def="5294">
+      <elev id="5294" base="tumaloa-base_57a33ec3cd8ab.jpg" cap="" description="" tag="A" bed="5" bath="3.5" size="0" cost="0" thumb="tumaloa_57a33ecf41d2a.jpg" thumbLg="tumaloa-lg_57a33ed058119.jpg" cars="0" floorCount="2">
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1908" name="Winthropshire" videoUrl="" description="" def="5295">
+      <elev id="5295" base="winthropshirea-base_57a33f2688773.jpg" cap="" description="" tag="A" bed="5" bath="4.5" size="0" cost="0" thumb="winthropshirea_57a33f346308d.jpg" thumbLg="winthropshirea-lg_57a33f3828009.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="65"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1909" name="Yorkville" videoUrl="" description="" def="5296">
+      <elev id="5296" base="yorkvillea-base_57a33fe317dd5.jpg" cap="" description="" tag="A" bed="5" bath="4" size="0" cost="0" thumb="yorkvillea_57a33fee2262b.jpg" thumbLg="yorkvillea-lg_57a33fef84849.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="65"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1910" name="Dinsmore" videoUrl="" description="" def="5297">
+      <elev id="5297" base="dinsmorea-base_57a3403eba812.jpg" cap="" description="" tag="A" bed="5" bath="2.5" size="3126" cost="0" thumb="dinsmorea_57a340477dffb.jpg" thumbLg="dinsmorea-lg_57a34048ebec3.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="64"/>
+        <filter catId="15" tagId="65"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1911" name="Woodlake" videoUrl="" description="" def="5298">
+      <elev id="5298" base="woodlakea-base_57a340ca45513.jpg" cap="" description="" tag="A" bed="3" bath="4" size="0" cost="0" thumb="woodlakea_57a3418d1e525.jpg" thumbLg="woodlakea-lg_57a341997bf23.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="64"/>
+        <filter catId="20" tagId="76"/>
+        <filter catId="20" tagId="80"/>
+      </elev>
+    </plan>
+    <plan id="1918" name="Mitchells Farmhouse" videoUrl="" description="" def="5325">
+      <elev id="5325" base="mitchellsfarmhousea-base_57a4f6088f7c8.jpg" cap="A" description="" tag="A" bed="4" bath="3" size="3658" cost="0" thumb="mitchellsfarmhousea_57a4f656b5ad2.jpg" thumbLg="mitchellsfarmhousea-lg_57a4f658ecea6.jpg" schemeids="1568,1569,1573,1575,1576,1577" cars="0" floorCount="3">
+        <filter catId="15" tagId="62"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="77"/>
+        <filter catId="20" tagId="80"/>
+      </elev>
+    </plan>
+    <plan id="1921" name="Alberg" videoUrl="" description="" def="5330">
+      <elev id="5330" base="alberga-base_57a9fac126ffc.jpg" cap="" description="" tag="A" bed="3" bath="3.5" size="0" cost="0" thumb="alberga_57a9fad1b92ee.jpg" thumbLg="alberga-lg_57a9fad3a3e63.jpg" cars="0" floorCount="1"/>
+    </plan>
+    <plan id="1922" name="Appalachia Mountain" videoUrl="" description="" def="5331">
+      <elev id="5331" base="appalachiamountaina-base_57a9fc41720b0.jpg" cap="" description="" tag="A" bed="3" bath="2.5" size="0" cost="0" thumb="appalachiamountaina_57a9fc5026329.jpg" thumbLg="appalachiamountaina-lg_57a9fc5124ce4.jpg" cars="0" floorCount="2">
+        <filter catId="20" tagId="76"/>
+      </elev>
+    </plan>
+    <plan id="1923" name="Asheville Mountain" videoUrl="" description="" def="5332">
+      <elev id="5332" base="ashevillemountaina-base_57a9fca3752a0.jpg" cap="" description="" tag="A" bed="4" bath="4.5" size="0" cost="0" thumb="ashevillemountaina_57a9fd2d92a20.jpg" thumbLg="ashevillemountaina-lg_57a9fd2dd74dd.jpg" cars="0" floorCount="3">
+        <filter catId="15" tagId="65"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1924" name="Blackhawk" videoUrl="" description="" def="5333">
+      <elev id="5333" base="blackhawka-base_57a9fd409397d.jpg" cap="" description="" tag="A" bed="3" bath="2" size="0" cost="0" thumb="blackhawka_57a9fd4b5366c.jpg" thumbLg="blackhawka-lg_57a9fd4bca682.jpg" cars="0" floorCount="1">
+        <filter catId="20" tagId="76"/>
+        <filter catId="20" tagId="78"/>
+      </elev>
+    </plan>
+    <plan id="1925" name="Buckner" videoUrl="" description="" def="5334">
+      <elev id="5334" base="bucknera-base_57a9fd937f0c8.jpg" cap="" description="" tag="A" bed="3" bath="2" size="0" cost="0" thumb="bucknera_57a9fdaaa351a.jpg" thumbLg="bucknera-lg_57a9fdac65c24.jpg" cars="0" floorCount="1">
+        <filter catId="20" tagId="76"/>
+      </elev>
+    </plan>
+    <plan id="1926" name="Carter" videoUrl="" description="" def="5335">
+      <elev id="5335" base="cartera-base_57a9fecaa686c.jpg" cap="" description="" tag="A" bed="3" bath="2" size="0" cost="0" thumb="cartera_57a9feda196ee.jpg" thumbLg="cartera-lg_57a9fedb92fc4.jpg" cars="0" floorCount="1">
+        <filter catId="20" tagId="76"/>
+      </elev>
+    </plan>
+    <plan id="1927" name="Cove" videoUrl="" description="" def="5336">
+      <elev id="5336" base="covea-base_57a9ff2f11491.jpg" cap="" description="" tag="A" bed="4" bath="3" size="0" cost="0" thumb="covea_57a9ff422490b.jpg" thumbLg="covea-lg_57a9ff434b654.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="59"/>
+        <filter catId="15" tagId="65"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1928" name="Darbi" videoUrl="" description="" def="5337">
+      <elev id="5337" base="darbia-base_57aa00ca7a57d.jpg" cap="A" description="" tag="A" bed="3" bath="2.5" size="0" cost="0" thumb="darbia_57aa00f48a926.jpg" thumbLg="darbia-lg_57aa00f52529c.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="63"/>
+        <filter catId="15" tagId="65"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1929" name="Fireside Cottage" videoUrl="" description="" def="5338">
+      <elev id="5338" base="firesidecottagea-base_57aa01411b54e.jpg" cap="" description="" tag="A" bed="3" bath="2" size="0" cost="0" thumb="firesidecottagea_57aa015c04ff1.jpg" thumbLg="firesidecottagea-lg_57aa015c417c2.jpg" cars="0" floorCount="1">
+        <filter catId="20" tagId="76"/>
+      </elev>
+    </plan>
+    <plan id="1930" name="Georgia Farmhouse" videoUrl="" description="" def="5339">
+      <elev id="5339" base="georgiafarmhousea-base_57aa01993d2a2.jpg" cap="" description="" tag="A" bed="3" bath="2.5" size="0" cost="0" thumb="georgiafarmhousea_57aa01a5630a5.jpg" thumbLg="georgiafarmhousea-lg_57aa01a5ac16d.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="65"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1931" name="Glenview" videoUrl="" description="" def="">
+      <elev id="5340" base="glenviewa-base_57aa01f98e507.jpg" cap="A" description="" tag="A" bed="3" bath="2" size="0" cost="0" thumb="glenviewa_57aa02080e674.jpg" thumbLg="glenviewa-lg_57aa02087942f.jpg" cars="0" floorCount="1">
+        <filter catId="20" tagId="76"/>
+      </elev>
+    </plan>
+    <plan id="1932" name="Gutenberg" videoUrl="" description="" def="5341">
+      <elev id="5341" base="gutenberga-base_57aa023d74e8f.jpg" cap="" description="" tag="A" bed="3" bath="2.5" size="0" cost="0" thumb="gutenberga_57aa024a2161d.jpg" thumbLg="gutenberga-lg_57aa024aa2357.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="63"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1933" name="Hayword" videoUrl="" description="" def="5342">
+      <elev id="5342" base="hayworda-base_57aa0299d26c0.gif" cap="" description="" tag="A" bed="3" bath="2" size="0" cost="0" thumb="hayworda_57aa02a8597bb.jpg" thumbLg="hayworda-lg_57aa02a8b59c8.jpg" cars="0" floorCount="1">
+        <filter catId="20" tagId="76"/>
+      </elev>
+    </plan>
+    <plan id="1934" name="Jasper" videoUrl="" description="" def="5343">
+      <elev id="5343" base="jaspera-base_57aa02e10ecac.jpg" cap="" description="" tag="A" bed="3" bath="2.5" size="0" cost="0" thumb="jaspera_57aa02eeb7b22.jpg" thumbLg="jaspera-lg_57aa02f247a40.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="63"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="20" tagId="76"/>
+      </elev>
+    </plan>
+    <plan id="1935" name="Lake Eufala Retreat" videoUrl="" description="" def="5344">
+      <elev id="5344" base="lakeeufalaretreata-base_57aa033e1c415.jpg" cap="" description="" tag="A" bed="4" bath="3.5" size="0" cost="0" thumb="lakeeufalaretreata_57aa0349dc9bf.jpg" thumbLg="lakeeufalaretreata-lg_57aa034a4ab54.jpg" cars="0" floorCount="2">
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1936" name="Larson" videoUrl="" description="" def="5345">
+      <elev id="5345" base="larsona-base_57aa040f57fe1.jpg" cap="" description="" tag="A" bed="3" bath="2.5" size="0" cost="0" thumb="larsona_57aa042293cbb.jpg" thumbLg="larsona-lg_57aa04238b3ed.jpg" cars="0" floorCount="2">
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1937" name="Lawrence" videoUrl="" description="" def="5346">
+      <elev id="5346" base="lawrencea-base_57aa04862632d.jpg" cap="" description="" tag="A" bed="3" bath="2.5" size="0" cost="0" thumb="lawrencea_57aa04a921cf2.jpg" thumbLg="lawrencea-lg_57aa04a9e6fab.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="63"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1938" name="Maysville" videoUrl="" description="" def="5347">
+      <elev id="5347" base="maysvillea-base_57aa04edd3f03.jpg" cap="" description="" tag="A" bed="4" bath="2.5" size="0" cost="0" thumb="maysvillea_57aa050822f53.jpg" thumbLg="maysvillea-lg_57aa05087bd63.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="65"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1939" name="Modern Ranch" videoUrl="" description="" def="5348">
+      <elev id="5348" base="modernrancha-base_57aa05e990539.jpg" cap="" description="" tag="A" bed="3" bath="2" size="0" cost="0" thumb="modernrancha_57aa05ff00dcf.jpg" thumbLg="modernrancha-lg_57aa060232583.jpg" cars="0" floorCount="1">
+        <filter catId="15" tagId="63"/>
+        <filter catId="20" tagId="76"/>
+      </elev>
+    </plan>
+    <plan id="1940" name="Oak Mountain" videoUrl="" description="" def="5349">
+      <elev id="5349" base="oakmountaina-base_57aa0645a468c.jpg" cap="" description="" tag="A" bed="3" bath="2" size="0" cost="0" thumb="oakmountaina_57aa0653ad293.jpg" thumbLg="oakmountaina-lg_57aa0654119fc.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="64"/>
+        <filter catId="20" tagId="76"/>
+      </elev>
+    </plan>
+    <plan id="1941" name="Oconee River House" videoUrl="" description="" def="5350">
+      <elev id="5350" base="oconeeriverhousea-base_57aa0730b4ba2.jpg" cap="" description="" tag="A" bed="4" bath="2.5" size="0" cost="0" thumb="oconeeriverhousea_57aa073a0456e.jpg" thumbLg="oconeeriverhousea-lg_57aa073a4f127.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="63"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1942" name="Old Stone Cottage" videoUrl="" description="" def="5351">
+      <elev id="5351" base="oldstonecottagea-base_57aa077dee630.jpg" cap="" description="" tag="A" bed="3" bath="2.5" size="0" cost="0" thumb="oldstonecottagea_57aa078e994fe.jpg" thumbLg="oldstonecottagea-lg_57aa078ef0fb0.jpg" cars="0" floorCount="2"/>
+    </plan>
+    <plan id="1943" name="Renville" videoUrl="" description="" def="5352">
+      <elev id="5352" base="renvillea-base_57aa07d73adb3.jpg" cap="" description="" tag="A" bed="3" bath="2.5" size="0" cost="0" thumb="renvillea_57aa07e4ccbf0.jpg" thumbLg="renvillea-lg_57aa07e48bd81.jpg" cars="0" floorCount="1">
+        <filter catId="15" tagId="63"/>
+        <filter catId="20" tagId="76"/>
+      </elev>
+    </plan>
+    <plan id="1944" name="Rivers Walk" videoUrl="" description="" def="5353">
+      <elev id="5353" base="riverswalka-base_57aa083895027.jpg" cap="" description="" tag="A" bed="4" bath="3.5" size="0" cost="0" thumb="riverswalka_57aa0846c32a0.jpg" thumbLg="riverswalka-lg_57aa08471ce4b.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="65"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1945" name="Sanderstone" videoUrl="" description="" def="5354">
+      <elev id="5354" base="sanderstonea-base_57aa08810cab3.jpg" cap="" description="" tag="A" bed="3" bath="2" size="0" cost="0" thumb="sanderstonea_57aa088f25224.jpg" thumbLg="sanderstonea-lg_57aa0890a9ece.jpg" cars="0" floorCount="1">
+        <filter catId="20" tagId="76"/>
+      </elev>
+    </plan>
+    <plan id="1946" name="Serenbe" videoUrl="" description="" def="5355">
+      <elev id="5355" base="serenbea-base_57aa08d7efe77.jpg" cap="" description="" tag="A" bed="4" bath="3" size="2837" cost="0" thumb="serenbea_57aa09013c559.jpg" thumbLg="serenbea-lg_57aa090188032.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="65"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1947" name="Skylar" videoUrl="" description="" def="5356">
+      <elev id="5356" base="skylara-base_57aa09458291a.jpg" cap="" description="" tag="A" bed="3" bath="2.5" size="0" cost="0" thumb="skylara_57aa0953d18cc.jpg" thumbLg="skylara-lg_57aa0954bb1f0.jpg" cars="0" floorCount="1">
+        <filter catId="15" tagId="61"/>
+        <filter catId="20" tagId="76"/>
+      </elev>
+    </plan>
+    <plan id="1948" name="Sunset Cottage" videoUrl="" description="" def="5357">
+      <elev id="5357" base="sunsetcottaega-base_57aa0980e302f.jpg" cap="" description="" tag="A" bed="3" bath="2.5" size="0" cost="0" thumb="sunsetcottaega_57aa098f4b136.jpg" thumbLg="sunsetcottaega-lg_57aa098fa6813.jpg" cars="0" floorCount="1">
+        <filter catId="20" tagId="76"/>
+      </elev>
+    </plan>
+    <plan id="1949" name="Timber Ridge" videoUrl="" description="" def="5358">
+      <elev id="5358" base="timberridgea-base_57aa09cd3e43c.jpg" cap="" description="" tag="A" bed="3" bath="2.5" size="0" cost="0" thumb="timberridgea_57aa09def3e44.jpg" thumbLg="timberridgea-lg_57aa09df55355.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="65"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1954" name="Amarantha" videoUrl="" description="" def="5369">
+      <elev id="5369" base="amaranthaa-base_57acb5a8da89c.jpg" cap="" description="" tag="A" bed="4" bath="3.5" size="0" cost="0" thumb="amaranthaa_57acb5bce739f.jpg" thumbLg="amaranthaa-lg_57acb5c04811a.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="61"/>
+        <filter catId="15" tagId="65"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1955" name="Azalea Park" videoUrl="" description="" def="5370">
+      <elev id="5370" base="azaleaparka-base_57acb6baa8744.jpg" cap="" description="" tag="A" bed="3" bath="2.5" size="0" cost="0" thumb="azaleaparka_57acb6df1ffe9.jpg" thumbLg="azaleaparka-lg_57acb6e22f869.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="64"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1956" name="Barlow" videoUrl="" description="" def="5371">
+      <elev id="5371" base="barlowa-base_57acb74155d97.jpg" cap="" description="" tag="A" bed="4" bath="2.5" size="0" cost="0" thumb="barlowa_57acb7552afd2.jpg" thumbLg="barlowa-lg_57acb75a6c25a.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="61"/>
+        <filter catId="15" tagId="65"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1957" name="Berkshire Pointe" videoUrl="" description="" def="5372">
+      <elev id="5372" base="berkshirepointea-base_57acb7b7590fc.jpg" cap="" description="" tag="A" bed="4" bath="3.5" size="0" cost="0" thumb="berkshirepointea_57acb7cd0d096.jpg" thumbLg="berkshirepointea-lg_57acb7ced931f.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="63"/>
+        <filter catId="15" tagId="65"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1958" name="Brandywine" videoUrl="" description="" def="5373">
+      <elev id="5373" base="brandywinea-base_57acb82108af1.jpg" cap="" description="" tag="A" bed="4" bath="3.5" size="0" cost="0" thumb="brandywinea_57acb832d1cb3.jpg" thumbLg="brandywinea-lg_57acb8366ceba.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="61"/>
+        <filter catId="20" tagId="76"/>
+      </elev>
+    </plan>
+    <plan id="1959" name="Caufield" videoUrl="" description="" def="5374">
+      <elev id="5374" base="caufielda-base_57acb87878de4.jpg" cap="" description="" tag="A" bed="4" bath="3" size="0" cost="0" thumb="caufielda_57acb88cb8dee.jpg" thumbLg="caufielda-lg_57acb8910bda1.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="61"/>
+        <filter catId="15" tagId="62"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1960" name="Chapel Hill" videoUrl="" description="" def="5375">
+      <elev id="5375" base="chapelhilla-base_57acb8cd861c2.jpg" cap="" description="" tag="A" bed="5" bath="4.5" size="3708" cost="0" thumb="chapelhilla_57acb8dd02813.jpg" thumbLg="chapelhilla-lg_57acb8dd2a8c4.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="67"/>
+        <filter catId="20" tagId="80"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1961" name="Copper Ridge" videoUrl="" description="" def="5376">
+      <elev id="5376" base="copperridgea-base_57acb93a1ae76.jpg" cap="" description="" tag="A" bed="5" bath="4.5" size="4101" cost="0" thumb="copperridgea_57acb94760be0.jpg" thumbLg="copperridgea-lg_57acb94d8d319.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="66"/>
+        <filter catId="15" tagId="67"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1962" name="Ethans Mill" videoUrl="" description="" def="5377">
+      <elev id="5377" base="ethansmilla-base_57acb98459a01.jpg" cap="" description="" tag="A" bed="4" bath="2.5" size="0" cost="0" thumb="ethansmilla_57acb9984de09.jpg" thumbLg="ethansmilla-lg_57acb99b71dd8.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="61"/>
+        <filter catId="15" tagId="62"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1963" name="Falkirk" videoUrl="" description="" def="5378">
+      <elev id="5378" base="falkirka-base_57acba1bbc602.jpg" cap="" description="" tag="A" bed="4" bath="3.5" size="0" cost="0" thumb="falkirka_57acba2aed68a.jpg" thumbLg="falkirka-lg_57acba2caddc6.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="61"/>
+        <filter catId="15" tagId="67"/>
+        <filter catId="20" tagId="76"/>
+      </elev>
+    </plan>
+    <plan id="1964" name="Faucett" videoUrl="" description="" def="5379">
+      <elev id="5379" base="faucetta-base_57acba69d2bcd.jpg" cap="" description="" tag="A" bed="3" bath="3.5" size="0" cost="0" thumb="faucetta_57acba7a4a6ec.jpg" thumbLg="faucetta-lg_57acba7c695a8.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="64"/>
+        <filter catId="15" tagId="65"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="80"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1965" name="Gaylord" videoUrl="" description="" def="5380">
+      <elev id="5380" base="gaylorda-base_57acbaad1a85b.jpg" cap="" description="" tag="A" bed="4" bath="2.5" size="0" cost="0" thumb="gaylorda_57acbae03f5fe.jpg" thumbLg="gaylorda-lg_57acbae4cc4e1.jpg" cars="0" floorCount="2">
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1966" name="Glen Abbey" videoUrl="" description="" def="5381">
+      <elev id="5381" base="glenabbeya-base_57acbb22e9ceb.jpg" cap="" description="" tag="A" bed="5" bath="4.5" size="0" cost="0" thumb="glenabbeya_57acbb2ee3914.jpg" thumbLg="glenabbeya-lg_57acbb2f5c0cc.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="59"/>
+        <filter catId="15" tagId="67"/>
+        <filter catId="20" tagId="76"/>
+      </elev>
+    </plan>
+    <plan id="1967" name="Graceton" videoUrl="" description="" def="5382">
+      <elev id="5382" base="gracetona-base_57acbb8ad15e7.jpg" cap="" description="" tag="A" bed="4" bath="4" size="0" cost="0" thumb="gracetona_57acbba77ec0e.jpg" thumbLg="gracetona-lg_57acbba9e246e.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="64"/>
+        <filter catId="15" tagId="67"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1968" name="Grove Park" videoUrl="" description="" def="5383">
+      <elev id="5383" base="groveparka-base_57acbc4d15ae2.jpg" cap="" description="" tag="A" bed="4" bath="4" size="0" cost="0" thumb="groveparka_57acbc5b17a6d.jpg" thumbLg="groveparka-lg_57acbc5d812b9.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="59"/>
+        <filter catId="15" tagId="61"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="15" tagId="67"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1969" name="Hayes" videoUrl="" description="" def="5384">
+      <elev id="5384" base="hayesa-base_57acbcb6bccb6.jpg" cap="" description="" tag="A" bed="3" bath="2.5" size="0" cost="0" thumb="hayesa_57acbcd781ccd.jpg" thumbLg="hayesa-lg_57acbcdecdda0.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="63"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1970" name="Hedrick" videoUrl="" description="" def="5385">
+      <elev id="5385" base="hedricka-base_57acbd1aa95bd.jpg" cap="" description="" tag="A" bed="4" bath="3" size="0" cost="0" thumb="hedricka_57acbd39e5bcb.jpg" thumbLg="hedricka-lg_57acbd3d1d58e.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="59"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1971" name="Hilldale" videoUrl="" description="" def="5386">
+      <elev id="5386" base="hilldalea-base_57acbd73eaf72.jpg" cap="" description="" tag="A" bed="4" bath="2.5" size="0" cost="0" thumb="hilldalea_57acbdae7f2ab.jpg" thumbLg="hilldalea-lg_57acbdafede50.jpg" cars="0" floorCount="2">
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1972" name="Jacksonville" videoUrl="" description="" def="5387">
+      <elev id="5387" base="jacksonvillea-base_57acbe0f20a34.jpg" cap="" description="" tag="A" bed="3" bath="2.5" size="0" cost="0" thumb="jacksonvillea_57acbe1bd092e.jpg" thumbLg="jacksonvillea-lg_57acbe1ecd866.jpg" cars="0" floorCount="2">
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1973" name="Kenton" videoUrl="" description="" def="5388">
+      <elev id="5388" base="kentona-base_57acbe5376943.jpg" cap="" description="" tag="A" bed="3" bath="2.5" size="0" cost="0" thumb="kentona_57acbe62923ad.jpg" thumbLg="kentona-lg_57acbe650031e.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="64"/>
+        <filter catId="15" tagId="65"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1974" name="Kingsbridge" videoUrl="" description="" def="5389">
+      <elev id="5389" base="kingsbridgea-base_57acbea5900f4.jpg" cap="" description="" tag="A" bed="3" bath="3.5" size="0" cost="0" thumb="kingsbridgea_57acbeb8994db.jpg" thumbLg="kingsbridgea-lg_57acbeba99a1f.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="64"/>
+        <filter catId="15" tagId="67"/>
+        <filter catId="20" tagId="76"/>
+      </elev>
+    </plan>
+    <plan id="1975" name="Liberty Park" videoUrl="" description="" def="5390">
+      <elev id="5390" base="libertyparka-base_57acbf074f968.jpg" cap="A" description="" tag="A" bed="4" bath="2.5" size="0" cost="0" thumb="libertyparka_57acbf1745936.jpg" thumbLg="libertyparka-lg_57acbf18a4b61.jpg" cars="0" floorCount="2">
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1976" name="Maplewood" videoUrl="" description="" def="5391">
+      <elev id="5391" base="maplewooda-base_57acbf6743602.jpg" cap="" description="" tag="A" bed="4" bath="3.5" size="0" cost="0" thumb="maplewooda_57acbf753fc18.jpg" thumbLg="maplewooda-lg_57acbf768a87b.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="64"/>
+        <filter catId="20" tagId="76"/>
+      </elev>
+    </plan>
+    <plan id="1977" name="Meadow Glen" videoUrl="" description="" def="5392">
+      <elev id="5392" base="meadowglena-base_57acbfd1f2e55.jpg" cap="" description="" tag="A" bed="4" bath="4" size="0" cost="0" thumb="meadowglena_57acbfdf88122.jpg" thumbLg="meadowglena-lg_57acbfe099f64.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="62"/>
+        <filter catId="15" tagId="63"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1978" name="Morgan Falls" videoUrl="" description="" def="5393">
+      <elev id="5393" base="morganfallsa-base_57acc06944057.jpg" cap="" description="" tag="A" bed="4" bath="5.5" size="0" cost="0" thumb="morganfallsa_57acc077266a1.jpg" thumbLg="morganfallsa-lg_57acc07915916.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="59"/>
+        <filter catId="15" tagId="62"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1979" name="Nickerson" videoUrl="" description="" def="5394">
+      <elev id="5394" base="nickersona-base_57acc0d142a0f.jpg" cap="" description="" tag="A" bed="3" bath="2" size="0" cost="0" thumb="nickersona_57acc0e031cab.jpg" thumbLg="nickersona-lg_57acc0e04109f.jpg" cars="0" floorCount="1">
+        <filter catId="20" tagId="76"/>
+      </elev>
+    </plan>
+    <plan id="1980" name="Riverview" videoUrl="" description="" def="5395">
+      <elev id="5395" base="riverviewa-base_57acc13f46388.jpg" cap="A" description="" tag="A" bed="5" bath="4" size="3916" cost="0" thumb="riverviewa_57b33ed44ceef.jpg" thumbLg="riverviewa-lg_57b33ed82f953.jpg" cars="0" floorCount="3">
+        <filter catId="15" tagId="60"/>
+        <filter catId="15" tagId="61"/>
+        <filter catId="15" tagId="62"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1981" name="Riverwalk" videoUrl="" description="" def="5396">
+      <elev id="5396" base="riverwalka-base_57acc191e0b7c.jpg" cap="A" description="" tag="A" bed="3" bath="2.5" size="0" cost="0" thumb="riverwalka_57acc19b2f82b.jpg" thumbLg="riverwalka-lg_57acc19d15033.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="66"/>
+        <filter catId="15" tagId="67"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="1982" name="Sentinel" videoUrl="" description="" def="5397">
+      <elev id="5397" base="sentinela-base_57acc22f20caf.jpg" cap="" description="" tag="A" bed="4" bath="3.5" size="0" cost="0" thumb="sentinela_57acc23e5e280.jpg" thumbLg="sentinela-lg_57acc2406d230.jpg" cars="0" floorCount="1">
+        <filter catId="15" tagId="61"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="20" tagId="76"/>
+      </elev>
+    </plan>
+    <plan id="1983" name="Sophia" videoUrl="" description="" def="5398">
+      <elev id="5398" base="sophiaa-base_57acc28a7927e.jpg" cap="" description="" tag="A" bed="4" bath="2.5" size="0" cost="0" thumb="sophiaa_57acc29627603.jpg" thumbLg="sophiaa-lg_57acc298a2053.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="59"/>
+        <filter catId="15" tagId="62"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="1984" name="Tanglewood" videoUrl="" description="" def="5399">
+      <elev id="5399" base="tanglewooda-base_57acc3309a71d.jpg" cap="A" description="" tag="A" bed="3" bath="2.5" size="0" cost="0" thumb="tanglewooda_57b33ea9f1b44.jpg" thumbLg="tanglewooda-lg_57b33eaac5c75.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="62"/>
+        <filter catId="15" tagId="63"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="2174" name="Autumn Brooke" videoUrl="" description="" def="6010">
+      <elev id="6010" base="autumnbrookea-base_582f10b20b64b.jpg" cap="A" description="" tag="A" bed="4" bath="3.5" size="3138" cost="0" thumb="autumnbrookea_582f10bd739b6.jpg" thumbLg="autumnbrookea-lg_582f10bec3acd.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="60"/>
+        <filter catId="15" tagId="61"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="2173" name="Alexander" videoUrl="" description="" def="6009">
+      <elev id="6009" base="alexandera-base_582f103647920.jpg" cap="A" description="" tag="A" bed="4" bath="3" size="0" cost="0" thumb="alexandera_582f104714e58.jpg" thumbLg="alexandera-lg_582f1047b2e37.jpg" cars="0" floorCount="1">
+        <filter catId="15" tagId="59"/>
+        <filter catId="15" tagId="60"/>
+        <filter catId="20" tagId="76"/>
+      </elev>
+    </plan>
+    <plan id="2052" name="Cotswold" videoUrl="" description="" def="5611">
+      <elev id="5611" base="cotswolda-base_57e94709267d5.jpg" cap="A" description="" tag="A" bed="5" bath="4.5" size="3324" cost="0" thumb="cotswolda_57e947ad6da22.jpg" thumbLg="cotswolda-lg_57e947adb3f95.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="59"/>
+        <filter catId="15" tagId="60"/>
+        <filter catId="15" tagId="65"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="2175" name="Barton Creek" videoUrl="" description="" def="6011">
+      <elev id="6011" base="bartoncreeka-base_582f118e02027.jpg" cap="A" description="" tag="A" bed="4" bath="3.5" size="0" cost="0" thumb="bartoncreeka_582f119800c6a.jpg" thumbLg="bartoncreeka-lg_582f1198453f6.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="59"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="2176" name="Beaufort" videoUrl="" description="" def="6012">
+      <elev id="6012" base="beauforta-base_5af1a99799374.jpg" cap="A" description="" tag="A" bed="4" bath="3" size="2313" cost="0" thumb="beauforta_582f12af0a9ce.jpg" thumbLg="beauforta-lg_582f12af53ea7.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="64"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="2177" name="Bucknell Place" videoUrl="" description="" def="6013">
+      <elev id="6013" base="bucknellplacea-base_582f139539513.jpg" cap="A" description="" tag="A" bed="4" bath="3" size="0" cost="0" thumb="bucknellplacea_582f13a2d5d13.jpg" thumbLg="bucknellplacea-lg_582f13a333041.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="60"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="2178" name="Cabot" videoUrl="" description="" def="6014">
+      <elev id="6014" base="cabota-base_582f14187a157.jpg" cap="A" description="" tag="A" bed="4" bath="4.5" size="3430" cost="0" thumb="cabota_582f14b074887.jpg" thumbLg="cabota-lg_582f14b0f16dc.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="59"/>
+        <filter catId="15" tagId="60"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="2179" name="Defoors Mill" videoUrl="" description="" def="6015">
+      <elev id="6015" base="defoorsmilla-base_582f149bdb01d.jpg" cap="A" description="" tag="A" bed="4" bath="3" size="0" cost="0" thumb="defoorsmilla_582f14a49422b.jpg" thumbLg="defoorsmilla-lg_582f14a4defc3.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="59"/>
+        <filter catId="15" tagId="60"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="2180" name="Essington" videoUrl="" description="" def="6016">
+      <elev id="6016" base="essingtona-base_582f151feee68.jpg" cap="A" description="" tag="A" bed="4" bath="2.5" size="0" cost="0" thumb="essingtona_582f1529f19b5.jpg" thumbLg="essingtona-lg_582f152a69e3b.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="60"/>
+        <filter catId="15" tagId="62"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="2181" name="Fishers Walk" videoUrl="" description="" def="6017">
+      <elev id="6017" base="fisherswalka-base_582f158a63db4.jpg" cap="A" description="" tag="A" bed="4" bath="3" size="0" cost="0" thumb="fisherswalka_582f1593b3ef2.jpg" thumbLg="fisherswalka-lg_582f159412d24.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="60"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="2182" name="Gershwin" videoUrl="" description="" def="6018">
+      <elev id="6018" base="gershwina-base_582f164a4c93a.jpg" cap="A" description="" tag="A" bed="3" bath="2.5" size="2073" cost="0" thumb="gershwina_582f165375a60.jpg" thumbLg="gershwina-lg_582f16548e2c4.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="60"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="2183" name="Holly Glen" videoUrl="" description="" def="6019">
+      <elev id="6019" base="hollyglena-base_582f16f64014f.jpg" cap="A" description="" tag="A" bed="5" bath="3.5" size="0" cost="0" thumb="hollyglena_582f16feb1866.jpg" thumbLg="hollyglena-lg_582f16ff4ead6.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="59"/>
+        <filter catId="15" tagId="60"/>
+        <filter catId="15" tagId="63"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="2184" name="Lakeside" videoUrl="" description="" def="6020">
+      <elev id="6020" base="lakesidea-base_582f1781ad4c7.jpg" cap="A" description="" tag="A" bed="4" bath="2.5" size="0" cost="0" thumb="lakesidea_582f178fbf055.jpg" thumbLg="lakesidea-lg_582f179014f85.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="60"/>
+        <filter catId="15" tagId="61"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="2185" name="Mackinaw" videoUrl="" description="" def="6021">
+      <elev id="6021" base="mackinawa-base_582f17e890804.jpg" cap="A" description="" tag="A" bed="4" bath="3" size="3400" cost="0" thumb="mackinawa_582f17f34a0c5.jpg" thumbLg="mackinawa-lg_582f17f39da81.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="59"/>
+        <filter catId="15" tagId="60"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="2186" name="McKinley" videoUrl="" description="" def="6022">
+      <elev id="6022" base="mckinleya-base_582f184be7cbb.jpg" cap="A" description="" tag="A" bed="4" bath="3.5" size="0" cost="0" thumb="mckinleya_582f18560271b.jpg" thumbLg="mckinleya-lg_582f185658b00.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="60"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="2187" name="Roswell" videoUrl="" description="" def="6023">
+      <elev id="6023" base="roswella-base_582f230e824f5.jpg" cap="A" description="" tag="A" bed="4" bath="3" size="0" cost="0" thumb="roswella_582f231997518.jpg" thumbLg="roswella-lg_582f2319ec836.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="60"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="2188" name="Shoal Creek" videoUrl="" description="" def="6024">
+      <elev id="6024" base="shoalcreeka-base_582f23a245d70.jpg" cap="A" description="" tag="A" bed="4" bath="3" size="2765" cost="0" thumb="shoalcreeka_582f23b095efc.jpg" thumbLg="shoalcreeka-lg_582f23b20136a.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="60"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="2189" name="Vidabelo" videoUrl="" description="" def="6025">
+      <elev id="6025" base="vidabeloa-base_582f24cd510d0.jpg" cap="A" description="" tag="A" bed="4" bath="3.5" size="0" cost="0" thumb="vidabeloa_582f24d8eb9e7.jpg" thumbLg="vidabeloa-lg_582f24d9de209.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="60"/>
+        <filter catId="20" tagId="80"/>
+      </elev>
+    </plan>
+    <plan id="2190" name="Worthington" videoUrl="" description="" def="6026">
+      <elev id="6026" base="worthingtona-base_582f253c1c936.jpg" cap="A" description="" tag="A" bed="4" bath="3.5" size="0" cost="0" thumb="worthingtona_582f254884bdf.jpg" thumbLg="worthingtona-lg_582f254b6bf92.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="60"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="2191" name="Worthington II" videoUrl="" description="" def="6027">
+      <elev id="6027" base="worthingtoniia-base_582f279302441.jpg" cap="A" description="" tag="A" bed="4" bath="3.5" size="0" cost="0" thumb="worthingtoniia_582f279b48167.jpg" thumbLg="worthingtoniia-lg_582f279be70a7.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="60"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="2230" name="Boyega " videoUrl="" description="" def="6157">
+      <elev id="6157" base="boyegaa-base_5849a2b2bbc75.jpg" cap="A" description="" defaultFloor="1" tag="A" bed="4" bath="3" size="0" cost="0" thumb="boyegaa_5849a2c0f3cdc.jpg" thumbLg="boyegaa-lg_5849a2c397446.jpg" cars="0" floorCount="3">
+        <filter catId="15" tagId="59"/>
+        <filter catId="15" tagId="60"/>
+        <filter catId="15" tagId="63"/>
+        <filter catId="15" tagId="65"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="2231" name="Chalet Vert" videoUrl="" description="" def="6158">
+      <elev id="6158" base="chaletverta-base_5849a4396f9cb.jpg" cap="A" description="" tag="A" bed="4" bath="3.5" size="2707" cost="0" thumb="chaletverta_5849a44989b24.jpg" thumbLg="chaletverta-lg_5849a44b33725.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="59"/>
+        <filter catId="15" tagId="60"/>
+        <filter catId="15" tagId="63"/>
+        <filter catId="15" tagId="65"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="2232" name="Darby Hill" videoUrl="" description="" def="6159">
+      <elev id="6159" base="darbyhilla-base_5849a4be25ac6.jpg" cap="A" description="" tag="A" bed="4" bath="3" size="0" cost="0" thumb="darbyhilla_5849a4c7ab5c0.jpg" thumbLg="darbyhilla-lg_5849a4c8060ca.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="59"/>
+        <filter catId="15" tagId="60"/>
+        <filter catId="15" tagId="62"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="2233" name="Edge Field" videoUrl="" description="" def="6160">
+      <elev id="6160" base="edgefielda-base_5849a535eeb29.jpg" cap="A" description="" tag="A" bed="4" bath="3.5" size="0" cost="0" thumb="edgefielda_5849a5411bc77.jpg" thumbLg="edgefielda-lg_5849a541c3a94.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="59"/>
+        <filter catId="15" tagId="60"/>
+        <filter catId="15" tagId="61"/>
+        <filter catId="15" tagId="63"/>
+        <filter catId="20" tagId="76"/>
+      </elev>
+    </plan>
+    <plan id="2234" name="Garden Hill" videoUrl="" description="" def="6161">
+      <elev id="6161" base="gardenhilla-base_5849a5e7d9d2c.jpg" cap="A" description="" tag="A" bed="4" bath="3" size="0" cost="0" thumb="gardenhilla_5849a5f1ab284.jpg" thumbLg="gardenhilla-lg_5849a5f23c6bb.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="60"/>
+        <filter catId="15" tagId="61"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="15" tagId="65"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="2235" name="Leighton" videoUrl="" description="" def="6162">
+      <elev id="6162" base="leightona-base_5849a70e3cddb.jpg" cap="A" description="" tag="A" bed="4" bath="3" size="0" cost="0" thumb="leightona_5849a71a7d7d0.jpg" thumbLg="leightona-lg_5849a71ad2807.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="59"/>
+        <filter catId="15" tagId="60"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="2236" name="Musgrave" videoUrl="" description="" def="6163">
+      <elev id="6163" base="musgravea-base_5849a76a36354.jpg" cap="A" description="" tag="A" bed="4" bath="3" size="0" cost="0" thumb="musgravea_5849a7746aec1.jpg" thumbLg="musgravea-lg_5849a774c2210.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="59"/>
+        <filter catId="15" tagId="64"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="2237" name="Oak Knoll" videoUrl="" description="" def="6164">
+      <elev id="6164" base="oakknolla-base_5849a80b98316.jpg" cap="A" description="" tag="A" bed="4" bath="3" size="0" cost="0" thumb="oakknolla_5849a84bc5ec5.jpg" thumbLg="oakknolla-lg_5849a84c28900.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="60"/>
+        <filter catId="15" tagId="62"/>
+        <filter catId="15" tagId="66"/>
+        <filter catId="15" tagId="67"/>
+        <filter catId="20" tagId="81"/>
+      </elev>
+    </plan>
+    <plan id="2239" name="Sawyer" videoUrl="" description="" def="6166">
+      <elev id="6166" base="sawyera-base_5849a989e9d4d.jpg" cap="A" description="" tag="A" bed="4" bath="3.5" size="2907" cost="0" thumb="sawyera_5849a993d67bc.jpg" thumbLg="sawyera-lg_5849a9949ed3e.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="59"/>
+        <filter catId="15" tagId="60"/>
+        <filter catId="15" tagId="61"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="2240" name="Spring Hollow" videoUrl="" description="" def="6167">
+      <elev id="6167" base="springhollowa-base_5849aa8388d04.jpg" cap="A" description="" tag="A" bed="4" bath="2.5" size="0" cost="0" thumb="springhollowa_5849aa9ced403.jpg" thumbLg="springhollowa-lg_5849aa9d5c1be.jpg" cars="0" floorCount="3">
+        <filter catId="15" tagId="60"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="2241" name="Thorndale" videoUrl="" description="" def="6168">
+      <elev id="6168" base="thorndatea-base_5849ab58c75e2.jpg" cap="A" description="" tag="A" bed="4" bath="2.5" size="0" cost="0" thumb="thorndatea_5849ab62b5d25.jpg" thumbLg="thorndatea-lg_5849ab63118a7.jpg" cars="0" floorCount="3">
+        <filter catId="15" tagId="60"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="2242" name="Waterbury" videoUrl="" description="" def="6169">
+      <elev id="6169" base="waterburya-base_5849ac0ec0d2a.jpg" cap="A" description="" tag="A" bed="4" bath="3" size="0" cost="0" thumb="waterburya_5849ac1e8642b.jpg" thumbLg="waterburya-lg_5849ac1f66023.jpg" cars="0" floorCount="2">
+        <filter catId="15" tagId="60"/>
+        <filter catId="15" tagId="63"/>
+        <filter catId="15" tagId="67"/>
+        <filter catId="20" tagId="77"/>
+      </elev>
+    </plan>
+    <plan id="2258" name="Glen View" videoUrl="" description="" def="6242">
+      <elev id="6242" base="glenviewa-base_5858033ee0b18.jpg" cap="A" description="" tag="A" bed="3" bath="2.5" size="0" cost="0" thumb="glenviewa_585803508d057.jpg" thumbLg="glenviewa-lg_58580350e4ba6.jpg" cars="0" floorCount="2"/>
+    </plan>
+  </nbrhood>
+</designers>

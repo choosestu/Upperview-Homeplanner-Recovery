@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Status: reconstructed. No real UpperView plan names were recovered. Neutral placeholders are used. -->
+<data>
+  <nbrhood id="1" name="Grandview Trail">
+    <palettes>
+      <palette id="1" name="Reconstructed Neutral Palette" layid="1" lay="Exterior" blend="m">
+        <ele id="1" cid="1" />
+      </palette>
+    </palettes>
+    <schemes>
+      <scheme id="1" name="Reconstructed Neutral Scheme" cost="0">
+        <ele id="1" blend="m" cid="1">Body Colour</ele>
+      </scheme>
+    </schemes>
+    <plan id="101" name="Reconstructed Sample Plan" videoUrl="" defaultFloor="1" imgs="" fpimgs="" def="1" description="Neutral reconstructed sample plan for local app-flow testing.">
+      <elev id="1001" cap="A" description="Reconstructed sample elevation." tag="A" thumb="" thumbLg="" base="" bed="4" bath="3.5" size="2512" cost="807990" schemeids="1" cars="2" floorCount="2" defaultFloor="1" />
+    </plan>
+  </nbrhood>
+</data>

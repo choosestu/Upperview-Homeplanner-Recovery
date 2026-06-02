@@ -1,0 +1,36 @@
+{
+  "_status": "reconstructed",
+  "_note": "Original UpperView getsummary.php response was not captured by Wayback. One neutral sample plan is provided so the archived frontend can demonstrate its original flow.",
+  "maxPhpInt": 2147483647,
+  "filterCats": [],
+  "regiondata": [
+    {
+      "id": 1,
+      "name": "Grandview Trail",
+      "state": "ON",
+      "numInv": 0,
+      "locations": [
+        {
+          "id": 1,
+          "metroId": 1,
+          "name": "Oshawa",
+          "metro": "Grandview Trail",
+          "state": "ON",
+          "city": "Oshawa",
+          "region": "Grandview Trail",
+          "nbrhoods": [
+            {
+              "id": 1,
+              "name": "Grandview Trail",
+              "metro": "Grandview Trail",
+              "state": "ON",
+              "city": "Oshawa",
+              "sort": "Name",
+              "pricing": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

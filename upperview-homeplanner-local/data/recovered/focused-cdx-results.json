@@ -1,0 +1,31 @@
+{
+  "upperviewhomeplanner.com/*Grandview*": [],
+  "upperviewhomeplanner.com/*UpperView*": [],
+  "upperviewhomeplanner.com/*upperview*": [],
+  "upperviewhomeplanner.com/*clientId=1*": [
+    {
+      "error": "TimeoutError: The read operation timed out"
+    }
+  ],
+  "upperviewhomeplanner.com/*nbrhoodIds=1*": [],
+  "upperviewhomeplanner.com/*ids=1*": [],
+  "upperviewhomeplanner.com/homedesigner/getclientdata.php*": [],
+  "upperviewhomeplanner.com/db/scripts/php/getcolorlib.php*": [],
+  "upperviewhomeplanner.com/db/scripts/php/getsummary.php*": [],
+  "upperviewhomeplanner.com/db/scripts/php/getnbrhoodsdata.php*": [],
+  "upperviewhomeplanner.com/db/scripts/php/getplans.php*": [],
+  "upperviewhomeplanner.com/db/scripts/php/getElevationDetails.php*": [],
+  "upperviewhomeplanner.com/db/scripts/php/getElevationElements.php*": [],
+  "upperviewhomeplanner.com/db/scripts/php/getElevationSchemes.php*": [],
+  "upperviewhomeplanner.com/db/scripts/php/getPlanFloorplans.php*": [],
+  "upperviewhomeplanner.com/db/scripts/php/getelevnbrhoods.php*": [],
+  "upperviewhomeplanner.com/db/scripts/php/getinteriors.php*": [],
+  "upperviewhomeplanner.com/*getclientdata.php*": [],
+  "upperviewhomeplanner.com/*getcolorlib.php*": [],
+  "upperviewhomeplanner.com/*getsummary.php*": [],
+  "upperviewhomeplanner.com/*getnbrhoodsdata.php*": [],
+  "upperviewhomeplanner.com/*getplans.php*": [],
+  "upperviewhomeplanner.com/*getElevationDetails.php*": [],
+  "upperviewhomeplanner.com/*getElevationElements.php*": [],
+  "upperviewhomeplanner.com/*getElevationSchemes.php*": []
+}

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en"><head><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><link rel="apple-touch-icon" sizes="72x72" href="../../homedesigner/images/apple-touch-icon-72x72.png"><link rel="apple-touch-icon" sizes="114x114" href="../../homedesigner/images/apple-touch-icon-114x114.png"><link rel="apple-touch-icon" href="../../homedesigner/images/apple-touch-icon-57x57.png"><link rel="apple-touch-startup-image" href="../../homedesigner/images/splash-startup.png"><link rel="icon" type="image/png" sizes="32x32" href="../../homedesigner/images/favicon-32x32.png"><meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>Builder App</title><!-- google+ auth --><meta name="google-signin-clientid" content="530620600684-mp2isbgvlfk0cmrhge3k91ba3fl5a5ep.apps.googleusercontent.com"><meta name="google-signin-scope" content="https://www.googleapis.com/auth/plus.profile.emails.read"><meta name="google-signin-requestvisibleactions" content="https://schemas.google.com/AddActivity"><meta name="google-signin-cookiepolicy" content="single_host_origin"><link rel="stylesheet" type="text/css" href="//cloud.typography.com/6932912/760484/css/fonts.css"><link rel="stylesheet" href="../../homedesigner/dist/css/app.css"><link rel="stylesheet" href="../../homedesigner/dist/css/homebuilder.min.css"><link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"><!-- fonts --><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css"><link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet" type="text/css"><link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css"></head><body class="antialiased">
+    <div id="fb-root"></div>
+    <div class="spinner"></div>
+    <div class="loading-text animated pulse">Loading...</div>
+    <div id="topbar-container" class="fixed contain-to-grid">
+      <nav id="primary-banner" class="top-bar hide-for-small" data-topbar><ul class="title-area"><!-- Title Area --><li class="name">
+            <div class="rhlogo"></div>
+          </li>
+          <li class="toggle-topbar menu-icon">
+            <a href="#"><span></span></a>
+          </li>
+        </ul><section class="top-bar-section"><!-- Right Nav Section --><ul class="right"><li><a href="#" class="my-home show-for-small"><i class="fa fa-home"></i></a></li>
+            <li class="divider show-for-small">
+            <li><a href="#" class="sendmail"><i class="fa fa-envelope"></i></a></li>
+            <li class="divider">
+            <li class="has-dropdown fav-menu">
+              <a class="fav-menuitem" href="#">FAVORITES</a>
+              <ul class="dropdown"><li><a class="reqlogin-menu uni-fav" href="#">Add/Remove Favorite Home</a></li>
+                <li><a class="reqlogin-menu see-fav" href="#">Compare&nbsp;/&nbsp;Edit</a></li>
+                <li><a class="reqlogin-menu email-fav" href="#">Email Favorites</a></li>
+                <!-- <li><a class="reqlogin-menu manage-fav" href="#">Manage Favourites</a></li> -->
+                <li class="has-dropdown"><a class="reqlogin-menu resume-fav" href="#">Resume with Favorite</a>
+                  <ul class="dropdown fav-list"></ul></li>
+              </ul></li>
+            <li class="divider">
+            <li class="has-dropdown signin">
+              <a href="#" class="signin-menu">LOGIN</a>
+              <ul class="dropdown"><li><a class="signin-google" href="#">Sign in with Google</a></li>
+                <li><a class="signin-facebook" href="#">Sign in with Facebook</a></li>
+                <li><a class="signin-email" href="#">Sign in with email</a></li>
+              </ul></li>
+            <li class="has-dropdown signout">
+              <a class="username" href="#">User Name</a>
+              <ul class="dropdown"><li><a class="signout-any" href="#">Logout</a></li>
+              </ul></li>
+
+          </ul></section></nav></div> <!-- contains nav -->
+
+    <!-- stage -->
+    <!-- where all the action happens -->
+    <div class="off-canvas-wrap show-for-small" data-offcanvas>
+      <div class="inner-wrap" id="inner-wrap">
+        <nav class="tab-bar" id="app-header"><section class="left-small"><a class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
+          </section><section class="middle tab-bar-section" id="midtab-section"><h1 class="title"></h1>
+          </section></nav><!-- Off Canvas Menu --><aside class="left-off-canvas-menu"><!-- menu goes here --></aside><div id="mobileStage-container">
+          <!-- main content goes here -->
+          <!-- for mobile -->
+          <div class="mob-nav disable" id="navarrow-left">
+            <i class="fa fa-angle-left"></i>
+          </div>
+          <div class="mob-nav" id="navarrow-right">
+            <i class="fa fa-angle-right"></i>
+          </div>
+        </div>
+
+        <!-- close the off-canvas menu -->
+        <a class="exit-off-canvas"></a>
+
+      </div>
+    </div> <!-- off-canvas-wrap -->
+
+    <div class="hide-for-small" id="tabdeskStage-container">
+      <!-- main content goes here -->
+      <!-- for tablets and desktop -->
+    <div id="my-stage" class="row collapse stage" data-client="upperview" data-tid="UA-46999026-29" data-usr="204.236.235.245" data-rand="5d252da8d5ba5e3d96fa1077abce69e5" data-deviceType="computer" data-fbappid="944621658936860"></div></div>
+
+    <canvas id="tmpCanvas"></canvas><div id="tmp">
+      <canvas id="tmpLotCanvas"></canvas><canvas id="blenderCanvas"></canvas><canvas id="brochureCanvas"></canvas><canvas id="elevCanvas"></canvas><canvas id="fpCanvas"></canvas><div id="myModal" class="reveal-modal" data-reveal data-options="close_on_background_click:true;close_on_esc:true;multiple_opened:true;">
+        <a class="close-reveal-modal">&times;</a>
+      </div>
+
+      <div id="favModal" class="reveal-modal" data-reveal data-options="close_on_background_click:true;close_on_esc:true;multiple_opened:true;">
+        <a class="close-reveal-modal">&times;</a>
+      </div>
+
+    </div> <!-- tmp -->
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      var stage = document.getElementById("my-stage");
+      var tid = stage.getAttribute("data-tid");
+      ga('create', tid, 'auto');
+      ga('require', 'displayfeatures');
+      ga('send', 'pageview');
+    </script><script>
+      var myAppId = '1513118802337613';
+      var stage = document.getElementById('my-stage');
+      if(stage.hasAttribute('data-fbappid')) {
+        myAppId = stage.getAttribute("data-fbappid");
+      } else {
+        stage.setAttribute('data-fbappid', myAppId);
+      }
+      window.fbAsyncInit = function() {
+      // init the FB JS SDK
+          FB.init({
+           appId      : myAppId,
+           version     : 'v2.5',
+           xfbml      : true
+          });
+      };
+
+      // Load the SDK asynchronously
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) {return;}
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script><script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;&amp;libraries=places&amp;key=AIzaSyCRUOplYC_keUxu8KY91ZZD-tBK-Bbez1U"></script><script type="text/javascript" src="../../ext/scripts/infobox.min.js"></script><script type="text/javascript" src="../../ext/scripts/maplabel-compiled.js"></script><script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script><script type="text/javascript" src="//cdn.jsdelivr.net/fingerprintjs2/1.1.1/fingerprint2.min.js"></script><script src="../../homedesigner/dist/js/jquery.min.js"></script><script src="../../homedesigner/dist/js/foundation.min.js"></script><script src="../../homedesigner/dist/js/homebuilder.min.js"></script><script type="text/javascript" async src="//assets.pinterest.com/js/pinit.js"></script><script>
+      $(document).ready(function() {
+          anewgo.homedesign.init();
+      });
+    </script><script type="text/javascript">
+      (function() {
+       var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+       po.src = 'https://apis.google.com/js/client:plusone.js?onload=callBack';
+       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+     })();
+      function callBack() {
+      }
+    </script></body></html>

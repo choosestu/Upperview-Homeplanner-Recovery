@@ -1,0 +1,57 @@
+{
+  "_status": "reconstructed",
+  "planData": {
+    "imgs": "",
+    "fpimgs": "",
+    "elevations": [
+      {
+        "id": 1001,
+        "elements": [
+          { "id": 1, "name": "Body Colour", "src": "" }
+        ],
+        "paletteOverlays": [],
+        "floorplans": [
+          {
+            "fnum": 1,
+            "groups": [
+              { "id": 1, "groupType": "structural", "name": "First Floor Options", "designatedPrimary": 0, "fpOptIds": "2001" }
+            ],
+            "opts": [
+              { "id": 2000, "name": "Reconstructed Base First Floor", "src": "floorplan-placeholder.svg", "src2": "", "base": 1, "listOrder": 0, "renderOrder": 0, "opt": 0, "cost": 0, "size": 0, "groupIds": "", "fpAlts": [] },
+              { "id": 2001, "name": "Reconstructed Open Layout Option", "src": "", "src2": "", "base": 0, "listOrder": 1, "renderOrder": 1, "opt": 1, "cost": 0, "size": 0, "groupIds": "1", "fpAlts": [] }
+            ]
+          },
+          {
+            "fnum": 2,
+            "groups": [],
+            "opts": [
+              { "id": 2002, "name": "Reconstructed Base Second Floor", "src": "floorplan-placeholder.svg", "src2": "", "base": 1, "listOrder": 0, "renderOrder": 0, "opt": 0, "cost": 0, "size": 0, "groupIds": "", "fpAlts": [] }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "schemes": [
+    {
+      "id": 1,
+      "name": "Reconstructed Neutral Scheme",
+      "cost": 0,
+      "elements": [
+        { "elementId": 1, "lay": "Body Colour", "blendmode": "m", "colorId": 1 }
+      ]
+    }
+  ],
+  "palettes": [
+    {
+      "id": 1,
+      "name": "Reconstructed Neutral Palette",
+      "layid": 1,
+      "lay": "Exterior",
+      "blendmode": "m",
+      "elements": [
+        { "id": 1, "cid": 1 }
+      ]
+    }
+  ]
+}

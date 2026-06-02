@@ -1,0 +1,33 @@
+{
+  "_reconstructed": true,
+  "_note": "Original PHP JSON response was not captured by the Wayback Machine. This minimal summary is reconstructed so the archived app can boot locally.",
+  "maxPhpInt": 2147483647,
+  "filterCats": [],
+  "regiondata": [
+    {
+      "name": "Ontario",
+      "state": "ON",
+      "locations": [
+        {
+          "id": 1,
+          "name": "Grandview Trail",
+          "metro": "Grandview Trail",
+          "state": "ON",
+          "city": "",
+          "region": "Ontario",
+          "nbrhoods": [
+            {
+              "id": 1,
+              "name": "Grandview Trail",
+              "metro": "Grandview Trail",
+              "state": "ON",
+              "city": "",
+              "sort": 1,
+              "pricing": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
