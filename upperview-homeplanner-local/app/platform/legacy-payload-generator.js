@@ -270,6 +270,8 @@
 
   function getSummaryJson(config) {
     var community = firstCommunity(config);
+    var lots = community.lots || [];
+    var inventory = community.inventory || [];
     var nbrhoodSummary = addDefined({
       id: community.id,
       name: community.name,
@@ -277,9 +279,14 @@
       state: community.state,
       city: community.city,
       sort: community.sort || "Name",
-      pricing: boolNum(community.pricingEnabled)
+      pricing: boolNum(community.pricingEnabled),
+      numLots: lots.length,
+      numAvailableLots: lots.filter(function (lot) { return lot.sold === "available"; }).length,
+      numHoldLots: lots.filter(function (lot) { return lot.sold === "hold"; }).length,
+      numSoldLots: lots.filter(function (lot) { return lot.sold === "sold"; }).length,
+      numModelHomes: lots.filter(function (lot) { return lot.sold === "model"; }).length,
+      numInv: inventory.length || community.numInv || 0
     }, community, [
-      "numInv",
       "numHomeSitesOnly",
       "numPlans",
       "numElevs",
@@ -331,6 +338,7 @@
     var lots = community.lots || [];
     var inventory = community.inventory || [];
     var landPhotos = community.landPhotos || [];
+    var siteplan = community.siteplan || {};
     var nbrhoodAttrs = {
       id: community.id,
       name: community.name,
@@ -380,16 +388,34 @@
       legend.length ? "    <legend>\n" + legend.map(function (entry) {
         return "      <entry " + attrs(entry) + " />";
       }).join("\n") + "\n    </legend>" : "    <legend />",
+      isDefined(siteplan.id) ? "    <siteplan " + attrs({
+        id: siteplan.id,
+        status: siteplan.status,
+        image: siteplan.image,
+        width: siteplan.width,
+        height: siteplan.height,
+        coordinateSystem: siteplan.coordinateSystem,
+        note: siteplan.note
+      }) + " />" : "",
       lots.map(function (lot) {
         var lotText = isDefined(lot.label) ? lot.label : (isDefined(lot.name) ? lot.name : lot.id);
         return "    <lot " + attrs({
           id: lot.id,
+          name: lot.name,
+          landId: lot.landId,
           x: lot.x,
           y: lot.y,
           width: lot.width,
           height: lot.height,
+          frontage: lot.frontage,
+          depth: lot.depth,
+          size: lot.size,
+          orientation: lot.orientation,
           sold: lot.sold,
           status: lot.status,
+          statusLabel: lot.statusLabel,
+          selectable: lot.selectable,
+          available: lot.available,
           elevId: lot.elevId,
           planId: lot.planId,
           cost: lot.cost,
@@ -397,7 +423,17 @@
           address: lot.address,
           lotType: lot.lotType,
           mls: lot.mls,
-          photoFolder: lot.photoFolder
+          landMls: lot.landMls,
+          photoFolder: lot.photoFolder,
+          compatiblePlanIds: lot.compatiblePlanIds,
+          restrictedPlanIds: lot.restrictedPlanIds,
+          allowedElevationIds: lot.allowedElevationIds,
+          restrictionReason: lot.restrictionReason,
+          quickMoveIn: lot.quickMoveIn,
+          modelHome: lot.modelHome,
+          inventoryId: lot.inventoryId,
+          availableDate: lot.availableDate,
+          homeStyle: lot.homeStyle
         }) + ">" + text(lotText) + "</lot>";
       }).join("\n"),
       inventory.map(function (item) {

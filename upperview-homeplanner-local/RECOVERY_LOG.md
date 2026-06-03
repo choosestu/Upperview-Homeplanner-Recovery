@@ -11,6 +11,7 @@
 - Phase 1 Task 3 added a compatibility serializer test suite for generated endpoint files, route compatibility, required legacy fields, parseability, and catalog relationships.
 - Phase 1 Task 4 expanded the reconstructed catalog to 3 neutral plans, 6 elevations, multiple color packages, options, lots, inventory examples, and availability states.
 - Phase 2 Task 1 added safe local no-op mocks for favorites, registration, lead capture, email, CRM, brochure, and inventory-photo endpoints.
+- Phase 2 Task 2 reconstructed lot/siteplan and availability behavior from frontend references, expanding local data to 9 lots, 3 quick move-in examples, explicit model/hold/sold states, plan-to-lot compatibility, and lot-to-plan restrictions.
 
 ## Searches Performed
 
@@ -116,14 +117,17 @@ The generated payloads now include:
 - 6 reconstructed elevations
 - 3 color schemes and 3 palettes
 - multiple floorplan option groups and priced options
-- 6 reconstructed lots with available, hold, sold, model, and quick move-in states
-- 2 reconstructed quick move-in inventory examples
+- 9 reconstructed lots with available, hold, sold, model, and quick move-in states
+- 3 reconstructed quick move-in inventory examples
+- reconstructed siteplan metadata and lot geometry fields
+- plan-to-lot compatibility, allowed elevations, restricted plans, selectable flags, and availability dates
 - summary counts and ranges aligned with the richer sample catalog
 
 Runtime limitations remain:
 
 - Real plan/elevation/lot/option IDs and names are still missing.
 - Elevation, floorplan, interior, and siteplan artwork remains unrecovered.
+- Original UpperView lot numbers, lot geometry, premiums, restrictions, inventory listings, MLS data, and availability dates remain unrecovered.
 - Lazy static endpoint files now include all reconstructed elevations so multi-plan selection can work without a query-aware PHP backend.
 - Real favorites, lead capture, CRM, email, brochure, MLS photo, and cloud inventory integrations remain unrecovered; local no-op mocks now cover those paths.
 

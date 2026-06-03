@@ -254,8 +254,8 @@ test("reconstructed sample catalog is rich enough for buyer-flow demos", () => {
   assert(options.length >= 6, "sample catalog should include multiple floorplan/options records");
   assert(schemes.length >= 3, "sample catalog should include multiple color schemes");
   assert(palettes.length >= 3, "sample catalog should include multiple palettes");
-  assert(lots.length >= 6, "sample catalog should include lot/siteplan examples");
-  assert(inventory.length >= 2, "sample catalog should include quick move-in inventory examples");
+  assert(lots.length >= 9, "sample catalog should include expanded lot/siteplan examples");
+  assert(inventory.length >= 3, "sample catalog should include quick move-in inventory examples");
   ["available", "inventory", "hold", "sold", "model", "quick-move-in"].forEach((state) => {
     assert(availabilityStates.has(state), "sample catalog should include availability state `" + state + "`");
   });
@@ -415,14 +415,61 @@ test("neighborhood XML has required community fields and valid lot references", 
   const agent = firstAttrs(xml, "agent");
   assertAttrs(agent, ["agentid", "fname", "lname", "email", "phone"], "agent");
 
+  const siteplan = firstAttrs(xml, "siteplan");
+  assertAttrs(siteplan, ["id", "status", "width", "height", "coordinateSystem"], "siteplan");
+
   attrsFrom(xml, "lot").forEach((lot) => {
-    assertAttrs(lot, ["id", "sold", "planId", "elevId"], "lot");
+    assertAttrs(lot, ["id", "sold", "statusLabel", "selectable", "available", "planId", "elevId", "compatiblePlanIds", "allowedElevationIds"], "lot");
     assert(planIds.includes(Number(lot.planId)), "lot " + lot.id + " references missing plan " + lot.planId);
     assert(elevationIds.includes(Number(lot.elevId)), "lot " + lot.id + " references missing elevation " + lot.elevId);
+    csvIds(lot.compatiblePlanIds).forEach((planId) => assert(planIds.includes(planId), "lot " + lot.id + " compatiblePlanIds references missing plan " + planId));
+    csvIds(lot.restrictedPlanIds).forEach((planId) => assert(planIds.includes(planId), "lot " + lot.id + " restrictedPlanIds references missing plan " + planId));
+    csvIds(lot.allowedElevationIds).forEach((elevId) => assert(elevationIds.includes(elevId), "lot " + lot.id + " allowedElevationIds references missing elevation " + elevId));
     lotStatuses.add(lot.sold);
   });
   ["available", "inventory", "hold", "sold", "model"].forEach((status) => {
     assert(lotStatuses.has(status), "neighborhood lots should include `" + status + "` availability");
+  });
+});
+
+test("lot, siteplan, inventory, and plan restriction behavior is represented", () => {
+  const community = config.communities[0];
+  const lots = community.lots || [];
+  const inventory = community.inventory || [];
+  const { planIds, elevationIds } = catalogIds();
+  const lotById = new Map(lots.map((lot) => [Number(lot.id), lot]));
+  const inventoryLotIds = new Set(inventory.map((item) => Number(item.lotId)));
+
+  assert(community.siteplan, "community should define reconstructed siteplan metadata");
+  assert.strictEqual(community.siteplan.status, "reconstructed");
+  assert(lots.some((lot) => lot.restrictedPlanIds), "at least one lot should exercise plan-to-lot restrictions");
+  assert(lots.some((lot) => csvIds(lot.compatiblePlanIds).length === 1), "at least one lot should be compatible with only one plan");
+  assert(lots.some((lot) => lot.sold === "model" && Number(lot.modelHome) === 1), "model-home lot should be represented");
+
+  lots.forEach((lot) => {
+    assert(planIds.includes(Number(lot.planId)), "lot " + lot.id + " references missing plan " + lot.planId);
+    assert(elevationIds.includes(Number(lot.elevId)), "lot " + lot.id + " references missing elevation " + lot.elevId);
+    assert(Number(lot.selectable) === 0 || Number(lot.selectable) === 1, "lot " + lot.id + " should have selectable flag");
+    assert(Number(lot.available) === 0 || Number(lot.available) === 1, "lot " + lot.id + " should have available flag");
+    if (lot.sold === "sold" || lot.sold === "hold") {
+      assert.strictEqual(Number(lot.selectable), 0, lot.sold + " lot " + lot.id + " should not be selectable");
+    }
+    if (lot.sold === "inventory") {
+      assert(Number(lot.inventoryId) > 0, "inventory lot " + lot.id + " should link to inventoryId");
+      assert(inventoryLotIds.has(Number(lot.id)), "inventory lot " + lot.id + " should have matching inventory record");
+    }
+    csvIds(lot.compatiblePlanIds).forEach((planId) => assert(planIds.includes(planId), "lot " + lot.id + " compatible plan missing " + planId));
+    csvIds(lot.restrictedPlanIds).forEach((planId) => assert(planIds.includes(planId), "lot " + lot.id + " restricted plan missing " + planId));
+    csvIds(lot.allowedElevationIds).forEach((elevId) => assert(elevationIds.includes(elevId), "lot " + lot.id + " allowed elevation missing " + elevId));
+  });
+
+  inventory.forEach((item) => {
+    const lot = lotById.get(Number(item.lotId));
+    assert(lot, "inventory " + item.id + " references missing lot " + item.lotId);
+    assert.strictEqual(lot.sold, "inventory", "inventory " + item.id + " should point to an inventory lot");
+    assert.strictEqual(Number(lot.planId), Number(item.planId), "inventory " + item.id + " should match lot plan");
+    assert.strictEqual(Number(lot.elevId), Number(item.elevId), "inventory " + item.id + " should match lot elevation");
+    assertFields(item, ["id", "lotId", "lotName", "planId", "planName", "elevId", "price", "cost", "address", "mlsId", "homeStyle", "sqft", "availableDate"], "inventory home");
   });
 });
 
@@ -557,6 +604,12 @@ test("expanded schema serializer coverage remains supported", () => {
   richConfig.communities[0].numHomeSitesOnly = 1;
   richConfig.communities[0].filterIds = "8";
   richConfig.communities[0].landPhotos = [{ id: 1, src: "land.jpg", status: "reconstructed" }];
+  richConfig.communities[0].siteplan = { id: 99, status: "reconstructed", width: 100, height: 50, coordinateSystem: "test" };
+  richConfig.communities[0].lots[0].compatiblePlanIds = "101";
+  richConfig.communities[0].lots[0].restrictedPlanIds = "102";
+  richConfig.communities[0].lots[0].allowedElevationIds = "1001";
+  richConfig.communities[0].lots[0].selectable = 1;
+  richConfig.communities[0].lots[0].available = 1;
   richConfig.communities[0].inventory = [{ id: 77, planId: 101, elevId: 1001, status: "available", lotId: 1 }];
   richConfig.catalog.schemes[0].elements[0].palId = 10;
   richConfig.catalog.schemes[0].elements[0].palSelId = 11;
@@ -600,6 +653,9 @@ test("expanded schema serializer coverage remains supported", () => {
   assert(richPayloads["homedesigner/getclientdata.generated.xml"].includes('bundle="coverage-bundle"'), "designer serializer should support bundle flags");
   assert(richPayloads["homedesigner/getclientdata.generated.xml"].includes('<crm LassoUID="lasso-test"'), "designer serializer should support CRM child data");
   assert(richPayloads["db/scripts/php/getnbrhoodsdata.generated.xml"].includes('crmId="1234"'), "neighborhood serializer should support crmId");
+  assert(richPayloads["db/scripts/php/getnbrhoodsdata.generated.xml"].includes('<siteplan id="99"'), "neighborhood serializer should support siteplan metadata");
+  assert(richPayloads["db/scripts/php/getnbrhoodsdata.generated.xml"].includes('compatiblePlanIds="101"'), "lot serializer should support plan compatibility");
+  assert(richPayloads["db/scripts/php/getnbrhoodsdata.generated.xml"].includes('restrictedPlanIds="102"'), "lot serializer should support plan restrictions");
   assert(richPayloads["db/scripts/php/getnbrhoodsdata.generated.xml"].includes('<lot id="1"'), "neighborhood serializer should support lots");
   assert(richPayloads["db/scripts/php/getnbrhoodsdata.generated.xml"].includes('<inventory id="77"'), "neighborhood serializer should support inventory passthrough");
   assert(richPayloads["db/scripts/php/getplans.generated.xml"].includes('fpPhotos="floorplan-photo.jpg"'), "plan serializer should support floorplan photos");

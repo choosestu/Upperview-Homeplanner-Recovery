@@ -10,10 +10,10 @@ Status: inferred from frontend constructors and comparable recovered Rendering H
 - `locations`: city/metro-level groupings containing neighborhoods.
 - `neighbourhoods`: communities with pricing flag, sorting mode, color method, agents, lots, plans, palettes, schemes, and standard features.
 - `agents`: contact records attached to neighborhoods.
-- `lots`: siteplan lots with geometry, status, elevation exclusions, optional land listing fields, optional linked inventory home.
+- `lots`: siteplan lots with geometry, status, selectable/available flags, premiums, frontage/depth/size, plan/elevation compatibility, restrictions, optional land listing fields, optional linked inventory home, model-home flags, and availability dates.
 - `home_plans`: plan families within neighborhoods.
 - `elevations`: plan variants with beds, baths, sqft, cars, base price, thumbnails, color schemes, floorplan options, inventory homes.
-- `inventory_homes`: quick move-in/listing records tied to lots and optionally elevations.
+- `inventory_homes`: quick move-in/listing records tied to lots, plans, elevations, pricing, MLS/listing placeholders, included options, and availability dates.
 - `colour_vendors`: paint/material vendors.
 - `colours`: vendor color records with hex values.
 - `palettes`: selectable color/material layers.
@@ -67,6 +67,5 @@ erDiagram
 - The original app mixes XML for initial catalog data and JSON for lazy details.
 - The model is client-first; `clientId` and neighborhood IDs are the central lookup keys.
 - Pricing exists at elevation, lot, inventory, scheme, floorplan option, and architectural option levels.
-- Availability is likely encoded in lot `sold` status and inventory `status`.
+- Availability is likely encoded in lot `sold` status and inventory `status`; the local reconstruction also exposes `selectable`, `available`, `quickMoveIn`, `modelHome`, and `availableDate` flags for compatibility testing.
 - Color/finish rendering is layer-based: palettes define render layers, schemes bind layers to colors or overlay selections.
-

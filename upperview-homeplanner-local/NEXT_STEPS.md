@@ -23,7 +23,7 @@ Scores use `1` to `5`.
 | 6 | Add local no-op adapters for favorites, lead capture, email, CRM, and brochure endpoints | Reconstruct | 4 | 4 | 3 | Done | Completed in Phase 2 Task 1; late-flow user/session routes now resolve to safe in-browser no-op mocks. |
 | 7 | Create a richer reconstructed sample catalog with multiple plans/elevations/options | Reconstruct | 4 | 4 | 2 | Done | Completed in Phase 1 Task 4; the sample catalog now has 3 plans, 6 elevations, multiple options, schemes, lots, and availability states. |
 | 8 | Normalize asset manifests for plan images, elevation layers, floorplans, logos, and siteplans | Refactor | 4 | 5 | 3 | 12-20 | Decouples media from hard-coded legacy paths and prepares for a modern rendering/media service. |
-| 9 | Document and mock lot/siteplan data | Reconstruct | 4 | 4 | 4 | 14-26 | Lots and availability are central to a new-home sales flow, but the current sample catalog barely exercises them. |
+| 9 | Document and mock lot/siteplan data | Reconstruct | 4 | 4 | 4 | Done | Completed in Phase 2 Task 2; lot/siteplan behavior now covers available, hold, sold, inventory, model, plan restrictions, and quick move-in examples. |
 | 10 | Package the legacy adapter as a reusable QiBiLDiR module | Refactor | 3 | 5 | 3 | 8-14 | Moves `static-api-router`, bootstrap, and API contracts toward a clean `homeplanner-legacy-adapter` package. |
 | 11 | Replace static route files with a small local data service | Replace | 3 | 5 | 3 | 12-22 | Lets the same data serve legacy XML/JSON and modern resource APIs. |
 | 12 | Create modern resource API contracts beside legacy contracts | Refactor | 3 | 5 | 3 | 10-18 | Establishes the future `/api/builders`, `/api/projects`, `/api/plans`, and buyer-session API surface. |
@@ -54,7 +54,7 @@ Outcome: the prototype becomes configurable in practice, not just in structure.
 Do these next:
 
 1. Mock favorites, lead capture, brochure, email, and CRM endpoints.
-2. Reconstruct or recover lot/siteplan and availability data.
+2. Reconstruct or recover lot/siteplan and availability data. Done in Phase 2 Task 2 using clearly reconstructed homesite data.
 3. Normalize asset manifests.
 4. Add regression screenshots for plan, elevation, option, lot, and lead flows.
 

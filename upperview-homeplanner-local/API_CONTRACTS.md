@@ -6,6 +6,8 @@ Field-level support status for the generated compatibility layer is tracked in `
 
 Late-flow favorites, lead, email, CRM, brochure, and user/session mock behavior is tracked in `LATE_FLOW_MOCK_ENDPOINTS.md`.
 
+Lot/siteplan and availability reconstruction is tracked in `LOT_SITEPLAN_BEHAVIOR.md`.
+
 ## XML Conventions
 
 The frontend uses jQuery XML traversal and `attr(...)`. Missing string attributes often become `undefined`; missing numeric attributes often become `NaN`, so a rebuilt backend should provide all fields listed as required.
@@ -86,14 +88,18 @@ Returns XML neighborhood detail:
       <category id="1" name="Community"><feature id="1" name="..."/></category>
     </stdfeatures>
     <legend>
-      <entry id="1" code="i" name="Available" color="#..." />
+      <entry id="1" code="available" name="Available" color="#..." selectable="1" available="1" />
     </legend>
-    <lot id="1" x="0" y="0" width="0" height="0" sold="i" elevId="1001">1</lot>
+    <siteplan id="1" status="reconstructed" width="180" height="132" coordinateSystem="legacy-percent" />
+    <lot id="1" name="1" x="0" y="0" width="0" height="0" sold="available" statusLabel="Available" selectable="1" available="1" planId="101" elevId="1001" premium="12000" compatiblePlanIds="101,102" restrictedPlanIds="103" allowedElevationIds="1001,1002">1</lot>
+    <inventory id="9001" lotId="2" lotName="2" planId="102" elevId="1003" price="849990" cost="849990" status="inventory" availabilityStatus="quick-move-in" address="..." mlsId="..." homeStyle="..." sqft="2512" />
   </nbrhood>
 </data>
 ```
 
 Lots are optional but required for siteplan/homesite behavior.
+
+Recovered runtime lot behavior references lot id/name, `sold` status, legend lookup, plan/elevation ids, cost/premium, land MLS/photo fields, inventory `lotId`, inventory address, MLS id, home style, square footage, and description. The local generated payload also includes reconstructed compatibility fields for selectable/available flags, compatible plans, restricted plans, allowed elevations, model flags, and quick move-in links.
 
 ## `getplans.php`
 

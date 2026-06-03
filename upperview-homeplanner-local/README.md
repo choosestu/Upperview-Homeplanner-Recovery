@@ -51,7 +51,7 @@ Generated active route payloads are under:
 
 The Wayback archive did not contain the dynamic UpperView PHP responses needed by the app. The local prototype therefore uses generated responses from a clearly reconstructed neutral sample catalog.
 
-The sample catalog is not historical. It currently includes 3 neutral reconstructed plans, 6 elevations, multiple color schemes, palettes, floorplan options, lots, quick move-in examples, and availability states so the original frontend can demonstrate realistic catalog behavior.
+The sample catalog is not historical. It currently includes 3 neutral reconstructed plans, 6 elevations, multiple color schemes, palettes, floorplan options, 9 homesites, 3 quick move-in examples, model/hold/sold states, and plan-to-lot compatibility examples so the original frontend can demonstrate realistic catalog behavior.
 
 ## Documentation
 
@@ -103,3 +103,4 @@ Screenshots:
 Yes. The original system can realistically be rebuilt into a usable modern prototype because the frontend exposes the core data model, endpoint paths, query parameters, and expected response shapes.
 
 What is still missing is the historical UpperView dataset: real plan names/IDs, lot geometry, elevation IDs/images, floorplan artwork, structural options, color packages, finishes, pricing, inventory homes, and user/favorite records.
+See `LOT_SITEPLAN_BEHAVIOR.md` for the recovered lot-flow behavior and the reconstructed homesite assumptions.

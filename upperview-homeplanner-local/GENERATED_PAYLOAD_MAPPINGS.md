@@ -64,7 +64,7 @@ The generated layer covers the same app path as the previous reconstructed files
 - designer flags, labels, splash configuration, brochure flags, and optional CRM boot metadata
 - color library
 - community summary, filters, inventory counts, and plan/elevation/price/spec ranges
-- community detail, CRM id, agents, standard features, legends, lots, inventory passthrough, and land-photo metadata
+- community detail, CRM id, agents, standard features, legends, siteplan metadata, lots, inventory passthrough, and land-photo metadata
 - plan/elevation listing
 - plan/elevation listing with media, filter/tag, pricing, availability, and scheme metadata
 - elevation detail with image/layer/overlay metadata
@@ -74,7 +74,8 @@ The generated layer covers the same app path as the previous reconstructed files
 - elevation-neighborhood summary
 - interiors response with room/selection support
 - floorplan rendering URI placeholder
-- richer reconstructed catalog: 3 plans, 6 elevations, multiple schemes/palettes/options, lots, and inventory examples
+- richer reconstructed catalog: 3 plans, 6 elevations, multiple schemes/palettes/options, 9 lots, and 3 inventory examples
+- reconstructed lot mappings: selectable/available flags, status labels, frontage/depth/size, premiums, plan compatibility, restricted plans, allowed elevations, model flags, inventory links, and availability dates
 
 Detailed field status is documented in:
 
@@ -86,7 +87,7 @@ Detailed field status is documented in:
 These are intentionally not solved by Phase 1 Task 4:
 
 - real UpperView historical catalog data
-- real lot/siteplan geometry
+- real lot/siteplan geometry and original plan-to-lot restrictions
 - real elevation/floorplan artwork
 - exact historical option dependency semantics
 - real favorites, lead capture, email, CRM, and brochure persistence implementations
