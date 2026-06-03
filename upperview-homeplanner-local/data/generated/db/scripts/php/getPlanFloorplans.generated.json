@@ -1,0 +1,75 @@
+{
+  "_status": "generated",
+  "_source": "app/config/upperview-project.config.js",
+  "planData": {
+    "elevations": [
+      {
+        "id": 1001,
+        "floorplans": [
+          {
+            "fnum": 1,
+            "groups": [
+              {
+                "id": 1,
+                "groupType": "structural",
+                "name": "First Floor Options",
+                "designatedPrimary": 0,
+                "fpOptIds": "2001"
+              }
+            ],
+            "opts": [
+              {
+                "id": 2000,
+                "name": "Reconstructed Base First Floor",
+                "src": "floorplan-placeholder.svg",
+                "src2": "",
+                "base": 1,
+                "listOrder": 0,
+                "renderOrder": 0,
+                "opt": 0,
+                "cost": 0,
+                "size": 0,
+                "groupIds": "",
+                "fpAlts": []
+              },
+              {
+                "id": 2001,
+                "name": "Reconstructed Open Layout Option",
+                "src": "",
+                "src2": "",
+                "base": 0,
+                "listOrder": 1,
+                "renderOrder": 1,
+                "opt": 1,
+                "cost": 0,
+                "size": 0,
+                "groupIds": "1",
+                "fpAlts": []
+              }
+            ]
+          },
+          {
+            "fnum": 2,
+            "groups": [],
+            "opts": [
+              {
+                "id": 2002,
+                "name": "Reconstructed Base Second Floor",
+                "src": "floorplan-placeholder.svg",
+                "src2": "",
+                "base": 1,
+                "listOrder": 0,
+                "renderOrder": 0,
+                "opt": 0,
+                "cost": 0,
+                "size": 0,
+                "groupIds": "",
+                "fpAlts": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -30,7 +30,8 @@ If `python` is not on your PATH, use any static file server from this folder.
 - Downloaded local CSS, JavaScript, Font Awesome, icons, and required support assets.
 - Rewrote asset URLs to local relative paths.
 - Stubbed third-party analytics/social/map loaders so the old app can boot locally without external popups or auth scripts.
-- Routed the missing historical PHP AJAX endpoints to local static reconstructed data files in `data/reconstructed/`.
+- Routed the missing historical PHP AJAX endpoints to local static generated data files in `data/generated/`.
+- Added a compatibility serializer so legacy XML/JSON/text payloads are generated from `app/config/upperview-project.config.js`.
 - Replaced a hard-coded Cloudinary equal-housing logo request with `local-mocks/eho-logo.png`.
 
 ## Recovered And Reconstructed Data
@@ -42,6 +43,10 @@ Recovered files are under:
 Reconstructed files are under:
 
 - `data/reconstructed/`
+
+Generated active route payloads are under:
+
+- `data/generated/`
 
 The Wayback archive did not contain the dynamic UpperView PHP responses needed by the app. The local prototype therefore uses reconstructed responses and one neutral sample plan named `Reconstructed Sample Plan`.
 
@@ -55,6 +60,18 @@ The sample plan is not historical. It exists so the original frontend can demons
 - `RECOVERY_LOG.md`
 - `REBUILD_PLAN.md`
 - `BROKEN_DEPENDENCIES.md`
+- `GENERATED_PAYLOAD_MAPPINGS.md`
+
+## Generate And Test Legacy Payloads
+
+From this folder:
+
+```powershell
+node scripts\generate-legacy-payloads.js
+node tests\compatibility.test.js
+```
+
+The generated files preserve the old endpoint response shapes while making the normalized config the source of truth.
 
 ## Verification
 
@@ -71,6 +88,7 @@ Screenshots:
 - `sample-catalog-screenshot.png`
 - `screenshots/01-plan-selected.png`
 - `screenshots/02-floorplan-options.png`
+- `screenshots/04-generated-payloads.png`
 
 ## Can This Be Rebuilt Into A Modern Prototype?
 

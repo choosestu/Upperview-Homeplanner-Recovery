@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Status: generated. Source of truth: app/config/upperview-project.config.js. -->
+<data>
+  <vendors>
+    <vendor id="1" name="Reconstructed Vendor" />
+  </vendors>
+  <colors>
+    <color id="1" vendorId="1" ident="white" name="White" hex="FFFFFF" />
+    <color id="2" vendorId="1" ident="black" name="Black" hex="000000" />
+    <color id="3" vendorId="1" ident="gray" name="Gray" hex="808080" />
+    <color id="4" vendorId="1" ident="bluegray" name="Blue Gray" hex="708090" />
+  </colors>
+</data>

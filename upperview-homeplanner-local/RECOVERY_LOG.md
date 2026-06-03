@@ -6,6 +6,7 @@
 - Broad Wayback CDX searches recovered original static assets and comparable Rendering House backend responses for other clients.
 - No UpperView-specific dynamic PHP backend responses were recovered.
 - The current sample catalog is reconstructed, not historical.
+- Phase 1 Task 1 now generates the active legacy XML/JSON/text endpoint payloads from normalized project configuration.
 
 ## Searches Performed
 
@@ -47,5 +48,25 @@ General web search confirms `Grandview Trail` was an Upperview Homes community i
 - `recovered`: downloaded from Wayback or original public asset URLs.
 - `inferred`: schema or behavior derived from frontend code.
 - `reconstructed`: local data created to satisfy the inferred schema.
+- `generated`: route-compatible legacy payload created from normalized configuration.
 - `speculative`: plausible business model or missing table not directly required by the frontend.
 
+## Generated Compatibility Layer
+
+Active local route responses are now saved under `data/generated/`.
+
+They are produced by:
+
+- `app/config/upperview-project.config.js`
+- `app/platform/legacy-payload-generator.js`
+- `scripts/generate-legacy-payloads.js`
+
+The older `data/reconstructed/` payloads are still retained as preserved fallback/evidence files, but the recovered frontend now routes to generated files through `HomePlannerConfig.api.routes`.
+
+Compatibility coverage is tested by:
+
+- `tests/compatibility.test.js`
+
+Detailed endpoint-to-config mappings are documented in:
+
+- `GENERATED_PAYLOAD_MAPPINGS.md`

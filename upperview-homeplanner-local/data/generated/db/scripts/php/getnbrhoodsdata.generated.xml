@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Status: generated. Source of truth: app/config/upperview-project.config.js. -->
+<data>
+  <nbrhood
+    id="1"
+    name="Grandview Trail"
+    def="1"
+    salesapp="1"
+    logo=""
+    cap="Grandview Trail"
+    descr="Grandview Trail is a warm and family-friendly community located within North Oshawa."
+    long="-78.837"
+    lat="43.945"
+    city="Oshawa"
+    state="ON"
+    metro="Grandview Trail"
+    metroId="1"
+    site=""
+    active="1"
+    pricing="1"
+    cutsheet=""
+    cmtd="PALETTE"
+    sort="Name"
+    order="asc"
+    lotType="lot"
+    thumb=""
+    imgs=""
+    schemeids="1"
+    palids="1"
+    url="https://www.upperviewhomes.com/"
+    addr1=""
+    addr2="">
+    <agent agentid="1" fname="" lname="" email="" phone="" />
+    <stdfeatures>
+      <category id="1" name="Community">
+        <feature id="1" name="Reconstructed sample data for local prototype only" />
+      </category>
+    </stdfeatures>
+    <legend />
+  </nbrhood>
+</data>

@@ -1,0 +1,18 @@
+{
+  "_status": "generated",
+  "_source": "app/config/upperview-project.config.js",
+  "planData": {
+    "elevations": [
+      {
+        "id": 1001,
+        "elements": [
+          {
+            "id": 1,
+            "name": "Body Colour",
+            "src": ""
+          }
+        ]
+      }
+    ]
+  }
+}
