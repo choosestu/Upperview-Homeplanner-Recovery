@@ -13,7 +13,7 @@ The normalized source of truth is `app/config/upperview-project.config.js`. The 
 | Designer boot flags | `designer.contentStorage`, `pageOrder`, `bgColor`, `displayIntPhotos`, `displayExtPhotos`, labels, splash flags, brochure flags, metric/filter flags | `<designers ...>` | supported | Values are emitted only when defined in config. |
 | CRM boot metadata | `designer.crm` | `<crm ...>` | supported, disabled by default | Emitted only when `designer.crm.enabled` is true. |
 | Color library | `catalog.vendors`, `catalog.colors` | `<vendor>`, `<color>` | supported | Recovered runtime requires colors for schemes and palettes. |
-| Summary filters | `catalog.filterCats` | `filterCats[]` | supported | Empty for UpperView sample until real filters are recovered. |
+| Summary filters | `catalog.filterCats` | `filterCats[]` | supported | Reconstructed filters now cover bedrooms, home type, and availability. |
 | Community summary | `communities[]` counts, ranges, region/location overrides | `regiondata[].locations[].nbrhoods[]` | supported | Supports plan/elevation/price/bed/bath/square-foot ranges. |
 | Community detail | community identity, captions, address, map coords, CRM id, color method, image/site fields | `<nbrhood ...>` | supported | UpperView values remain reconstructed. |
 | Agents/features | `community.agent`, `community.standardFeatures` | `<agent>`, `<stdfeatures>` | supported | Feature content is reconstructed. |
@@ -21,8 +21,8 @@ The normalized source of truth is `app/config/upperview-project.config.js`. The 
 | Lots/homesites | `community.lots` | `<lot ...>label</lot>` | supported, inferred | Geometry/status fields are supported; exact UpperView lot records are missing. |
 | Inventory | `community.inventory` | `<inventory ...>` | supported as passthrough | Exact historical inventory shape remains unknown. |
 | Land photos | `community.landPhotos`, `landPhotoFolder` | `<landphoto ...>`, `landPhotoFolder` | supported as passthrough | Optional inventory/photo path support. |
-| Plans | `catalog.plans[]` identity, media, filters, tags, pricing/availability status | `<plan ...>` and JSON `planData` | supported | Names remain neutral reconstructed placeholders. |
-| Elevations | `plans[].elevations[]` identity, specs, media, schemes, elements, overlays, status | `<elev ...>` and lazy JSON | supported | Layer artwork remains missing. |
+| Plans | `catalog.plans[]` identity, media, filters, tags, pricing/availability status | `<plan ...>` and JSON `planData` | supported | Names remain neutral reconstructed placeholders; current sample includes 3 plans. |
+| Elevations | `plans[].elevations[]` identity, specs, media, schemes, elements, overlays, status | `<elev ...>` and lazy JSON | supported | Layer artwork remains missing; current sample includes all 6 elevations in static lazy payloads. |
 | Schemes | `catalog.schemes[]` and `elements[]` | `<scheme>`, lazy JSON `schemes[]` | supported | Supports `m` and overlay-related `n` metadata fields. |
 | Palettes | `catalog.palettes[]` and `elements[]` | `<palette>`, lazy JSON `palettes[]` | supported | Supports overlay/swatch metadata. |
 | Floorplan option groups | `catalog.floorplanGroups[]` | lazy JSON `groups[]` | supported | Used by plan floorplan flow. |
@@ -62,3 +62,4 @@ The normalized source of truth is `app/config/upperview-project.config.js`. The 
 - Route targets point to existing files.
 - Plan/elevation/scheme/palette/color/option/group/lot relationships remain internally consistent.
 - `tests/compatibility-snapshots.json` preserves the expected legacy endpoint list and generated payload file list.
+- The reconstructed sample catalog remains rich enough for buyer-flow demos.

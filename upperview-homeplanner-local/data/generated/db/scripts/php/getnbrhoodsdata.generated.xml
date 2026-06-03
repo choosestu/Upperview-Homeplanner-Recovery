@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Status: generated. Source of truth: app/config/upperview-project.config.js. -->
 <data>
-  <nbrhood id="1" name="Grandview Trail" def="1" salesapp="1" logo="" cap="Grandview Trail" descr="Grandview Trail is a warm and family-friendly community located within North Oshawa." long="-78.837" lat="43.945" city="Oshawa" state="ON" metro="Grandview Trail" metroId="1" site="" active="1" pricing="1" cutsheet="" cmtd="PALETTE" sort="Name" order="asc" lotType="lot" thumb="" imgs="" crmId="0" schemeids="1" palids="1" url="https://www.upperviewhomes.com/" addr1="" addr2="" landPhotoFolder="">
+  <nbrhood id="1" name="Grandview Trail" def="1" salesapp="1" logo="" cap="Grandview Trail" descr="Grandview Trail is a warm and family-friendly community located within North Oshawa." long="-78.837" lat="43.945" city="Oshawa" state="ON" metro="Grandview Trail" metroId="1" site="" active="1" pricing="1" cutsheet="" cmtd="PALETTE" sort="Name" order="asc" lotType="lot" thumb="" imgs="" crmId="0" schemeids="1,2,3" palids="1,2,3" url="https://www.upperviewhomes.com/" addr1="" addr2="" landPhotoFolder="">
     <agent agentid="1" fname="" lname="" email="" phone="" />
     <stdfeatures>
       <category id="1" name="Community">
@@ -10,7 +10,18 @@
     </stdfeatures>
     <legend>
       <entry id="1" code="available" name="Available" color="#8bbf40" status="reconstructed" />
+      <entry id="2" code="hold" name="On Hold" color="#f0b84a" status="reconstructed" />
+      <entry id="3" code="sold" name="Sold" color="#8b8b8b" status="reconstructed" />
+      <entry id="4" code="inventory" name="Quick Move-In" color="#4a90c2" status="reconstructed" />
+      <entry id="5" code="model" name="Model Home" color="#b06fc5" status="reconstructed" />
     </legend>
-    <lot id="1" x="0" y="0" width="0" height="0" sold="available" status="reconstructed" elevId="1001" planId="101" cost="0" premium="0" address="" lotType="lot" mls="" photoFolder="">Reconstructed Lot 1</lot>
+    <lot id="1" x="18" y="22" width="24" height="36" sold="available" status="reconstructed" elevId="1001" planId="101" cost="0" premium="12000" address="Reconstructed Homesite 1" lotType="lot" mls="" photoFolder="">Reconstructed Lot 1</lot>
+    <lot id="2" x="48" y="22" width="24" height="36" sold="inventory" status="reconstructed" elevId="1003" planId="102" cost="849990" premium="18000" address="Reconstructed Quick Move-In 2" lotType="lot" mls="" photoFolder="">Reconstructed Lot 2</lot>
+    <lot id="3" x="78" y="22" width="24" height="36" sold="hold" status="reconstructed" elevId="1005" planId="103" cost="0" premium="15000" address="Reconstructed Homesite 3" lotType="lot" mls="" photoFolder="">Reconstructed Lot 3</lot>
+    <lot id="4" x="18" y="70" width="24" height="36" sold="model" status="reconstructed" elevId="1002" planId="101" cost="0" premium="0" address="Reconstructed Model Home" lotType="lot" mls="" photoFolder="">Reconstructed Lot 4</lot>
+    <lot id="5" x="48" y="70" width="24" height="36" sold="sold" status="reconstructed" elevId="1004" planId="102" cost="0" premium="0" address="Reconstructed Sold Homesite" lotType="lot" mls="" photoFolder="">Reconstructed Lot 5</lot>
+    <lot id="6" x="78" y="70" width="24" height="36" sold="inventory" status="reconstructed" elevId="1006" planId="103" cost="939990" premium="22000" address="Reconstructed Quick Move-In 6" lotType="lot" mls="" photoFolder="">Reconstructed Lot 6</lot>
+    <inventory id="9001" lotId="2" planId="102" elevId="1003" price="849990" status="inventory" availabilityStatus="quick-move-in" address="Reconstructed Quick Move-In 2" />
+    <inventory id="9002" lotId="6" planId="103" elevId="1006" price="939990" status="inventory" availabilityStatus="quick-move-in" address="Reconstructed Quick Move-In 6" />
   </nbrhood>
 </data>

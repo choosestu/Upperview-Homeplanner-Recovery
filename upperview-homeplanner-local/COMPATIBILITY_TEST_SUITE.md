@@ -24,6 +24,7 @@ It validates:
 - required client, designer, color, summary, neighborhood, plan, elevation, scheme, palette, option, interior, and rendering fields exist
 - plan/elevation/scheme/palette/color/option/group/lot relationships remain valid
 - richer optional schema fields still serialize when configured
+- the reconstructed sample catalog has at least 3 plans, multiple elevations per plan, multiple color packages/options, lots, inventory, and varied availability states
 
 ## Snapshot Manifest
 
@@ -42,4 +43,3 @@ Update it only when intentionally adding, removing, or renaming a legacy endpoin
 | JSON malformed | Serializer emitted invalid JSON or a generated file was edited manually. |
 | Required field missing | A field read by the recovered runtime was removed or renamed. |
 | Relationship failure | Plan, elevation, lot, scheme, palette, color, option, or group IDs no longer line up. |
-

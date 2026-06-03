@@ -66,6 +66,20 @@
     return plan && plan.elevations ? plan.elevations[0] : undefined;
   }
 
+  function allElevations(config) {
+    var elevations = [];
+    (config.catalog.plans || []).forEach(function (plan) {
+      (plan.elevations || []).forEach(function (elevation) {
+        var copy = {};
+        Object.keys(elevation).forEach(function (key) { copy[key] = elevation[key]; });
+        copy.planId = plan.id;
+        copy.planName = plan.name;
+        elevations.push(copy);
+      });
+    });
+    return elevations;
+  }
+
   function optionPayload(option) {
     var payload = {
       id: option.id,
@@ -499,17 +513,20 @@
 
   function elevationDetails(config) {
     var plan = firstPlan(config);
+    var plans = config.catalog.plans || [];
     return {
       _status: "generated",
       _source: "app/config/upperview-project.config.js",
       planData: {
-        imgs: plan.imgs || "",
-        fpimgs: plan.fpimgs || "",
-        fpPhotos: plan.fpPhotos || "",
-        photos: plan.photos || "",
-        elevations: (plan.elevations || []).map(function (elevation) {
+        imgs: plans.map(function (item) { return item.imgs || ""; }).filter(Boolean).join(","),
+        fpimgs: plans.map(function (item) { return item.fpimgs || ""; }).filter(Boolean).join(","),
+        fpPhotos: plans.map(function (item) { return item.fpPhotos || ""; }).filter(Boolean).join(","),
+        photos: plans.map(function (item) { return item.photos || ""; }).filter(Boolean).join(","),
+        elevations: allElevations(config).map(function (elevation) {
           var payload = {
             id: elevation.id,
+            planId: elevation.planId,
+            planName: elevation.planName,
             elements: elevation.elements || [],
             paletteOverlays: elevation.paletteOverlays || [],
             floorplans: floorplans(config)
@@ -564,35 +581,42 @@
   }
 
   function elevationElements(config) {
-    var plan = firstPlan(config);
     return {
       _status: "generated",
       _source: "app/config/upperview-project.config.js",
       planData: {
-        elevations: (plan.elevations || []).map(function (elevation) {
-          return { id: elevation.id, elements: elevation.elements || [] };
+        elevations: allElevations(config).map(function (elevation) {
+          return { id: elevation.id, planId: elevation.planId, elements: elevation.elements || [] };
         })
       }
     };
   }
 
   function elevationSchemes(config) {
-    var elevation = firstElevation(config);
+    var seen = {};
+    var schemeIds = [];
+    allElevations(config).forEach(function (elevation) {
+      (elevation.schemeIds || []).forEach(function (schemeId) {
+        if (!seen[schemeId]) {
+          seen[schemeId] = true;
+          schemeIds.push(schemeId);
+        }
+      });
+    });
     return {
       _status: "generated",
       _source: "app/config/upperview-project.config.js",
-      schemeIds: elevation ? (elevation.schemeIds || []) : []
+      schemeIds: schemeIds
     };
   }
 
   function planFloorplans(config) {
-    var plan = firstPlan(config);
     return {
       _status: "generated",
       _source: "app/config/upperview-project.config.js",
       planData: {
-        elevations: (plan.elevations || []).map(function (elevation) {
-          return { id: elevation.id, floorplans: floorplans(config) };
+        elevations: allElevations(config).map(function (elevation) {
+          return { id: elevation.id, planId: elevation.planId, floorplans: floorplans(config) };
         })
       }
     };

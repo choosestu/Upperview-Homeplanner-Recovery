@@ -9,6 +9,7 @@
 - Phase 1 Task 1 now generates the active legacy XML/JSON/text endpoint payloads from normalized project configuration.
 - Phase 1 Task 2 expanded the normalized schema and serializer to cover the legacy fields currently required or referenced by the recovered runtime.
 - Phase 1 Task 3 added a compatibility serializer test suite for generated endpoint files, route compatibility, required legacy fields, parseability, and catalog relationships.
+- Phase 1 Task 4 expanded the reconstructed catalog to 3 neutral plans, 6 elevations, multiple color packages, options, lots, inventory examples, and availability states.
 
 ## Searches Performed
 
@@ -82,6 +83,10 @@ Field-level schema coverage is documented in:
 
 - `LEGACY_SCHEMA_COVERAGE.md`
 
+The richer reconstructed sample catalog is documented in:
+
+- `RECONSTRUCTED_SAMPLE_CATALOG.md`
+
 ## Phase 1 Task 2 Notes
 
 Task 2 did not recover new original UpperView backend data. It treated the recovered frontend JavaScript as the backend specification and expanded the normalized config/generator boundary to support:
@@ -95,3 +100,24 @@ Task 2 did not recover new original UpperView backend data. It treated the recov
 - interiors rooms and selections
 
 Compatibility tests now include a richer synthetic config proving these optional fields serialize into route-compatible XML/JSON without replacing the recovered runtime.
+
+## Phase 1 Task 4 Notes
+
+Task 4 did not recover new original UpperView data. It expanded the clearly marked reconstructed catalog so the local prototype can demonstrate more realistic buyer behavior while preserving the recovered runtime.
+
+The generated payloads now include:
+
+- 3 neutral reconstructed plans
+- 6 reconstructed elevations
+- 3 color schemes and 3 palettes
+- multiple floorplan option groups and priced options
+- 6 reconstructed lots with available, hold, sold, model, and quick move-in states
+- 2 reconstructed quick move-in inventory examples
+- summary counts and ranges aligned with the richer sample catalog
+
+Runtime limitations remain:
+
+- Real plan/elevation/lot/option IDs and names are still missing.
+- Elevation, floorplan, interior, and siteplan artwork remains unrecovered.
+- Lazy static endpoint files now include all reconstructed elevations so multi-plan selection can work without a query-aware PHP backend.
+- Favorites, lead capture, CRM, email, brochure, MLS photo, and cloud inventory endpoints remain deferred.

@@ -48,9 +48,9 @@ Generated active route payloads are under:
 
 - `data/generated/`
 
-The Wayback archive did not contain the dynamic UpperView PHP responses needed by the app. The local prototype therefore uses reconstructed responses and one neutral sample plan named `Reconstructed Sample Plan`.
+The Wayback archive did not contain the dynamic UpperView PHP responses needed by the app. The local prototype therefore uses generated responses from a clearly reconstructed neutral sample catalog.
 
-The sample plan is not historical. It exists so the original frontend can demonstrate plan loading, filtering/list display, selection, next-step navigation, elevation/options display, and a placeholder floorplan.
+The sample catalog is not historical. It currently includes 3 neutral reconstructed plans, 6 elevations, multiple color schemes, palettes, floorplan options, lots, quick move-in examples, and availability states so the original frontend can demonstrate realistic catalog behavior.
 
 ## Documentation
 
@@ -61,6 +61,8 @@ The sample plan is not historical. It exists so the original frontend can demons
 - `REBUILD_PLAN.md`
 - `BROKEN_DEPENDENCIES.md`
 - `GENERATED_PAYLOAD_MAPPINGS.md`
+- `RECONSTRUCTED_SAMPLE_CATALOG.md`
+- `COMPATIBILITY_TEST_SUITE.md`
 
 ## Generate And Test Legacy Payloads
 
@@ -75,13 +77,16 @@ The generated files preserve the old endpoint response shapes while making the n
 
 ## Verification
 
-Verified with a local static server and headless Chrome. The final prototype load had:
+Verified with local payload generation, compatibility tests, and a temporary local static server route check. The current generated route check had:
 
-- No Wayback wrapper scripts.
-- No Wayback popup.
-- No failed network responses during the tested flow.
-- Visible plan-list text including `1 Home Plans`, `Grandview Trail`, and `Reconstructed Sample Plan A`.
-- Successful click-through into the elevation/options/floorplan step.
+- 12 active routes.
+- 12 routes resolving from `data/generated`.
+- 3 plans in generated plans XML.
+- 6 elevations in generated plans XML.
+- 6 elevations in generated lazy elevation details JSON.
+- Summary counts matching the reconstructed catalog.
+
+Earlier browser screenshots still document the recovered UI getting past `Loading...`; current headless browser automation was not available in this sandbox, so this pass verified generated route behavior rather than producing a new screenshot.
 
 Screenshots:
 

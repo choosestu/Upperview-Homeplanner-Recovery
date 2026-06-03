@@ -35,10 +35,10 @@ The compatibility suite details are documented in:
 | `/db/scripts/php/getsummary.php` | `data/generated/db/scripts/php/getsummary.generated.json` | `communities`, `project` |
 | `/db/scripts/php/getnbrhoodsdata.php` | `data/generated/db/scripts/php/getnbrhoodsdata.generated.xml` | `communities`, `builder`, `catalog.palettes`, `catalog.schemes` |
 | `/db/scripts/php/getplans.php` | `data/generated/db/scripts/php/getplans.generated.xml` | `catalog.plans`, `catalog.palettes`, `catalog.schemes` |
-| `/db/scripts/php/getElevationDetails.php` | `data/generated/db/scripts/php/getElevationDetails.generated.json` | `catalog.plans[].elevations`, `catalog.schemes`, `catalog.palettes`, `catalog.options`, `catalog.floorplanGroups` |
-| `/db/scripts/php/getElevationElements.php` | `data/generated/db/scripts/php/getElevationElements.generated.json` | `catalog.plans[].elevations[].elements` |
-| `/db/scripts/php/getElevationSchemes.php` | `data/generated/db/scripts/php/getElevationSchemes.generated.json` | `catalog.plans[].elevations[].schemeIds` |
-| `/db/scripts/php/getPlanFloorplans.php` | `data/generated/db/scripts/php/getPlanFloorplans.generated.json` | `catalog.options`, `catalog.floorplanGroups` |
+| `/db/scripts/php/getElevationDetails.php` | `data/generated/db/scripts/php/getElevationDetails.generated.json` | all `catalog.plans[].elevations`, `catalog.schemes`, `catalog.palettes`, `catalog.options`, `catalog.floorplanGroups` |
+| `/db/scripts/php/getElevationElements.php` | `data/generated/db/scripts/php/getElevationElements.generated.json` | all `catalog.plans[].elevations[].elements` |
+| `/db/scripts/php/getElevationSchemes.php` | `data/generated/db/scripts/php/getElevationSchemes.generated.json` | union of all `catalog.plans[].elevations[].schemeIds` |
+| `/db/scripts/php/getPlanFloorplans.php` | `data/generated/db/scripts/php/getPlanFloorplans.generated.json` | all `catalog.plans[].elevations`, `catalog.options`, `catalog.floorplanGroups` |
 | `/db/scripts/php/getelevnbrhoods.php` | `data/generated/db/scripts/php/getelevnbrhoods.generated.json` | `communities` |
 | `/db/scripts/php/getinteriors.php` | `data/generated/db/scripts/php/getinteriors.generated.xml` | `communities`, `catalog.interiors` |
 | `/api/v1/fp/` | `data/generated/rendering-api/floorplan-uri.generated.txt` | `catalog.rendering.floorplanUri` |
@@ -72,14 +72,16 @@ The generated layer covers the same app path as the previous reconstructed files
 - elevation-neighborhood summary
 - interiors response with room/selection support
 - floorplan rendering URI placeholder
+- richer reconstructed catalog: 3 plans, 6 elevations, multiple schemes/palettes/options, lots, and inventory examples
 
 Detailed field status is documented in:
 
 - `LEGACY_SCHEMA_COVERAGE.md`
+- `RECONSTRUCTED_SAMPLE_CATALOG.md`
 
 ## Remaining Gaps
 
-These are intentionally not solved by Phase 1 Task 2:
+These are intentionally not solved by Phase 1 Task 4:
 
 - real UpperView historical catalog data
 - real lot/siteplan geometry

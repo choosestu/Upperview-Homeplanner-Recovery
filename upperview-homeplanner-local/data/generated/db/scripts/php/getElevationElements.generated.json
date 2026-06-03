@@ -5,10 +5,126 @@
     "elevations": [
       {
         "id": 1001,
+        "planId": 101,
         "elements": [
           {
             "id": 1,
             "name": "Body Colour",
+            "src": ""
+          },
+          {
+            "id": 2,
+            "name": "Trim Colour",
+            "src": ""
+          },
+          {
+            "id": 3,
+            "name": "Accent Finish",
+            "src": ""
+          }
+        ]
+      },
+      {
+        "id": 1002,
+        "planId": 101,
+        "elements": [
+          {
+            "id": 1,
+            "name": "Body Colour",
+            "src": ""
+          },
+          {
+            "id": 2,
+            "name": "Trim Colour",
+            "src": ""
+          },
+          {
+            "id": 3,
+            "name": "Accent Finish",
+            "src": ""
+          }
+        ]
+      },
+      {
+        "id": 1003,
+        "planId": 102,
+        "elements": [
+          {
+            "id": 1,
+            "name": "Body Colour",
+            "src": ""
+          },
+          {
+            "id": 2,
+            "name": "Trim Colour",
+            "src": ""
+          },
+          {
+            "id": 3,
+            "name": "Masonry Finish",
+            "src": ""
+          }
+        ]
+      },
+      {
+        "id": 1004,
+        "planId": 102,
+        "elements": [
+          {
+            "id": 1,
+            "name": "Body Colour",
+            "src": ""
+          },
+          {
+            "id": 2,
+            "name": "Trim Colour",
+            "src": ""
+          },
+          {
+            "id": 3,
+            "name": "Masonry Finish",
+            "src": ""
+          }
+        ]
+      },
+      {
+        "id": 1005,
+        "planId": 103,
+        "elements": [
+          {
+            "id": 1,
+            "name": "Body Colour",
+            "src": ""
+          },
+          {
+            "id": 2,
+            "name": "Trim Colour",
+            "src": ""
+          },
+          {
+            "id": 3,
+            "name": "Accent Finish",
+            "src": ""
+          }
+        ]
+      },
+      {
+        "id": 1006,
+        "planId": 103,
+        "elements": [
+          {
+            "id": 1,
+            "name": "Body Colour",
+            "src": ""
+          },
+          {
+            "id": 2,
+            "name": "Trim Colour",
+            "src": ""
+          },
+          {
+            "id": 3,
+            "name": "Masonry Finish",
             "src": ""
           }
         ]

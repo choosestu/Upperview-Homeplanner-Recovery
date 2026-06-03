@@ -154,6 +154,37 @@ function catalogIds() {
   return { planIds, elevationIds, schemeIds, paletteIds, colorIds, optionIds, groupIds, communityIds };
 }
 
+test("reconstructed sample catalog is rich enough for buyer-flow demos", () => {
+  const plans = config.catalog.plans || [];
+  const elevations = plans.flatMap((plan) => plan.elevations || []);
+  const options = config.catalog.options || [];
+  const schemes = config.catalog.schemes || [];
+  const palettes = config.catalog.palettes || [];
+  const lots = config.communities.flatMap((community) => community.lots || []);
+  const inventory = config.communities.flatMap((community) => community.inventory || []);
+  const availabilityStates = new Set(
+    plans.map((plan) => plan.availabilityStatus)
+      .concat(elevations.map((elevation) => elevation.availabilityStatus))
+      .concat(lots.map((lot) => lot.sold))
+      .filter(Boolean)
+  );
+
+  assert(plans.length >= 3, "sample catalog should include at least 3 reconstructed plans");
+  plans.forEach((plan) => {
+    assert(plan.name.startsWith("Reconstructed "), "plan " + plan.id + " should be clearly marked reconstructed");
+    assert((plan.elevations || []).length >= 2, "plan " + plan.id + " should include multiple elevations");
+  });
+  assert(elevations.length >= 6, "sample catalog should include at least 6 reconstructed elevations");
+  assert(options.length >= 6, "sample catalog should include multiple floorplan/options records");
+  assert(schemes.length >= 3, "sample catalog should include multiple color schemes");
+  assert(palettes.length >= 3, "sample catalog should include multiple palettes");
+  assert(lots.length >= 6, "sample catalog should include lot/siteplan examples");
+  assert(inventory.length >= 2, "sample catalog should include quick move-in inventory examples");
+  ["available", "inventory", "hold", "sold", "model", "quick-move-in"].forEach((state) => {
+    assert(availabilityStates.has(state), "sample catalog should include availability state `" + state + "`");
+  });
+});
+
 test("generated payload file list is stable", () => {
   assert.deepStrictEqual(Object.keys(payloads).sort(), expectedPayloadPaths.slice().sort());
   assert.deepStrictEqual(expectedPayloadPaths.slice().sort(), snapshots.generatedPayloadPaths.slice().sort());
@@ -254,6 +285,7 @@ test("neighborhood XML has required community fields and valid lot references", 
   const xml = readGenerated("db/scripts/php/getnbrhoodsdata.generated.xml");
   const nbrhoods = attrsFrom(xml, "nbrhood");
   const { planIds, elevationIds } = catalogIds();
+  const lotStatuses = new Set();
 
   assert(nbrhoods.length > 0, "neighborhood XML should include neighborhoods");
   nbrhoods.forEach((nbrhood) => {
@@ -267,6 +299,10 @@ test("neighborhood XML has required community fields and valid lot references", 
     assertAttrs(lot, ["id", "sold", "planId", "elevId"], "lot");
     assert(planIds.includes(Number(lot.planId)), "lot " + lot.id + " references missing plan " + lot.planId);
     assert(elevationIds.includes(Number(lot.elevId)), "lot " + lot.id + " references missing elevation " + lot.elevId);
+    lotStatuses.add(lot.sold);
+  });
+  ["available", "inventory", "hold", "sold", "model"].forEach((status) => {
+    assert(lotStatuses.has(status), "neighborhood lots should include `" + status + "` availability");
   });
 });
 
@@ -282,6 +318,8 @@ test("plans XML preserves plan/elevation/scheme/palette relationships", () => {
   assert(elevations.length > 0, "plans XML should include at least one elevation");
   assert(schemes.length > 0, "plans XML should include schemes");
   assert(palettes.length > 0, "plans XML should include palettes");
+  assert.strictEqual(plans.length, config.catalog.plans.length, "plans XML should include every reconstructed plan");
+  assert.strictEqual(elevations.length, config.catalog.plans.flatMap((plan) => plan.elevations || []).length, "plans XML should include every reconstructed elevation");
 
   plans.forEach((plan) => assertAttrs(plan, ["id", "name", "defaultFloor", "imgs", "fpimgs", "def", "description"], "plan"));
   elevations.forEach((elevation) => {
@@ -313,6 +351,23 @@ test("lazy elevation JSON payloads preserve required structures", () => {
   });
   assertFields(schemes, ["schemeIds"], "elevation schemes root");
   assert(Array.isArray(schemes.schemeIds), "schemeIds should be an array");
+
+  const expectedElevationIds = normalizedArray(catalogIds().elevationIds.slice().sort((a, b) => a - b));
+  assert.deepStrictEqual(
+    details.planData.elevations.map((elevation) => Number(elevation.id)).sort((a, b) => a - b),
+    expectedElevationIds,
+    "elevation details should include all reconstructed elevations"
+  );
+  assert.deepStrictEqual(
+    elements.planData.elevations.map((elevation) => Number(elevation.id)).sort((a, b) => a - b),
+    expectedElevationIds,
+    "elevation elements should include all reconstructed elevations"
+  );
+  assert.deepStrictEqual(
+    floorplans.planData.elevations.map((elevation) => Number(elevation.id)).sort((a, b) => a - b),
+    expectedElevationIds,
+    "plan floorplans should include all reconstructed elevations"
+  );
 });
 
 test("floorplan option relationships are intact", () => {

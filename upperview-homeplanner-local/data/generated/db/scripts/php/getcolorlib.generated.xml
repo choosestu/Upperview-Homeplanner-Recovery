@@ -2,12 +2,17 @@
 <!-- Status: generated. Source of truth: app/config/upperview-project.config.js. -->
 <data>
   <vendors>
-    <vendor id="1" name="Reconstructed Vendor" />
+    <vendor id="1" name="Reconstructed Exterior Vendor" />
+    <vendor id="2" name="Reconstructed Finish Vendor" />
   </vendors>
   <colors>
     <color id="1" vendorId="1" ident="white" name="White" hex="FFFFFF" />
     <color id="2" vendorId="1" ident="black" name="Black" hex="000000" />
     <color id="3" vendorId="1" ident="gray" name="Gray" hex="808080" />
     <color id="4" vendorId="1" ident="bluegray" name="Blue Gray" hex="708090" />
+    <color id="5" vendorId="1" ident="warmtaupe" name="Warm Taupe" hex="9B8B7A" />
+    <color id="6" vendorId="1" ident="deepnavy" name="Deep Navy" hex="243A52" />
+    <color id="7" vendorId="2" ident="lightoak" name="Light Oak" hex="C6A77B" />
+    <color id="8" vendorId="2" ident="charcoalbrick" name="Charcoal Brick" hex="3B3B3B" />
   </colors>
 </data>

@@ -2,13 +2,60 @@
   "_status": "generated",
   "_source": "app/config/upperview-project.config.js",
   "maxPhpInt": 2147483647,
-  "filterCats": [],
+  "filterCats": [
+    {
+      "id": 1,
+      "name": "Bedrooms",
+      "filters": [
+        {
+          "id": 11,
+          "name": "3 Bedrooms"
+        },
+        {
+          "id": 12,
+          "name": "4 Bedrooms"
+        },
+        {
+          "id": 13,
+          "name": "5 Bedrooms"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Home Type",
+      "filters": [
+        {
+          "id": 21,
+          "name": "Two Storey"
+        },
+        {
+          "id": 22,
+          "name": "Family Suite"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Availability",
+      "filters": [
+        {
+          "id": 31,
+          "name": "To Be Built"
+        },
+        {
+          "id": 32,
+          "name": "Quick Move-In"
+        }
+      ]
+    }
+  ],
   "regiondata": [
     {
       "id": 1,
       "name": "Grandview Trail",
       "state": "ON",
-      "numInv": 0,
+      "numInv": 2,
       "locations": [
         {
           "id": 1,
@@ -27,18 +74,18 @@
               "city": "Oshawa",
               "sort": "Name",
               "pricing": 1,
-              "numInv": 0,
-              "numHomeSitesOnly": 0,
-              "numPlans": 1,
-              "numElevs": 1,
-              "minSqft": 2512,
-              "maxSqft": 2512,
-              "minBed": 4,
-              "maxBed": 4,
-              "minBath": 3.5,
-              "maxBath": 3.5,
-              "minPrice": 807990,
-              "maxPrice": 807990,
+              "numInv": 2,
+              "numHomeSitesOnly": 3,
+              "numPlans": 3,
+              "numElevs": 6,
+              "minSqft": 1985,
+              "maxSqft": 3125,
+              "minBed": 3,
+              "maxBed": 5,
+              "minBath": 2.5,
+              "maxBath": 4,
+              "minPrice": 734990,
+              "maxPrice": 929990,
               "url": "https://www.upperviewhomes.com/"
             }
           ]
