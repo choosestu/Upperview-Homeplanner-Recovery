@@ -10,6 +10,7 @@
 - Phase 1 Task 2 expanded the normalized schema and serializer to cover the legacy fields currently required or referenced by the recovered runtime.
 - Phase 1 Task 3 added a compatibility serializer test suite for generated endpoint files, route compatibility, required legacy fields, parseability, and catalog relationships.
 - Phase 1 Task 4 expanded the reconstructed catalog to 3 neutral plans, 6 elevations, multiple color packages, options, lots, inventory examples, and availability states.
+- Phase 2 Task 1 added safe local no-op mocks for favorites, registration, lead capture, email, CRM, brochure, and inventory-photo endpoints.
 
 ## Searches Performed
 
@@ -87,6 +88,10 @@ The richer reconstructed sample catalog is documented in:
 
 - `RECONSTRUCTED_SAMPLE_CATALOG.md`
 
+Late-flow user/session mocks are documented in:
+
+- `LATE_FLOW_MOCK_ENDPOINTS.md`
+
 ## Phase 1 Task 2 Notes
 
 Task 2 did not recover new original UpperView backend data. It treated the recovered frontend JavaScript as the backend specification and expanded the normalized config/generator boundary to support:
@@ -120,4 +125,17 @@ Runtime limitations remain:
 - Real plan/elevation/lot/option IDs and names are still missing.
 - Elevation, floorplan, interior, and siteplan artwork remains unrecovered.
 - Lazy static endpoint files now include all reconstructed elevations so multi-plan selection can work without a query-aware PHP backend.
-- Favorites, lead capture, CRM, email, brochure, MLS photo, and cloud inventory endpoints remain deferred.
+- Real favorites, lead capture, CRM, email, brochure, MLS photo, and cloud inventory integrations remain unrecovered; local no-op mocks now cover those paths.
+
+## Phase 2 Task 1 Notes
+
+Task 1 of Phase 2 did not recover original PHP implementations. It added in-browser local no-op behavior for late-stage endpoints referenced by the recovered runtime:
+
+- favorites read/write/sync endpoints
+- favorite floorplan, palette, and custom scheme endpoints from adjacent recovered bundles
+- registration, authentication, password reset, and prospect lookup endpoints
+- email, registration email, and CRM submission endpoints
+- brochure HTML/file upload endpoints
+- inventory cloud-photo and MLS photo endpoints
+
+The mocks return simple local success or empty-data responses. They do not send external requests, create real records, or persist real user data. Mock submissions are kept only in memory at `window.HomePlannerPlatform.mockLog` for debugging.

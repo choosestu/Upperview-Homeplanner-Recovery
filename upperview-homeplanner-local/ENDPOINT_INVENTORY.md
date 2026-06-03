@@ -34,31 +34,38 @@ Confidence levels:
 
 | Path | Method | Query / Body Parameters | Caller | Expected Format | Required Fields | Optional Fields | Local Mock | Confidence |
 |---|---:|---|---|---|---|---|---|---|
-| `../../src/idash/dist/php/getCloudInventoryPhotoFileNames.php` | GET | `custDir`, `photoFolder` | `Inventory.getCloudPhotoPathsPromise()` | JSON | `fileNames[]` | none observed | none; optional path not exercised | High |
-| `../../src/idash/dist/php/mls/mls.photos.phrets.php` | GET | `mls` | `Inventory.getCloudPhotoPathsPromise()` | JSON | object keyed by MLS id with URL arrays | none observed | none; optional path not exercised | High |
+| `../../src/idash/dist/php/getCloudInventoryPhotoFileNames.php` | GET | `custDir`, `photoFolder` | `Inventory.getCloudPhotoPathsPromise()` | JSON | `fileNames[]` | none observed | in-browser no-op mock | High |
+| `../../src/idash/dist/php/mls/mls.photos.phrets.php` | GET | `mls` | `Inventory.getCloudPhotoPathsPromise()` | JSON | object keyed by MLS id with URL arrays | none observed | in-browser no-op mock | High |
 
 ## Favorites, Auth, Registration, And CRM
 
-These endpoints are visible in the frontend but are not required for the local display prototype.
+These endpoints are visible in the frontend but are not required for the initial display prototype. They are now covered by local in-browser no-op mocks so late flows do not send real data or fail on missing PHP.
 
 | Path | Method | Parameters | Caller | Expected Format | Local Mock | Confidence |
 |---|---:|---|---|---|---|---|
-| `php/getfavs.php` | POST/GET | `clientId`, `prospectId` or session data | `anewgo.favorites` | JSON/text favorite records | none | Medium |
-| `php/uploadDeviceFavs.php` | POST | `maxFavorites`, `clientId`, `prospectId`, `localFavorites` | `anewgo.favorites.uploadDeviceFavs()` | JSON with `data` | none | High |
-| `php/addfav.php` | POST | client/prospect/neighborhood/plan/elevation/scheme/lot fields | `anewgo.favorites` | text containing `OK` | none | High |
-| `php/updfav.php` | POST | favorite id and selected option fields | `anewgo.favorites` | text containing `OK` | none | High |
-| `php/delfav.php` | POST | favorite id or selection key | `anewgo.favorites` | text containing `OK` | none | Medium |
-| `php/addfavfpopt.php` | POST | `clientId`, `prospectId`, `nbrhoodId`, `planId`, `elevId`, `fpNum`, `fpoptId` | `anewgo.favorites.fpOptAdd()` | text containing `OK` | none | High |
-| `php/delfavfpopt.php` | POST | same option identity fields | `anewgo.favorites.fpOptRem()` | text containing `OK` | none | High |
-| `php/addfavpalsel.php` | POST | palette/selection identity fields | `anewgo.favorites` | text containing `OK` | none | Medium |
-| `php/addcustomscheme.php` | POST | `clientId`, `prospectId`, `nbrhoodId`, `planId`, `elevId`, `schemeId`, `elementId`, `colorId`, `palSelId` | `anewgo.favorites.setCustomSchemeColor2()` | text/no-op | none | High |
-| `php/authenMe.php` | POST | provider, email/password or auth fields | `anewgo.signin` | JSON/text auth result | none | Low |
-| `php/registerMe.php` | POST | `clientId`, `fname`, `lname`, `email`, `phone`, `inquiry`, `passwd`, `srcip`, `provider`, `subscribe`, `sentToCrm` | `anewgo.signin.register()` | text containing `OK` plus JSON user payload | none | High |
-| `php/resetMe.php` | POST | email/account fields | `anewgo.signin.reset()` | text/status | none | Low |
-| `php/findProspectEmail.php` | POST/GET | email | `anewgo.signin` validation | text/JSON availability | none | Medium |
-| `php/sendMail.php` | POST | agent/customer message data | inquiry modal | text alert body | none | Medium |
-| `php/sendRegMail.php` | POST | registration inquiry data | required registration flow | text containing `OK` | none | Medium |
-| `php/curlCrmSubmission.php` | POST | CRM question fields and IDs | `sendUserDataToCrm()` | text/status | none | Low |
-| `php/createBrochureHtml.php` | POST | `title`, `descr`, `tgtDir`, `imageUrl`, `tgtPdf` | Facebook share/brochure flow | URL string | none | Low |
-| `php/postFiles.php` | POST | generated brochure/image data | brochure generation | text/status | none | Low |
+| `php/getfavs.php` | POST/GET | `clientId`, `prospectId` or session data | `anewgo.favorites` | JSON/text favorite records | in-browser no-op mock | Medium |
+| `php/uploadDeviceFavs.php` | POST | `maxFavorites`, `clientId`, `prospectId`, `localFavorites` | `anewgo.favorites.uploadDeviceFavs()` | JSON with `data` | in-browser no-op mock | High |
+| `php/addfav.php` | POST | client/prospect/neighborhood/plan/elevation/scheme/lot fields | `anewgo.favorites` | text containing `OK` | in-browser no-op mock | High |
+| `php/updfav.php` | POST | favorite id and selected option fields | `anewgo.favorites` | text containing `OK` | in-browser no-op mock | High |
+| `php/delfav.php` | POST | favorite id or selection key | `anewgo.favorites` | text containing `OK` | in-browser no-op mock | Medium |
+| `php/addfavfpopt.php` | POST | `clientId`, `prospectId`, `nbrhoodId`, `planId`, `elevId`, `fpNum`, `fpoptId` | `anewgo.favorites.fpOptAdd()` | text containing `OK` | in-browser no-op mock | High |
+| `php/delfavfpopt.php` | POST | same option identity fields | `anewgo.favorites.fpOptRem()` | text containing `OK` | in-browser no-op mock | High |
+| `php/updfavfp.php` | POST | favorite floorplan state | older `anewgo.favorites` flows | text containing `OK` | in-browser no-op mock | Medium |
+| `php/addfavpalsel.php` | POST | palette/selection identity fields | `anewgo.favorites` | text containing `OK` | in-browser no-op mock | Medium |
+| `php/addcustomscheme.php` | POST | `clientId`, `prospectId`, `nbrhoodId`, `planId`, `elevId`, `schemeId`, `elementId`, `colorId`, `palSelId` | `anewgo.favorites.setCustomSchemeColor2()` | text/no-op | in-browser no-op mock | High |
+| `php/getfavfp.php` | POST/GET | favorite/prospect identity | older `anewgo.favorites` flows | JSON favorite floorplan records | in-browser no-op mock | Medium |
+| `php/getfavfpopts.php` | POST/GET | favorite/prospect identity | older `anewgo.favorites` flows | JSON favorite option records | in-browser no-op mock | Medium |
+| `php/getfavpalsel.php` | POST/GET | favorite/prospect identity | older `anewgo.favorites` flows | JSON favorite palette records | in-browser no-op mock | Medium |
+| `php/getfavcustomscheme.php` | POST/GET | favorite/prospect identity | older `anewgo.favorites` flows | JSON favorite custom scheme records | in-browser no-op mock | Medium |
+| `php/authenMe.php` | POST | provider, email/password or auth fields | `anewgo.signin` | JSON/text auth result | in-browser no-op mock | Low |
+| `php/registerMe.php` | POST | `clientId`, `fname`, `lname`, `email`, `phone`, `inquiry`, `passwd`, `srcip`, `provider`, `subscribe`, `sentToCrm` | `anewgo.signin.register()` | text containing `OK` plus JSON user payload | in-browser no-op mock | High |
+| `php/resetMe.php` | POST | email/account fields | `anewgo.signin.reset()` | text/status | in-browser no-op mock | Low |
+| `php/findProspectEmail.php` | POST/GET | email | `anewgo.signin` validation | text/JSON availability | in-browser no-op mock | Medium |
+| `php/sendMail.php` | POST | agent/customer message data | inquiry modal | text alert body | in-browser no-op mock | Medium |
+| `php/sendRegMail.php` | POST | registration inquiry data | required registration flow | text containing `OK` | in-browser no-op mock | Medium |
+| `php/curlCrmSubmission.php` | POST | CRM question fields and IDs | `sendUserDataToCrm()` | text/status | in-browser no-op mock | Low |
+| `php/createBrochureHtml.php` | POST | `title`, `descr`, `tgtDir`, `imageUrl`, `tgtPdf` | Facebook share/brochure flow | URL string | in-browser no-op mock | Low |
+| `php/postFiles.php` | POST | generated brochure/image data | brochure generation | text/status | in-browser no-op mock | Low |
+| `php/postFile.php` | POST | generated brochure/image data | older brochure generation flow | text/status | in-browser no-op mock | Low |
 
+Detailed late-flow behavior is documented in `LATE_FLOW_MOCK_ENDPOINTS.md`.

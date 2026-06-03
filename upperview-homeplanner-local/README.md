@@ -32,6 +32,7 @@ If `python` is not on your PATH, use any static file server from this folder.
 - Stubbed third-party analytics/social/map loaders so the old app can boot locally without external popups or auth scripts.
 - Routed the missing historical PHP AJAX endpoints to local static generated data files in `data/generated/`.
 - Added a compatibility serializer so legacy XML/JSON/text payloads are generated from `app/config/upperview-project.config.js`.
+- Added local no-op mocks for late-flow favorites, lead capture, email, CRM, brochure, and user/session endpoints.
 - Replaced a hard-coded Cloudinary equal-housing logo request with `local-mocks/eho-logo.png`.
 
 ## Recovered And Reconstructed Data
@@ -63,6 +64,7 @@ The sample catalog is not historical. It currently includes 3 neutral reconstruc
 - `GENERATED_PAYLOAD_MAPPINGS.md`
 - `RECONSTRUCTED_SAMPLE_CATALOG.md`
 - `COMPATIBILITY_TEST_SUITE.md`
+- `LATE_FLOW_MOCK_ENDPOINTS.md`
 
 ## Generate And Test Legacy Payloads
 
@@ -79,8 +81,9 @@ The generated files preserve the old endpoint response shapes while making the n
 
 Verified with local payload generation, compatibility tests, and a temporary local static server route check. The current generated route check had:
 
-- 12 active routes.
-- 12 routes resolving from `data/generated`.
+- 40 active routes.
+- 12 catalog/runtime routes resolving from `data/generated`.
+- 28 late-flow user/session routes resolving through safe local mocks.
 - 3 plans in generated plans XML.
 - 6 elevations in generated plans XML.
 - 6 elevations in generated lazy elevation details JSON.

@@ -52,6 +52,8 @@ The compatibility suite details are documented in:
 - Generated files include `_status: "generated"` or XML comments marking the config source.
 - `tests/compatibility-snapshots.json` snapshots the endpoint file list and legacy route matches.
 - `tests/compatibility.test.js` verifies route targets, generated files, required fields, XML/JSON parseability, and catalog relationships.
+- Late-flow user/session endpoints are route-configured as `mock: true` and handled in-browser by `app/platform/static-api-router.js`.
+- Late-flow behavior is documented in `LATE_FLOW_MOCK_ENDPOINTS.md`.
 
 ## Current Coverage
 
@@ -87,6 +89,6 @@ These are intentionally not solved by Phase 1 Task 4:
 - real lot/siteplan geometry
 - real elevation/floorplan artwork
 - exact historical option dependency semantics
-- favorites, lead capture, email, CRM, and brochure persistence endpoints
+- real favorites, lead capture, email, CRM, and brochure persistence implementations
 
 Those should be handled by later roadmap tasks.

@@ -1,6 +1,7 @@
 const assert = require("assert");
 const fs = require("fs");
 const path = require("path");
+const vm = require("vm");
 
 const root = path.resolve(__dirname, "..");
 const generator = require(path.join(root, "app", "platform", "legacy-payload-generator.js"));
@@ -38,6 +39,37 @@ const requiredRoutes = [
   "/db/scripts/php/getelevnbrhoods.php",
   "/db/scripts/php/getinteriors.php",
   "/api/v1/fp/"
+];
+
+const requiredMockRoutes = [
+  "/php/getfavs.php",
+  "/php/uploadDeviceFavs.php",
+  "/php/addfav.php",
+  "/php/updfav.php",
+  "/php/delfav.php",
+  "/php/addfavfpopt.php",
+  "/php/delfavfpopt.php",
+  "/php/updfavfp.php",
+  "/php/addfavpalsel.php",
+  "/php/addcustomscheme.php",
+  "/php/getfavfp.php",
+  "/php/getfavfpopts.php",
+  "/php/getfavpalsel.php",
+  "/php/getfavcustomscheme.php",
+  "/php/authenMe.php",
+  "/php/registerMe.php",
+  "/php/resetMe.php",
+  "/php/findProspectEmail.php",
+  "/php/sendMail.php",
+  "/php/sendRegMail.php",
+  "/php/curlCrmSubmission.php",
+  "/php/createBrochureHtml.php",
+  "/php/postFiles.php",
+  "/php/postFile.php",
+  "/php/getCloudInventoryPhotoFileNames.php",
+  "/php/mls/mls.photos.phrets.php",
+  "/src/idash/dist/php/getCloudInventoryPhotoFileNames.php",
+  "/src/idash/dist/php/mls/mls.photos.phrets.php"
 ];
 
 function test(name, fn) {
@@ -154,6 +186,50 @@ function catalogIds() {
   return { planIds, elevationIds, schemeIds, paletteIds, colorIds, optionIds, groupIds, communityIds };
 }
 
+function createRouterSandbox() {
+  function NativeXhr() {
+    this.openedUrl = "";
+    this.openedMethod = "";
+  }
+  NativeXhr.prototype.open = function (method, url) {
+    this.openedMethod = method;
+    this.openedUrl = url;
+  };
+  NativeXhr.prototype.send = function () {
+    this.readyState = 4;
+    this.status = 200;
+    this.responseText = "";
+    if (typeof this.onreadystatechange === "function") this.onreadystatechange();
+  };
+
+  return {
+    window: {
+      HomePlannerConfig: config,
+      setTimeout: function (fn) { fn(); },
+      XMLHttpRequest: NativeXhr
+    },
+    document: {
+      createElement: function () {
+        return {
+          set href(value) {
+            this._url = new URL(value, "http://127.0.0.1");
+          },
+          get href() {
+            return this._url ? this._url.href : "";
+          },
+          get pathname() {
+            return this._url ? this._url.pathname : "";
+          }
+        };
+      }
+    },
+    XMLHttpRequest: NativeXhr,
+    URL: URL,
+    Date: Date,
+    JSON: JSON
+  };
+}
+
 test("reconstructed sample catalog is rich enough for buyer-flow demos", () => {
   const plans = config.catalog.plans || [];
   const elevations = plans.flatMap((plan) => plan.elevations || []);
@@ -207,15 +283,59 @@ test("all generated endpoint files exist", () => {
 });
 
 test("route manifest remains compatible", () => {
+  const generatedRouteMatches = normalizedArray(config.api.routes.filter((route) => !route.mock).map((route) => route.match).sort());
+  const mockRouteMatches = normalizedArray(config.api.routes.filter((route) => route.mock).map((route) => route.match).sort());
   const routeMatches = normalizedArray(config.api.routes.map((route) => route.match).sort());
-  assert.deepStrictEqual(routeMatches, requiredRoutes.slice().sort());
-  assert.deepStrictEqual(routeMatches, snapshots.routeMatches.slice().sort());
+  assert.deepStrictEqual(generatedRouteMatches, requiredRoutes.slice().sort());
+  assert.deepStrictEqual(generatedRouteMatches, snapshots.routeMatches.slice().sort());
+  assert.deepStrictEqual(mockRouteMatches, requiredMockRoutes.slice().sort());
+  assert.deepStrictEqual(mockRouteMatches, snapshots.mockRouteMatches.slice().sort());
 
   config.api.routes.forEach((route) => {
-    assert(route.local.startsWith("data/generated/"), route.match + " should route to data/generated");
-    assert(fs.existsSync(path.join(root, route.local)), route.match + " points to missing file " + route.local);
+    if (route.mock) {
+      assert.strictEqual(route.status, "mocked", route.match + " should be marked mocked");
+      assert(route.response !== undefined || route.body !== undefined, route.match + " should define a local mock response");
+    } else {
+      assert(route.local.startsWith("data/generated/"), route.match + " should route to data/generated");
+      assert(fs.existsSync(path.join(root, route.local)), route.match + " points to missing file " + route.local);
+    }
     assert(["xml", "json", "text"].includes(route.format), route.match + " has unsupported format " + route.format);
   });
+  assert.strictEqual(routeMatches.length, requiredRoutes.length + requiredMockRoutes.length);
+});
+
+test("late-flow mock endpoints resolve without network", () => {
+  const routerSource = fs.readFileSync(path.join(root, "app", "platform", "static-api-router.js"), "utf8");
+  const sandbox = createRouterSandbox();
+  vm.runInNewContext(routerSource, sandbox, { filename: "static-api-router.js" });
+
+  assert.strictEqual(
+    sandbox.window.HomePlannerPlatform.localRoute("../../db/scripts/php/getplans.php"),
+    "data/generated/db/scripts/php/getplans.generated.xml"
+  );
+  assert.strictEqual(
+    sandbox.window.HomePlannerPlatform.localRoute("php/addfav.php"),
+    "php/addfav.php",
+    "mocked endpoints should be intercepted instead of rewritten to a static file"
+  );
+
+  const xhr = new sandbox.window.XMLHttpRequest();
+  let ready = false;
+  xhr.onreadystatechange = function () { ready = true; };
+  xhr.open("POST", "php/addfav.php");
+  xhr.send("clientId=1&email=buyer@example.test");
+  assert(ready, "mock XHR should call onreadystatechange");
+  assert.strictEqual(xhr.status, 200);
+  assert(xhr.responseText.indexOf("OK") !== -1, "mock favorite response should contain OK");
+  assert.strictEqual(sandbox.window.HomePlannerPlatform.mockLog.length, 1, "mock submissions should be logged in memory");
+  assert.strictEqual(sandbox.window.HomePlannerPlatform.mockLog[0].route, "/php/addfav.php");
+
+  const crm = new sandbox.window.XMLHttpRequest();
+  crm.open("POST", "php/curlCrmSubmission.php");
+  crm.send("fname=Local&email=local@example.test");
+  assert.strictEqual(crm.status, 200);
+  assert(crm.responseText.indexOf("OK") !== -1, "mock CRM response should contain OK");
+  assert.strictEqual(sandbox.window.HomePlannerPlatform.mockLog.length, 2);
 });
 
 test("XML payloads are well formed enough for jQuery traversal", () => {

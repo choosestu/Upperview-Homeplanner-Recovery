@@ -4,6 +4,8 @@ The contracts below are inferred from the frontend parser and model constructors
 
 Field-level support status for the generated compatibility layer is tracked in `LEGACY_SCHEMA_COVERAGE.md`.
 
+Late-flow favorites, lead, email, CRM, brochure, and user/session mock behavior is tracked in `LATE_FLOW_MOCK_ENDPOINTS.md`.
+
 ## XML Conventions
 
 The frontend uses jQuery XML traversal and `attr(...)`. Missing string attributes often become `undefined`; missing numeric attributes often become `NaN`, so a rebuilt backend should provide all fields listed as required.
