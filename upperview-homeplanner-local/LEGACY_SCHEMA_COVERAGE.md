@@ -58,4 +58,7 @@ The normalized source of truth is `app/config/upperview-project.config.js`. The 
 - Active routes point at `data/generated`.
 - Required startup, summary, plan, elevation, floorplan, and rendering URI fields are preserved.
 - Optional legacy schema fields serialize correctly when present in a richer test config.
-
+- Generated XML and JSON files are parseable.
+- Route targets point to existing files.
+- Plan/elevation/scheme/palette/color/option/group/lot relationships remain internally consistent.
+- `tests/compatibility-snapshots.json` preserves the expected legacy endpoint list and generated payload file list.

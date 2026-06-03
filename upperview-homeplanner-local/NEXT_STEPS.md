@@ -18,7 +18,7 @@ Scores use `1` to `5`.
 | 1 | Generate legacy XML/JSON payloads from normalized config | Refactor | 5 | 5 | 3 | Done | Completed in Phase 1 Task 1; `data/generated` is now produced from `HomePlannerConfig`. |
 | 2 | Expand normalized catalog schema to cover every legacy endpoint field | Reconstruct | 5 | 5 | 4 | Done | Completed in Phase 1 Task 2; `LEGACY_SCHEMA_COVERAGE.md` documents supported, ignored, inferred, and unknown fields. |
 | 3 | Recover more original UpperView plan, elevation, lot, image, and pricing data | Recover | 5 | 2 | 5 | 20-60 | Most important for historical fidelity, but less reusable because the data is project-specific. |
-| 4 | Build a compatibility serializer test suite | Refactor | 5 | 5 | 3 | 10-18 | Protects the old frontend while config generation evolves; essential before replacing handwritten reconstructed payloads. |
+| 4 | Build a compatibility serializer test suite | Refactor | 5 | 5 | 3 | Done | Completed in Phase 1 Task 3; the suite validates generated files, routes, XML/JSON parseability, required fields, and catalog relationships. |
 | 5 | Define buyer workflow state as a serializable model | Refactor | 4 | 5 | 3 | 10-16 | Turns hidden `anewgo.*` runtime state into portable session state for QiBiLDiR. |
 | 6 | Add local no-op adapters for favorites, lead capture, email, CRM, and brochure endpoints | Reconstruct | 4 | 4 | 3 | 10-18 | Prevents late-flow failures and documents original user/session behavior without sending real data. |
 | 7 | Create a richer reconstructed sample catalog with multiple plans/elevations/options | Reconstruct | 4 | 4 | 2 | 8-14 | Enables realistic filter, selection, option, and pricing tests while clearly staying non-historical. |

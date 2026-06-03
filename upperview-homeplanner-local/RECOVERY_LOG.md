@@ -8,6 +8,7 @@
 - The current sample catalog is reconstructed, not historical.
 - Phase 1 Task 1 now generates the active legacy XML/JSON/text endpoint payloads from normalized project configuration.
 - Phase 1 Task 2 expanded the normalized schema and serializer to cover the legacy fields currently required or referenced by the recovered runtime.
+- Phase 1 Task 3 added a compatibility serializer test suite for generated endpoint files, route compatibility, required legacy fields, parseability, and catalog relationships.
 
 ## Searches Performed
 
@@ -67,10 +68,15 @@ The older `data/reconstructed/` payloads are still retained as preserved fallbac
 Compatibility coverage is tested by:
 
 - `tests/compatibility.test.js`
+- `tests/compatibility-snapshots.json`
 
 Detailed endpoint-to-config mappings are documented in:
 
 - `GENERATED_PAYLOAD_MAPPINGS.md`
+
+Compatibility test coverage is documented in:
+
+- `COMPATIBILITY_TEST_SUITE.md`
 
 Field-level schema coverage is documented in:
 

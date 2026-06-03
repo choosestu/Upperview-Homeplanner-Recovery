@@ -22,6 +22,10 @@ The compatibility test command is:
 node tests\compatibility.test.js
 ```
 
+The compatibility suite details are documented in:
+
+- `COMPATIBILITY_TEST_SUITE.md`
+
 ## Route Mapping
 
 | Legacy endpoint | Generated file | Normalized source |
@@ -46,6 +50,8 @@ node tests\compatibility.test.js
 - The recovered frontend and `homebuilder.min.js` are unchanged.
 - The static router reads `HomePlannerConfig.api.routes`, so route targets can be swapped by configuration.
 - Generated files include `_status: "generated"` or XML comments marking the config source.
+- `tests/compatibility-snapshots.json` snapshots the endpoint file list and legacy route matches.
+- `tests/compatibility.test.js` verifies route targets, generated files, required fields, XML/JSON parseability, and catalog relationships.
 
 ## Current Coverage
 

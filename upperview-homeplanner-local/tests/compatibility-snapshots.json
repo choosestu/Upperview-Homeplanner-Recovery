@@ -1,0 +1,31 @@
+{
+  "note": "Stable compatibility manifest for generated legacy endpoint coverage. Update intentionally when endpoint files or route matches change.",
+  "generatedPayloadPaths": [
+    "homedesigner/getclientdata.generated.xml",
+    "db/scripts/php/getcolorlib.generated.xml",
+    "db/scripts/php/getsummary.generated.json",
+    "db/scripts/php/getnbrhoodsdata.generated.xml",
+    "db/scripts/php/getplans.generated.xml",
+    "db/scripts/php/getElevationDetails.generated.json",
+    "db/scripts/php/getElevationElements.generated.json",
+    "db/scripts/php/getElevationSchemes.generated.json",
+    "db/scripts/php/getPlanFloorplans.generated.json",
+    "db/scripts/php/getelevnbrhoods.generated.json",
+    "db/scripts/php/getinteriors.generated.xml",
+    "rendering-api/floorplan-uri.generated.txt"
+  ],
+  "routeMatches": [
+    "/homedesigner/getclientdata.php",
+    "/db/scripts/php/getcolorlib.php",
+    "/db/scripts/php/getsummary.php",
+    "/db/scripts/php/getnbrhoodsdata.php",
+    "/db/scripts/php/getplans.php",
+    "/db/scripts/php/getElevationDetails.php",
+    "/db/scripts/php/getElevationElements.php",
+    "/db/scripts/php/getElevationSchemes.php",
+    "/db/scripts/php/getPlanFloorplans.php",
+    "/db/scripts/php/getelevnbrhoods.php",
+    "/db/scripts/php/getinteriors.php",
+    "/api/v1/fp/"
+  ]
+}
