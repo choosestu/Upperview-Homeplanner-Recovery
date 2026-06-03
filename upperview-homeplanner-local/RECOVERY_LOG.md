@@ -7,6 +7,7 @@
 - No UpperView-specific dynamic PHP backend responses were recovered.
 - The current sample catalog is reconstructed, not historical.
 - Phase 1 Task 1 now generates the active legacy XML/JSON/text endpoint payloads from normalized project configuration.
+- Phase 1 Task 2 expanded the normalized schema and serializer to cover the legacy fields currently required or referenced by the recovered runtime.
 
 ## Searches Performed
 
@@ -70,3 +71,21 @@ Compatibility coverage is tested by:
 Detailed endpoint-to-config mappings are documented in:
 
 - `GENERATED_PAYLOAD_MAPPINGS.md`
+
+Field-level schema coverage is documented in:
+
+- `LEGACY_SCHEMA_COVERAGE.md`
+
+## Phase 1 Task 2 Notes
+
+Task 2 did not recover new original UpperView backend data. It treated the recovered frontend JavaScript as the backend specification and expanded the normalized config/generator boundary to support:
+
+- optional client, designer, and CRM startup fields
+- community filter/count/range fields
+- community CRM id, legends, lots, land photos, and inventory passthrough
+- richer plan/elevation media, filter, status, and pricing metadata
+- scheme/palette overlay metadata
+- floorplan option dependencies and alternates
+- interiors rooms and selections
+
+Compatibility tests now include a richer synthetic config proving these optional fields serialize into route-compatible XML/JSON without replacing the recovered runtime.

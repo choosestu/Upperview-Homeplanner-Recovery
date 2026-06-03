@@ -17,6 +17,10 @@
       phone: "",
       email: "",
       designApp: 1,
+      parentId: "",
+      selfDir: "",
+      disclaimer: "",
+      contact: { firstName: "", lastName: "", email: "" },
       analyticsId: "UA-46999026-29",
       facebookAppId: "944621658936860",
       fbPostUrl: ""
@@ -35,11 +39,62 @@
       bgColor: "E5F0B8",
       displayIntPhotos: "001",
       displayExtPhotos: "001",
+      bundle: "",
+      customRegMsg: "",
+      requireRegister: 0,
+      designButtonOnly: 0,
+      plansSubtitle: "",
+      elevTitleSqft: "",
+      elevTitleBr: "",
+      elevTitleBath: "",
+      omitCityInBrochure: 0,
+      omitLocationFilter: 0,
       showFilters: 1,
+      presetPlanFilter: "",
       showPlansCount: 1,
+      useMetric: 0,
+      lotSort: "",
       allCommunitiesLabel: "All Communities",
       availableCommunitiesLabel: "Available Communities",
-      quickMoveinLabel: "Quick Move-In"
+      showAvailableHomes: 0,
+      showBrochureElevDetails: 0,
+      showBrochureNbrhoodDetails: 0,
+      plainStart: 0,
+      showCities: 0,
+      showAvailableCommunities: 0,
+      communityIsColorScheme: 0,
+      showAllBtn: 0,
+      nbrhoodsBg: "",
+      allPlansImage: "",
+      inventoryImage: "",
+      designMeImage: "",
+      quickMoveinLabel: "Quick Move-In",
+      splashAllBtnHide: 0,
+      splashAllBtnTxt: "",
+      splashAllBtnSubtxt: "",
+      splashAllBtnImage: "",
+      splashAllBtnVerb: "",
+      splashDsnBtnHide: 0,
+      splashDsnBtnTxt: "",
+      splashDsnBtnSubtxt: "",
+      splashDsnBtnImage: "",
+      splashDsnBtnVerb: "",
+      splashInvBtnHide: 0,
+      splashInvBtnTxt: "",
+      splashInvBtnSubtxt: "",
+      splashInvBtnImage: "",
+      splashInvBtnVerb: "",
+      crm: {
+        enabled: false,
+        LassoUID: "",
+        ClientID: "",
+        ProjectID: "",
+        community: "",
+        planName: "",
+        domainAccountId: "",
+        renderingApp: "",
+        renderingAppAnswer: ""
+      }
     },
     communities: [
       {
@@ -67,9 +122,48 @@
         cutsheet: "",
         thumb: "",
         imgs: "",
+        crmId: 0,
         url: "https://www.upperviewhomes.com/",
         addr1: "",
         addr2: "",
+        numInv: 0,
+        numHomeSitesOnly: 0,
+        numPlans: 1,
+        numElevs: 1,
+        minSqft: 2512,
+        maxSqft: 2512,
+        minBed: 4,
+        maxBed: 4,
+        minBath: 3.5,
+        maxBath: 3.5,
+        minPrice: 807990,
+        maxPrice: 807990,
+        landPhotoFolder: "",
+        landPhotos: [],
+        legend: [
+          { id: 1, code: "available", name: "Available", color: "#8bbf40", status: "reconstructed" }
+        ],
+        lots: [
+          {
+            id: 1,
+            label: "Reconstructed Lot 1",
+            status: "reconstructed",
+            sold: "available",
+            x: 0,
+            y: 0,
+            width: 0,
+            height: 0,
+            planId: 101,
+            elevId: 1001,
+            cost: 0,
+            premium: 0,
+            address: "",
+            lotType: "lot",
+            mls: "",
+            photoFolder: ""
+          }
+        ],
+        inventory: [],
         agent: { id: 1, firstName: "", lastName: "", email: "", phone: "" },
         standardFeatures: [
           {
@@ -93,6 +187,7 @@
         { id: 3, vendorId: 1, ident: "gray", name: "Gray", hex: "808080" },
         { id: 4, vendorId: 1, ident: "bluegray", name: "Blue Gray", hex: "708090" }
       ],
+      filterCats: [],
       palettes: [
         {
           id: 1,
@@ -108,7 +203,7 @@
           id: 1,
           name: "Reconstructed Neutral Scheme",
           cost: 0,
-          elements: [{ id: 1, blend: "m", colorId: 1, label: "Body Colour" }]
+          elements: [{ id: 1, blend: "m", colorId: 1, label: "Body Colour", palId: "", palSelId: "", overlayName: "", ovl: "", swatch: "" }]
         }
       ],
       plans: [
@@ -121,6 +216,13 @@
           defaultFloor: 1,
           imgs: "",
           fpimgs: "",
+          fpPhotos: "",
+          photos: "",
+          tags: ["reconstructed"],
+          filterIds: "",
+          status: "reconstructed",
+          pricingStatus: "reconstructed",
+          availabilityStatus: "reconstructed",
           defaultPlan: true,
           elevations: [
             {
@@ -131,6 +233,11 @@
               thumb: "",
               thumbLg: "",
               base: "",
+              baseImg: "",
+              baseUrl: "",
+              imgs: "",
+              fpimgs: "",
+              photos: "",
               bedrooms: 4,
               bathrooms: 3.5,
               squareFeet: 2512,
@@ -140,7 +247,11 @@
               defaultFloor: 1,
               schemeIds: [1],
               elements: [{ id: 1, name: "Body Colour", src: "" }],
-              paletteOverlays: []
+              paletteOverlays: [],
+              availableInCommunityIds: [1],
+              status: "reconstructed",
+              pricingStatus: "reconstructed",
+              availabilityStatus: "reconstructed"
             }
           ]
         }
@@ -169,7 +280,18 @@
           cost: 0,
           size: 0,
           groupIds: "",
-          fpAlts: []
+          fpAlts: [],
+          description: "",
+          href: "",
+          dependent: "",
+          dependentGroupIds: "",
+          primary: 0,
+          choiceId: "",
+          excludeIds: "",
+          includeIds: "",
+          sku: "",
+          pricingStatus: "reconstructed",
+          availabilityStatus: "reconstructed"
         },
         {
           id: 2001,
@@ -186,7 +308,18 @@
           cost: 0,
           size: 0,
           groupIds: "1",
-          fpAlts: []
+          fpAlts: [],
+          description: "Neutral reconstructed option for local app-flow testing.",
+          href: "",
+          dependent: "",
+          dependentGroupIds: "",
+          primary: 0,
+          choiceId: "",
+          excludeIds: "",
+          includeIds: "",
+          sku: "",
+          pricingStatus: "reconstructed",
+          availabilityStatus: "reconstructed"
         },
         {
           id: 2002,
@@ -203,7 +336,18 @@
           cost: 0,
           size: 0,
           groupIds: "",
-          fpAlts: []
+          fpAlts: [],
+          description: "",
+          href: "",
+          dependent: "",
+          dependentGroupIds: "",
+          primary: 0,
+          choiceId: "",
+          excludeIds: "",
+          includeIds: "",
+          sku: "",
+          pricingStatus: "reconstructed",
+          availabilityStatus: "reconstructed"
         }
       ],
       floorplanGroups: [

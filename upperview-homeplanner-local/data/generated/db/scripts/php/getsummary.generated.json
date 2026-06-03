@@ -26,7 +26,20 @@
               "state": "ON",
               "city": "Oshawa",
               "sort": "Name",
-              "pricing": 1
+              "pricing": 1,
+              "numInv": 0,
+              "numHomeSitesOnly": 0,
+              "numPlans": 1,
+              "numElevs": 1,
+              "minSqft": 2512,
+              "maxSqft": 2512,
+              "minBed": 4,
+              "maxBed": 4,
+              "minBath": 3.5,
+              "maxBath": 3.5,
+              "minPrice": 807990,
+              "maxPrice": 807990,
+              "url": "https://www.upperviewhomes.com/"
             }
           ]
         }

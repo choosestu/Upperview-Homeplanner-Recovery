@@ -9,11 +9,11 @@
     </palettes>
     <schemes>
       <scheme id="1" name="Reconstructed Neutral Scheme" cost="0">
-        <ele id="1" blend="m" cid="1">Body Colour</ele>
+        <ele id="1" blend="m" cid="1" palId="" palSelId="" ovlname="" ovl="" swatch="">Body Colour</ele>
       </scheme>
     </schemes>
-    <plan id="101" name="Reconstructed Sample Plan" videoUrl="" defaultFloor="1" imgs="" fpimgs="" def="1" description="Neutral reconstructed sample plan for local app-flow testing.">
-      <elev id="1001" cap="A" description="Reconstructed sample elevation." tag="A" thumb="" thumbLg="" base="" bed="4" bath="3.5" size="2512" cost="807990" schemeids="1" cars="2" floorCount="2" defaultFloor="1" />
+    <plan id="101" name="Reconstructed Sample Plan" videoUrl="" defaultFloor="1" imgs="" fpimgs="" fpPhotos="" photos="" def="1" description="Neutral reconstructed sample plan for local app-flow testing." status="reconstructed" pricingStatus="reconstructed" availabilityStatus="reconstructed" filterIds="" tags="reconstructed">
+      <elev id="1001" cap="A" description="Reconstructed sample elevation." tag="A" thumb="" thumbLg="" base="" baseImg="" baseUrl="" bed="4" bath="3.5" size="2512" cost="807990" schemeids="1" cars="2" floorCount="2" defaultFloor="1" imgs="" fpimgs="" status="reconstructed" pricingStatus="reconstructed" availabilityStatus="reconstructed" />
     </plan>
   </nbrhood>
 </data>

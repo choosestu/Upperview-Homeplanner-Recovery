@@ -83,6 +83,10 @@ Generated payload mappings are documented in:
 
 - `GENERATED_PAYLOAD_MAPPINGS.md`
 
+Legacy field coverage is documented in:
+
+- `LEGACY_SCHEMA_COVERAGE.md`
+
 ### 7. Buyer Workflow State
 
 The recovered app stores most workflow state internally in the legacy `anewgo.homedesign`, `anewgo.filters`, `anewgo.favorites`, `anewgo.nbrhoods`, `anewgo.plans`, `anewgo.elevation`, and `anewgo.planfp` modules.
@@ -139,8 +143,9 @@ Project-specific layer:
 
 ## Next Extraction Steps
 
-1. Expand the normalized config to cover lots, richer plan catalogs, real assets, and late-flow endpoints.
-2. Split the minified recovered bundle into readable modules or rebuild the modules against the documented contracts.
-3. Add a real state store for the buyer workflow.
-4. Replace static generated payload files with a backend or local JSON data service.
-5. Keep a compatibility adapter so archived frontend flows can still be regression-tested.
+1. Recover or reconstruct richer UpperView plan, elevation, lot, asset, and pricing data using the expanded schema.
+2. Add local no-op adapters for late-flow endpoints such as favorites, lead capture, CRM, email, and brochures.
+3. Split the minified recovered bundle into readable modules or rebuild the modules against the documented contracts.
+4. Add a real state store for the buyer workflow.
+5. Replace static generated payload files with a backend or local JSON data service.
+6. Keep a compatibility adapter so archived frontend flows can still be regression-tested.

@@ -30,7 +30,20 @@
                 "cost": 0,
                 "size": 0,
                 "groupIds": "",
-                "fpAlts": []
+                "fpAlts": [],
+                "type": "base",
+                "status": "reconstructed",
+                "description": "",
+                "href": "",
+                "dependent": "",
+                "dependentGroupIds": "",
+                "primary": 0,
+                "choiceId": "",
+                "excludeIds": "",
+                "includeIds": "",
+                "sku": "",
+                "pricingStatus": "reconstructed",
+                "availabilityStatus": "reconstructed"
               },
               {
                 "id": 2001,
@@ -44,7 +57,20 @@
                 "cost": 0,
                 "size": 0,
                 "groupIds": "1",
-                "fpAlts": []
+                "fpAlts": [],
+                "type": "structural",
+                "status": "reconstructed",
+                "description": "Neutral reconstructed option for local app-flow testing.",
+                "href": "",
+                "dependent": "",
+                "dependentGroupIds": "",
+                "primary": 0,
+                "choiceId": "",
+                "excludeIds": "",
+                "includeIds": "",
+                "sku": "",
+                "pricingStatus": "reconstructed",
+                "availabilityStatus": "reconstructed"
               }
             ]
           },
@@ -64,7 +90,20 @@
                 "cost": 0,
                 "size": 0,
                 "groupIds": "",
-                "fpAlts": []
+                "fpAlts": [],
+                "type": "base",
+                "status": "reconstructed",
+                "description": "",
+                "href": "",
+                "dependent": "",
+                "dependentGroupIds": "",
+                "primary": 0,
+                "choiceId": "",
+                "excludeIds": "",
+                "includeIds": "",
+                "sku": "",
+                "pricingStatus": "reconstructed",
+                "availabilityStatus": "reconstructed"
               }
             ]
           }

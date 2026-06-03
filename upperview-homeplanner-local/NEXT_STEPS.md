@@ -16,7 +16,7 @@ Scores use `1` to `5`.
 | Rank | Task | Class | HomePlanner Importance | QiBiLDiR Reuse | Difficulty | Est. Hours | Why It Matters |
 | --- | --- | --- | ---: | ---: | ---: | ---: | --- |
 | 1 | Generate legacy XML/JSON payloads from normalized config | Refactor | 5 | 5 | 3 | Done | Completed in Phase 1 Task 1; `data/generated` is now produced from `HomePlannerConfig`. |
-| 2 | Expand normalized catalog schema to cover every legacy endpoint field | Reconstruct | 5 | 5 | 4 | 16-28 | The current config is a starter shape; the recovered engine expects many legacy fields that must be represented or intentionally omitted. |
+| 2 | Expand normalized catalog schema to cover every legacy endpoint field | Reconstruct | 5 | 5 | 4 | Done | Completed in Phase 1 Task 2; `LEGACY_SCHEMA_COVERAGE.md` documents supported, ignored, inferred, and unknown fields. |
 | 3 | Recover more original UpperView plan, elevation, lot, image, and pricing data | Recover | 5 | 2 | 5 | 20-60 | Most important for historical fidelity, but less reusable because the data is project-specific. |
 | 4 | Build a compatibility serializer test suite | Refactor | 5 | 5 | 3 | 10-18 | Protects the old frontend while config generation evolves; essential before replacing handwritten reconstructed payloads. |
 | 5 | Define buyer workflow state as a serializable model | Refactor | 4 | 5 | 3 | 10-16 | Turns hidden `anewgo.*` runtime state into portable session state for QiBiLDiR. |
@@ -94,9 +94,9 @@ Outcome: a modern multi-builder platform with the recovered HomePlanner preserve
 
 ## Highest-Leverage Next Task
 
-The next implementation task should be: **expand normalized catalog schema to cover every legacy endpoint field**.
+The next implementation task should be: **recover more original UpperView plan, elevation, lot, image, and pricing data**.
 
-That task builds on the generated layer by adding the remaining fields needed for lots, richer plan/elevation media, option dependencies, and production-grade catalog data.
+If original data remains unrecoverable, the next best implementation task is a richer clearly reconstructed sample catalog using the expanded schema. That would exercise multiple plans, elevations, lots, filters, inventory states, option dependencies, and image manifests without claiming historical fidelity.
 
 ## Risks And Assumptions
 

@@ -2,6 +2,8 @@
 
 The contracts below are inferred from the frontend parser and model constructors. They are intended as a rebuild spec, not proof of the exact historical database.
 
+Field-level support status for the generated compatibility layer is tracked in `LEGACY_SCHEMA_COVERAGE.md`.
+
 ## XML Conventions
 
 The frontend uses jQuery XML traversal and `attr(...)`. Missing string attributes often become `undefined`; missing numeric attributes often become `NaN`, so a rebuilt backend should provide all fields listed as required.
@@ -152,4 +154,3 @@ Required elevation attributes: `id`, `cap`, `tag`, `bed`, `bath`, `size`, `cost`
 ## Rendering API
 
 The frontend calls `//rendering.house/api/v1/fp/{client}/nbr/{neighborhood}/plan/{plan}/elev/{elevation}/fnum/{floor}?o=uri&w={width}` and expects a plain text image URI. The local repair routes this to a reconstructed placeholder URI.
-

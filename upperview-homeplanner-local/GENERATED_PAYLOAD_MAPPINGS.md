@@ -49,29 +49,36 @@ node tests\compatibility.test.js
 
 ## Current Coverage
 
-The generated layer covers the same app path as the previous reconstructed files:
+The generated layer covers the same app path as the previous reconstructed files and now supports a broader legacy field vocabulary:
 
 - client boot data
+- optional client hierarchy/contact/disclaimer fields
+- designer flags, labels, splash configuration, brochure flags, and optional CRM boot metadata
 - color library
-- community summary
-- community detail
+- community summary, filters, inventory counts, and plan/elevation/price/spec ranges
+- community detail, CRM id, agents, standard features, legends, lots, inventory passthrough, and land-photo metadata
 - plan/elevation listing
-- elevation detail
+- plan/elevation listing with media, filter/tag, pricing, availability, and scheme metadata
+- elevation detail with image/layer/overlay metadata
 - elevation elements
 - elevation schemes
-- floorplan options
+- floorplan options, option dependencies, include/exclude fields, and alternate floorplan overlays
 - elevation-neighborhood summary
-- empty interiors response
+- interiors response with room/selection support
 - floorplan rendering URI placeholder
+
+Detailed field status is documented in:
+
+- `LEGACY_SCHEMA_COVERAGE.md`
 
 ## Remaining Gaps
 
-These are intentionally not solved by Phase 1 Task 1:
+These are intentionally not solved by Phase 1 Task 2:
 
 - real UpperView historical catalog data
 - real lot/siteplan geometry
 - real elevation/floorplan artwork
-- real option dependencies beyond the sample structural option
+- exact historical option dependency semantics
 - favorites, lead capture, email, CRM, and brochure persistence endpoints
 
 Those should be handled by later roadmap tasks.
