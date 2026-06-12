@@ -12,6 +12,7 @@
 - Phase 1 Task 4 expanded the reconstructed catalog to 3 neutral plans, 6 elevations, multiple color packages, options, lots, inventory examples, and availability states.
 - Phase 2 Task 1 added safe local no-op mocks for favorites, registration, lead capture, email, CRM, brochure, and inventory-photo endpoints.
 - Phase 2 Task 2 reconstructed lot/siteplan and availability behavior from frontend references, expanding local data to 9 lots, 3 quick move-in examples, explicit model/hold/sold states, plan-to-lot compatibility, and lot-to-plan restrictions.
+- The 2026-06-12 recovery evidence pass found no new original UpperView HomePlanner backend payloads. It did add `RECOVERED_UPPERVIEW_DATA_INDEX.md` and recorded current public Upperview Homes corroboration for Grandview Trail.
 
 ## Searches Performed
 
@@ -23,6 +24,9 @@
 - Endpoint searches on `upperviewhomeplanner.com`, `www.upperviewhomeplanner.com`, `rendering.house`, and `www.rendering.house`.
 - Focused searches for all PHP endpoints discovered in the frontend bundle.
 - General web searches for `Grandview Trail`, `UpperView`, and `upperviewhomeplanner.com`.
+- 2026-06-12 pass: reviewed existing `data/recovered/focused-cdx-results.json`, which records no focused captures for the target UpperView PHP endpoints except a timeout for `upperviewhomeplanner.com/*clientId=1*`.
+- 2026-06-12 pass: attempted direct CDX/API checks from this Codex environment for target PHP endpoints. PowerShell failed with `Unable to connect to the remote server`; Node `fetch()` failed with `fetch failed`; direct web-open CDX attempts did not return usable content.
+- 2026-06-12 pass: opened current public Upperview Homes pages at `https://www.upperviewhomes.com/` and `https://www.upperviewhomes.com/communities/grandview-trail-oshawa/` for corroboration only.
 
 ## Recovered Original Data
 
@@ -43,10 +47,13 @@ Saved under `data/recovered/`:
 - UpperView `getplans.php`.
 - UpperView lazy elevation/floorplan/interior JSON/XML responses.
 - Real plan IDs, lot IDs, elevation IDs, option/package IDs, pricing tables, and plan/floorplan artwork from the original backend.
+- Original Grandview Trail siteplan image, lot geometry, lot statuses, lot premiums, inventory records, and HomePlanner media assets.
 
 ## External Corroboration
 
 General web search confirms `Grandview Trail` was an Upperview Homes community in Oshawa and is now sold out/complete. Some public real-estate pages mention example homes and square footage, but they do not expose the HomePlanner backend schema or exact app catalog records.
+
+The 2026-06-12 pass confirmed current public Upperview Homes pages state that Grandview Trail is an Oshawa community, completed in 2022, with 40 ft single homes ranging up to 3,200 sq ft. This is public corroboration only and should not be treated as recovered HomePlanner backend data.
 
 ## Data Status Labels
 
@@ -55,6 +62,7 @@ General web search confirms `Grandview Trail` was an Upperview Homes community i
 - `reconstructed`: local data created to satisfy the inferred schema.
 - `generated`: route-compatible legacy payload created from normalized configuration.
 - `speculative`: plausible business model or missing table not directly required by the frontend.
+- `public corroboration`: current or archived public marketing/listing evidence that confirms broad facts but is not an original HomePlanner backend response.
 
 ## Generated Compatibility Layer
 
@@ -92,6 +100,10 @@ The richer reconstructed sample catalog is documented in:
 Late-flow user/session mocks are documented in:
 
 - `LATE_FLOW_MOCK_ENDPOINTS.md`
+
+Recovered-data evidence and search status are indexed in:
+
+- `RECOVERED_UPPERVIEW_DATA_INDEX.md`
 
 ## Phase 1 Task 2 Notes
 
