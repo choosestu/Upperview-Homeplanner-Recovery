@@ -1,0 +1,110 @@
+﻿{
+    "upperviewhomeplanner.com/*Grandview*":  {
+                                                 "value":  [
+
+                                                           ],
+                                                 "Count":  0
+                                             },
+    "upperviewhomeplanner.com/db/scripts/php/getsummary.php*":  {
+                                                                    "value":  [
+
+                                                                              ],
+                                                                    "Count":  0
+                                                                },
+    "upperviewhomeplanner.com/db/scripts/php/getelevnbrhoods.php*":  {
+                                                                         "value":  [
+
+                                                                                   ],
+                                                                         "Count":  0
+                                                                     },
+    "upperviewhomeplanner.com/*nbrhoodIds=1*":  {
+                                                    "value":  [
+
+                                                              ],
+                                                    "Count":  0
+                                                },
+    "upperviewhomeplanner.com/*clientId=1*":  {
+                                                  "value":  [
+
+                                                            ],
+                                                  "Count":  0
+                                              },
+    "upperviewhomeplanner.com/db/scripts/php/getPlanFloorplans.php*":  {
+                                                                           "value":  [
+
+                                                                                     ],
+                                                                           "Count":  0
+                                                                       },
+    "upperviewhomeplanner.com/db/scripts/php/getcolorlib.php*":  {
+                                                                     "value":  [
+
+                                                                               ],
+                                                                     "Count":  0
+                                                                 },
+    "upperviewhomeplanner.com/db/scripts/php/getElevationDetails.php*":  {
+                                                                             "value":  [
+
+                                                                                       ],
+                                                                             "Count":  0
+                                                                         },
+    "rendering.house/db/scripts/php/getplans.php*clientId=1*":  {
+                                                                    "value":  [
+
+                                                                              ],
+                                                                    "Count":  0
+                                                                },
+    "upperviewhomeplanner.com/db/scripts/php/getinteriors.php*":  {
+                                                                      "value":  [
+
+                                                                                ],
+                                                                      "Count":  0
+                                                                  },
+    "upperviewhomeplanner.com/*ids=1*":  {
+                                             "value":  [
+
+                                                       ],
+                                             "Count":  0
+                                         },
+    "rendering.house/db/scripts/php/getnbrhoodsdata.php*clientId=1*":  {
+                                                                           "value":  [
+
+                                                                                     ],
+                                                                           "Count":  0
+                                                                       },
+    "upperviewhomeplanner.com/db/scripts/php/getnbrhoodsdata.php*":  {
+                                                                         "value":  [
+
+                                                                                   ],
+                                                                         "Count":  0
+                                                                     },
+    "upperviewhomeplanner.com/db/scripts/php/getplans.php*":  {
+                                                                  "value":  [
+
+                                                                            ],
+                                                                  "Count":  0
+                                                              },
+    "upperviewhomeplanner.com/db/scripts/php/getElevationElements.php*":  {
+                                                                              "value":  [
+
+                                                                                        ],
+                                                                              "Count":  0
+                                                                          },
+    "upperviewhomeplanner.com/*upperview*":  {
+                                                 "value":  [
+
+                                                           ],
+                                                 "Count":  0
+                                             },
+    "upperviewhomeplanner.com/homedesigner/getclientdata.php*":  {
+                                                                     "value":  [
+
+                                                                               ],
+                                                                     "Count":  0
+                                                                 },
+    "upperviewhomeplanner.com/db/scripts/php/getElevationSchemes.php*":  {
+                                                                             "value":  [
+
+                                                                                       ],
+                                                                             "Count":  0
+                                                                         }
+}
